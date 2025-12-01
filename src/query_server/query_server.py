@@ -1,15 +1,15 @@
 # src/query_server/query_server.py
 
 import asyncio_dgram
-from mediator.base_component import BaseComponent
-from config.settings import SERVER_IP, QUERY_PORT, GAME_PORT, SERVER_NAME, GAME_APP_ID, VERSION_GAME
+from src.mediator.mediator import Mediator
+from src.config import Config
 from src.constants import A2S_INFO, A2S_SERVERQUERY_GETCHALLENGE, A2S_PLAYER
 from src.query_server.query_request.info_query import info_query
 from src.query_server.query_request.challenge_query import challenge_query
-from src.query_server.player_query import player_query
+from src.query_server.query_request.player_query import player_query
 
 
-class QueryServer(BaseComponent):
+class QueryServer:
     """
     Класс QueryServer обрабатывает входящие UDP-запросы и взаимодействует с другими компонентами через медиатор.
     """
@@ -19,14 +19,13 @@ class QueryServer(BaseComponent):
         Инициализация QueryServer.
         :param mediator: Экземпляр медиатора для обмена событиями.
         """
-        super().__init__(mediator)  # Наследуем базовый класс BaseComponent
-        self.server_ip = SERVER_IP  # Поле IP-адреса сервера
-        self.query_port = QUERY_PORT  # Поле порта для запросов
+        self.mediator = mediator
+        self.config = Config()  # Загружаем конфигурацию
+        self.server_ip = self.config.get("SERVER_IP", "127.0.0.1")  # Поле IP-адреса сервера
+        self.query_port = self.config.get("QUERY_PORT", 12888)  # Поле порта для запросов (берем из конфига)
         self.players_data = {}  # Данные о игроках по умолчанию
-        self.game_version = b'1.1.0'  # Версия игры по умолчанию
+        self.game_version = self.config.get("VERSION_GAME", "1.1.0").encode('utf-8')  # Версия игры
         self.challenge_numbers = {}
-        self.mediator.notify("logger", {"message": f"Сервер инициализирован. IP: {self.server_ip}, "
-                                                   f"Порт: {self.query_port}", "level": "info"})
 
     async def handle_request(self, request_type, data, addr):
 
@@ -38,11 +37,10 @@ class QueryServer(BaseComponent):
         """
         if request_type == "A2S_INFO":
             # Уведомляем медиатор о необходимости получить данные о игроках
-            self.mediator.notify("get_players")
-            # Уведомляем медиатор о необходимости получить версию игры
-            self.mediator.notify("get_game_version")
             # Формируем ответ
-            return await info_query(self.players_data, VERSION_GAME)
+            server_name = self.config.get("SERVERS.1005.SERVER_NAME", "[RU][PVE]Siberian MOE")
+            game_port = self.config.get("SERVERS.1005.GAME_PORT", 11888)
+            return await info_query(self.players_data, self.config.get("VERSION_GAME", "1.1.0"), server_name, game_port)
         elif request_type == "A2S_SERVERQUERY_GETCHALLENGE":
             # Формируем ответ
             return await challenge_query(addr[0], self.challenge_numbers)

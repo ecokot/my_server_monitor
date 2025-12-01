@@ -248,3 +248,15 @@
 [2025-12-01 22:22:37,712][DEBUG] - Mediator - Передаем запрос обработчику GetPlayerCountQuery
 [2025-12-01 22:22:37,712][DEBUG] - Mediator - Передаем запрос обработчику GetConnectedPlayersQuery
 [2025-12-01 22:22:37,712][INFO] - MainApp - Application finished.
+[2025-12-01 15:50:34,168][INFO] - MainApp - Starting application...
+[2025-12-01 15:50:34,200][DEBUG] - Mediator - Подписываем обработчик async_print_player на событие PlayerJoinedEvent
+[2025-12-01 15:50:34,200][DEBUG] - Mediator - Подписываем обработчик sync_print_player на событие PlayerJoinedEvent
+[2025-12-01 15:50:34,200][DEBUG] - Mediator - Подписываем обработчик handle_ddos_event на событие DdosEvent
+[2025-12-01 15:50:34,200][DEBUG] - Mediator - Регистрируем обработчик <lambda> для запроса GetPlayerCountQuery
+[2025-12-01 15:50:34,211][DEBUG] - Mediator - Публикуем событие: PlayerJoinedEvent
+[2025-12-01 15:50:34,211][INFO] - LogParser - Начинаю парсинг 1 лог-файлов: ['D:/1/24722.log']
+[2025-12-01 15:50:34,211][DEBUG] - Mediator - Регистрируем обработчик _handle_get_connected_players_query для запроса GetConnectedPlayersQuery
+[2025-12-01 15:50:34,248][ERROR] - LogParser - Файл логов не найден: D:/1/24722.log
+[2025-12-01 15:50:35,213][DEBUG] - Mediator - Передаем запрос обработчику GetPlayerCountQuery
+[2025-12-01 15:50:35,214][DEBUG] - Mediator - Передаем запрос обработчику GetConnectedPlayersQuery
+[2025-12-01 15:50:35,214][INFO] - MainApp - Application finished.
