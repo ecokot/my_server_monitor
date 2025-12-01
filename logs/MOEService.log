@@ -1,0 +1,250 @@
+[2025-12-01 20:08:28,384][INFO] - Mediator - Mediator initialized
+[2025-12-01 20:09:42,459][INFO] - AppMain - Starting application...
+[2025-12-01 20:09:42,459][INFO] - Mediator - Mediator initialized
+[2025-12-01 20:18:17,061][INFO] - MainApp - Starting application...
+[2025-12-01 20:18:17,062][DEBUG] - Mediator - Subscribing handler async_print_player to event PlayerJoinedEvent
+[2025-12-01 20:18:17,062][DEBUG] - Mediator - Subscribing handler sync_print_player to event PlayerJoinedEvent
+[2025-12-01 20:18:17,062][DEBUG] - Mediator - Registering handler for query GetPlayerCountQuery
+[2025-12-01 20:18:17,062][INFO] - Mediator - Publishing event: PlayerJoinedEvent
+[2025-12-01 20:18:18,078][DEBUG] - Mediator - Processing query GetPlayerCountQuery
+[2025-12-01 20:18:18,079][INFO] - MainApp - Application finished.
+[2025-12-01 20:24:46,082][INFO] - MainApp - Запуск приложения...
+[2025-12-01 20:24:46,083][DEBUG] - Mediator - Подписываем обработчик async_print_player на событие PlayerJoinedEvent
+[2025-12-01 20:24:46,083][DEBUG] - Mediator - Подписываем обработчик sync_print_player на событие PlayerJoinedEvent
+[2025-12-01 20:24:46,083][DEBUG] - Mediator - Регистрируем обработчик <lambda> для запроса GetPlayerCountQuery
+[2025-12-01 20:24:46,083][DEBUG] - Mediator - Публикуем событие: PlayerJoinedEvent
+[2025-12-01 20:24:47,087][DEBUG] - Mediator - Передаем запрос обработчику GetPlayerCountQuery
+[2025-12-01 20:24:47,087][INFO] - MainApp - Приложение остановлено.
+[2025-12-01 20:30:23,767][INFO] - MainApp - Запуск приложения...
+[2025-12-01 20:30:23,767][INFO] - MainApp - Приложение остановлено.
+[2025-12-01 22:21:10,643][INFO] - MainApp - Starting application...
+[2025-12-01 22:21:10,643][DEBUG] - Mediator - Подписываем обработчик async_print_player на событие PlayerJoinedEvent
+[2025-12-01 22:21:10,643][DEBUG] - Mediator - Подписываем обработчик sync_print_player на событие PlayerJoinedEvent
+[2025-12-01 22:21:10,643][DEBUG] - Mediator - Подписываем обработчик handle_ddos_event на событие DdosEvent
+[2025-12-01 22:21:10,644][DEBUG] - Mediator - Регистрируем обработчик <lambda> для запроса GetPlayerCountQuery
+[2025-12-01 22:21:10,644][DEBUG] - Mediator - Публикуем событие: PlayerJoinedEvent
+[2025-12-01 22:21:10,645][INFO] - LogParser - Начинаю парсинг 1 лог-файлов: ['C:/Program Files (x86)/Steam/steamapps/common/Myth of Empires Dedicated Server/MOE/Saved/Logs/24722.log']
+[2025-12-01 22:21:10,645][DEBUG] - Mediator - Регистрируем обработчик _handle_get_connected_players_query для запроса GetConnectedPlayersQuery
+[2025-12-01 22:21:10,647][ERROR] - LogParser - Файл логов не найден: C:/Program Files (x86)/Steam/steamapps/common/Myth of Empires Dedicated Server/MOE/Saved/Logs/24722.log
+[2025-12-01 22:21:11,653][DEBUG] - Mediator - Передаем запрос обработчику GetPlayerCountQuery
+[2025-12-01 22:21:11,653][DEBUG] - Mediator - Передаем запрос обработчику GetConnectedPlayersQuery
+[2025-12-01 22:21:11,653][INFO] - MainApp - Application finished.
+[2025-12-01 22:22:36,699][INFO] - MainApp - Starting application...
+[2025-12-01 22:22:36,701][DEBUG] - Mediator - Подписываем обработчик async_print_player на событие PlayerJoinedEvent
+[2025-12-01 22:22:36,701][DEBUG] - Mediator - Подписываем обработчик sync_print_player на событие PlayerJoinedEvent
+[2025-12-01 22:22:36,701][DEBUG] - Mediator - Подписываем обработчик handle_ddos_event на событие DdosEvent
+[2025-12-01 22:22:36,701][DEBUG] - Mediator - Регистрируем обработчик <lambda> для запроса GetPlayerCountQuery
+[2025-12-01 22:22:36,702][DEBUG] - Mediator - Публикуем событие: PlayerJoinedEvent
+[2025-12-01 22:22:36,702][INFO] - LogParser - Начинаю парсинг 1 лог-файлов: ['D:/1/24722.log']
+[2025-12-01 22:22:36,702][DEBUG] - Mediator - Регистрируем обработчик _handle_get_connected_players_query для запроса GetConnectedPlayersQuery
+[2025-12-01 22:22:36,704][DEBUG] - LogParser - Начинаю парсинг файла: D:/1/24722.log
+[2025-12-01 22:22:36,710][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,711][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,711][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,712][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,712][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,712][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,713][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,713][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,713][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,713][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,713][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,715][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,715][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,715][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,717][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,717][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,718][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,719][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,719][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,719][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,720][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,720][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,720][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,720][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,721][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,721][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,721][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,722][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,722][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,723][INFO] - LogParser - Игрок подключился: Unknown_76561198039198830 (SteamID: 76561198039198830) из файла D:/1/24722.log
+[2025-12-01 22:22:36,723][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,723][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,724][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,724][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,724][INFO] - LogParser - Игрок подключился: Unknown_76561198346036900 (SteamID: 76561198346036900) из файла D:/1/24722.log
+[2025-12-01 22:22:36,725][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,725][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,725][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,725][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,725][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,725][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,727][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,727][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,728][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,728][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,729][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,729][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,729][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,729][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,730][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,730][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,730][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,731][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,731][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,731][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,731][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,731][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,732][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,732][INFO] - LogParser - Игрок подключился: Unknown_76561198084546219 (SteamID: 76561198084546219) из файла D:/1/24722.log
+[2025-12-01 22:22:36,732][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,733][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,733][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,734][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,734][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,734][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,734][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,735][INFO] - LogParser - Игрок отключился: Unknown_76561198084546219 (SteamID: 76561198084546219) из файла D:/1/24722.log
+[2025-12-01 22:22:36,735][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,735][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,736][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,736][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,736][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,737][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,737][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,737][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,738][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,738][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,738][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,738][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,738][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,739][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,739][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,739][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,740][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,740][INFO] - LogParser - Игрок подключился: Unknown_76561198151453668 (SteamID: 76561198151453668) из файла D:/1/24722.log
+[2025-12-01 22:22:36,740][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,740][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,742][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,742][INFO] - LogParser - Игрок отключился: Unknown_76561198151453668 (SteamID: 76561198151453668) из файла D:/1/24722.log
+[2025-12-01 22:22:36,743][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,743][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,743][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,743][INFO] - LogParser - Игрок подключился: Unknown_76561198448653226 (SteamID: 76561198448653226) из файла D:/1/24722.log
+[2025-12-01 22:22:36,744][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,744][INFO] - LogParser - Игрок отключился: Unknown_76561198346036900 (SteamID: 76561198346036900) из файла D:/1/24722.log
+[2025-12-01 22:22:36,745][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,745][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,745][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,745][INFO] - LogParser - Игрок отключился: Unknown_76561198448653226 (SteamID: 76561198448653226) из файла D:/1/24722.log
+[2025-12-01 22:22:36,745][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,747][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,747][INFO] - LogParser - Игрок подключился: Unknown_76561198084546219 (SteamID: 76561198084546219) из файла D:/1/24722.log
+[2025-12-01 22:22:36,747][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,747][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,748][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,748][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,748][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,749][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,749][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,749][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,750][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,750][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,750][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,751][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,751][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,751][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,751][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,752][INFO] - LogParser - Игрок подключился: Unknown_76561198078372219 (SteamID: 76561198078372219) из файла D:/1/24722.log
+[2025-12-01 22:22:36,752][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,752][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,752][INFO] - LogParser - Игрок подключился: Unknown_76561198448653226 (SteamID: 76561198448653226) из файла D:/1/24722.log
+[2025-12-01 22:22:36,753][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,753][INFO] - LogParser - Игрок отключился: Unknown_76561198084546219 (SteamID: 76561198084546219) из файла D:/1/24722.log
+[2025-12-01 22:22:36,753][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,753][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,754][INFO] - LogParser - Игрок отключился: Unknown_76561198448653226 (SteamID: 76561198448653226) из файла D:/1/24722.log
+[2025-12-01 22:22:36,754][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,754][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,755][INFO] - LogParser - Игрок подключился: Unknown_76561198019873330 (SteamID: 76561198019873330) из файла D:/1/24722.log
+[2025-12-01 22:22:36,755][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,755][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,755][INFO] - LogParser - Игрок подключился: Unknown_76561198040199345 (SteamID: 76561198040199345) из файла D:/1/24722.log
+[2025-12-01 22:22:36,755][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,755][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,755][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,757][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,757][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,757][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,758][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,758][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,758][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,758][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,759][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,759][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,759][INFO] - LogParser - Игрок подключился: Unknown_76561198084546219 (SteamID: 76561198084546219) из файла D:/1/24722.log
+[2025-12-01 22:22:36,759][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,760][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,760][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,760][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,761][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,761][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,761][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,762][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,762][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,762][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,762][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,762][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,763][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,763][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,763][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,763][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,764][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,764][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,764][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,764][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,765][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,765][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,765][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,765][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,765][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,767][INFO] - LogParser - Игрок подключился: Unknown_76561198448653226 (SteamID: 76561198448653226) из файла D:/1/24722.log
+[2025-12-01 22:22:36,767][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,767][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,767][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,767][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,768][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,768][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,769][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,769][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,769][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,769][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,770][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,770][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,771][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,771][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,771][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,772][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,772][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,772][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,772][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,772][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,773][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,773][INFO] - LogParser - Игрок отключился: Unknown_76561198019873330 (SteamID: 76561198019873330) из файла D:/1/24722.log
+[2025-12-01 22:22:36,773][INFO] - LogParser - Игрок отключился: Unknown_76561198448653226 (SteamID: 76561198448653226) из файла D:/1/24722.log
+[2025-12-01 22:22:36,774][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,774][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,774][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,774][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,775][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,775][INFO] - LogParser - Игрок отключился: Unknown_76561198084546219 (SteamID: 76561198084546219) из файла D:/1/24722.log
+[2025-12-01 22:22:36,775][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,775][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,777][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,777][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,778][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,778][DEBUG] - Mediator - Публикуем событие: DdosEvent
+[2025-12-01 22:22:36,779][DEBUG] - LogParser - Начальный размер файла D:/1/24722.log: 1127799
+[2025-12-01 22:22:37,712][DEBUG] - Mediator - Передаем запрос обработчику GetPlayerCountQuery
+[2025-12-01 22:22:37,712][DEBUG] - Mediator - Передаем запрос обработчику GetConnectedPlayersQuery
+[2025-12-01 22:22:37,712][INFO] - MainApp - Application finished.

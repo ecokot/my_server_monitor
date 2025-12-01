@@ -1,0 +1,32 @@
+{
+    "SERVER_IP":"192.168.1.3",
+    "VERSION_GAME": "1.114",
+    "VERSION_FILE": "./data/game_version.json",
+    "PLAYERS_DATA_FILE": "./data/players_data.json",
+    "LOG": {
+        "LOG_FILE": "./logs/MOEService.log",
+        "MAIN_LEVEL_LOG": "DEBUG",
+        "LEVEL_CONSOLE_LOG": "DEBUG",
+        "LEVEL_FILE_LOG": "DEBUG",
+        "DEFAULT_LEVEL_LOG": "DEBUG"
+    },
+    "TELEGRAM": {
+        "TOKEN": "1234567890:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "ADMIN_ID": [1554464656]
+    },
+    "DDOS": {
+        "DDOS_THRESHOLD": 150,
+        "DDOS_INTERVAL": 5,
+        "BLOCKED_IPS_FILE": "./data/blocked_ips.json"
+    },
+
+    "SERVERS": {
+        "1005": {
+            "SERVER_NAME": "[RU][PVE]Siberian MOE",
+            "QUERY_PORT": 12888,
+            "GAME_PORT": 11888,
+            "GAME_LOG_FILES": ["D:/1/24722.log"],
+            "GAME_LOG_LEVEL": "DEBUG"
+        }
+    }
+}
