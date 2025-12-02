@@ -1,8 +1,6 @@
-# src/main.py
-
 import asyncio
-from src.mediator.mediator import Mediator
-from src.events.types import PlayerJoinedEvent, GetPlayerCountQuery, DdosEvent
+import signal
+from src.events.types import GetPlayerCountQuery
 from src.config import Config
 from src.logger import LoggerMixin
 from src.log_parser.log_parser import LogParser
@@ -11,62 +9,60 @@ from src.log_parser.log_parser import LogParser
 class MainApp(LoggerMixin):
     def __init__(self):
         super().__init__()
+        self.log_parser = None
+        self.running = True
 
     async def run(self):
         self.logger.info("Starting application...")
 
         config = Config()
-        mediator = Mediator(config)
+        self.log_parser = LogParser(config=config)
 
-        # Подписка на события и запросы
-        mediator.subscribe(PlayerJoinedEvent, async_print_player)
-        mediator.subscribe(PlayerJoinedEvent, sync_print_player)
-        mediator.subscribe(DdosEvent, handle_ddos_event) # <-- Подписываемся на DDoS события
+        # Запускаем парсинг
+        log_parser_task = asyncio.create_task(self.log_parser.start_parsing())
 
-        mediator.register_handler(GetPlayerCountQuery, lambda q: 42) # <-- Временный обработчик
-        # mediator.register_handler(GetConnectedPlayersQuery, ...) # <-- LogParser сам зарегистрирует обработчик
-
-        # --- Интеграция LogParser ---
-        log_parser = LogParser(mediator=mediator, config=config) # <-- Создаем LogParser
-        # Запускаем парсинг в фоновой задаче
-        log_parser_task = asyncio.create_task(log_parser.start_parsing())
-
-        # Пример отправки события PlayerJoinedEvent
-        await mediator.publish(PlayerJoinedEvent("Артём"))
-        player_count = mediator.request(GetPlayerCountQuery())
-        print(f"Player count (from mediator): {player_count}")
-        print(f"Telegram token: {mediator.config.get('TELEGRAM.TOKEN')}")
-
-        # Пример запроса количества подключенных игроков через медиатор (LogParser должен зарегистрировать обработчик)
+        # Пример: запрос количества игроков через 5 секунд
+        await asyncio.sleep(5)
         try:
-            connected_players = mediator.request(GetPlayerCountQuery)
-            print(f"Connected players (from LogParser via mediator): {len(connected_players)} - {connected_players}")
-        except ValueError:
-            print("Обработчик GetConnectedPlayersQuery не зарегистрирован или не найден.")
+            player_count = self.log_parser.get_connected_players(None)
+            self.logger.info(f"Connected players: {len(player_count)}")
+        except Exception as e:
+            self.logger.error(f"Не удалось получить количество игроков: {e}")
 
-        # Ждем log_parser_task (в реальном приложении это может быть бесконечное ожидание)
-        # await log_parser_task
+        # Ожидаем завершения (на практике — бесконечно, пока не Ctrl+C)
+        try:
+            await asyncio.gather(log_parser_task)
+        except (asyncio.CancelledError, KeyboardInterrupt):
+            self.logger.info("LogParser task was cancelled. Shutting down...")
+            await self.log_parser.shutdown()
+            self.running = False
+            return  # ✅ ВЫХОДИМ
 
-        self.logger.info("Application finished.")
-
-
-async def async_print_player(event):
-    await asyncio.sleep(1)
-    print("ASYNC:", event.player_name)
-
-
-def sync_print_player(event):
-    print("SYNC:", event.player_name)
-
-
-def handle_ddos_event(event: DdosEvent):
-    print(f"[DDOS EVENT] IP: {event.ip}, Time: {event.timestamp}, File: {event.log_file}")
+    async def shutdown(self):
+        """Корректное завершение всех компонентов"""
+        if self.log_parser:
+            await self.log_parser.shutdown()
 
 
 async def main():
     app = MainApp()
+
+    # Регистрация обработчиков сигналов
+    def handle_shutdown():
+        if not app.running:
+            return  # ✅ Защита от повторного вызова
+        print("\nReceived shutdown signal...")
+        asyncio.create_task(app.shutdown())
+        app.running = False
+
+    signal.signal(signal.SIGINT, lambda s, f: handle_shutdown())
+    signal.signal(signal.SIGTERM, lambda s, f: handle_shutdown())
+
     await app.run()
 
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    try:
+        asyncio.run(main())
+    except KeyboardInterrupt:
+        print("Application interrupted. Exiting cleanly.")

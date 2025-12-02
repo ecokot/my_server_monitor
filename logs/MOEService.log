@@ -1,898 +1,826 @@
-[2025-12-02 17:50:53,657][INFO] - MainApp - Starting application...
-[2025-12-02 17:50:53,658][DEBUG] - Mediator - Подписываем обработчик async_print_player на событие PlayerJoinedEvent
-[2025-12-02 17:50:53,659][DEBUG] - Mediator - Подписываем обработчик sync_print_player на событие PlayerJoinedEvent
-[2025-12-02 17:50:53,659][DEBUG] - Mediator - Подписываем обработчик handle_ddos_event на событие DdosEvent
-[2025-12-02 17:50:53,659][DEBUG] - Mediator - Регистрируем обработчик <lambda> для запроса GetPlayerCountQuery
-[2025-12-02 17:50:53,659][DEBUG] - Mediator - Публикуем событие: PlayerJoinedEvent
-[2025-12-02 17:51:44,958][INFO] - MainApp - Starting application...
-[2025-12-02 17:51:44,959][DEBUG] - Mediator - Подписываем обработчик async_print_player на событие PlayerJoinedEvent
-[2025-12-02 17:51:44,959][DEBUG] - Mediator - Подписываем обработчик sync_print_player на событие PlayerJoinedEvent
-[2025-12-02 17:51:44,959][DEBUG] - Mediator - Подписываем обработчик handle_ddos_event на событие DdosEvent
-[2025-12-02 17:51:44,959][DEBUG] - Mediator - Регистрируем обработчик <lambda> для запроса GetPlayerCountQuery
-[2025-12-02 17:51:44,960][DEBUG] - Mediator - Публикуем событие: PlayerJoinedEvent
-[2025-12-02 17:53:34,172][INFO] - MainApp - Starting application...
-[2025-12-02 17:53:34,172][DEBUG] - Mediator - Подписываем обработчик async_print_player на событие PlayerJoinedEvent
-[2025-12-02 17:53:34,172][DEBUG] - Mediator - Подписываем обработчик sync_print_player на событие PlayerJoinedEvent
-[2025-12-02 17:53:34,172][DEBUG] - Mediator - Подписываем обработчик handle_ddos_event на событие DdosEvent
-[2025-12-02 17:53:34,172][DEBUG] - Mediator - Регистрируем обработчик <lambda> для запроса GetPlayerCountQuery
-[2025-12-02 17:53:34,173][DEBUG] - Mediator - Публикуем событие: PlayerJoinedEvent
-[2025-12-02 17:53:34,173][DEBUG] - LogParser - Начинаю парсинг 1 лог-файлов: ['D:/1/24722.log']
-[2025-12-02 17:53:34,173][DEBUG] - Mediator - Регистрируем обработчик _handle_get_connected_players_query для запроса GetConnectedPlayersQuery
-[2025-12-02 17:53:34,175][DEBUG] - LogParser - Начинаю парсинг файла: D:/1/24722.log
-[2025-12-02 17:53:34,182][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,182][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,182][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,183][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,183][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,183][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,184][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,184][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,184][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,184][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,185][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,186][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,186][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,187][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,187][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,188][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,189][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,189][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,190][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,190][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,190][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,190][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,191][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,191][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,192][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,192][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,192][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,193][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,193][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,193][INFO] - LogParser - Игрок подключился: Unknown_76561198039198830 (SteamID: 76561198039198830) из файла D:/1/24722.log
-[2025-12-02 17:53:34,194][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,194][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,194][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,194][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,194][INFO] - LogParser - Игрок подключился: Unknown_76561198346036900 (SteamID: 76561198346036900) из файла D:/1/24722.log
-[2025-12-02 17:53:34,195][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,195][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,195][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,196][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,196][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,196][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,196][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,196][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,197][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,197][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,198][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,198][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,198][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,198][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,199][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,199][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,199][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,199][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,199][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,201][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,201][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,201][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,201][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,201][INFO] - LogParser - Игрок подключился: Unknown_76561198084546219 (SteamID: 76561198084546219) из файла D:/1/24722.log
-[2025-12-02 17:53:34,201][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,201][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,202][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,202][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,202][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,202][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,203][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,203][INFO] - LogParser - Игрок отключился: Unknown_76561198084546219 (SteamID: 76561198084546219) из файла D:/1/24722.log
-[2025-12-02 17:53:34,203][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,204][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,204][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,204][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,205][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,205][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,205][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,205][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,205][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,207][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,207][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,207][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,207][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,208][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,208][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,208][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,208][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,209][INFO] - LogParser - Игрок подключился: Unknown_76561198151453668 (SteamID: 76561198151453668) из файла D:/1/24722.log
-[2025-12-02 17:53:34,209][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,209][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,209][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,210][INFO] - LogParser - Игрок отключился: Unknown_76561198151453668 (SteamID: 76561198151453668) из файла D:/1/24722.log
-[2025-12-02 17:53:34,210][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,210][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,211][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,211][INFO] - LogParser - Игрок подключился: Unknown_76561198448653226 (SteamID: 76561198448653226) из файла D:/1/24722.log
-[2025-12-02 17:53:34,211][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,211][INFO] - LogParser - Игрок отключился: Unknown_76561198346036900 (SteamID: 76561198346036900) из файла D:/1/24722.log
-[2025-12-02 17:53:34,212][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,212][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,213][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,213][INFO] - LogParser - Игрок отключился: Unknown_76561198448653226 (SteamID: 76561198448653226) из файла D:/1/24722.log
-[2025-12-02 17:53:34,213][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,213][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,213][INFO] - LogParser - Игрок подключился: Unknown_76561198084546219 (SteamID: 76561198084546219) из файла D:/1/24722.log
-[2025-12-02 17:53:34,214][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,214][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,215][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,215][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,215][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,215][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,216][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,216][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,216][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,216][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,217][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,217][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,217][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,217][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,219][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,219][INFO] - LogParser - Игрок подключился: Unknown_76561198078372219 (SteamID: 76561198078372219) из файла D:/1/24722.log
-[2025-12-02 17:53:34,219][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,220][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,220][INFO] - LogParser - Игрок подключился: Unknown_76561198448653226 (SteamID: 76561198448653226) из файла D:/1/24722.log
-[2025-12-02 17:53:34,220][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,220][INFO] - LogParser - Игрок отключился: Unknown_76561198084546219 (SteamID: 76561198084546219) из файла D:/1/24722.log
-[2025-12-02 17:53:34,220][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,221][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,221][INFO] - LogParser - Игрок отключился: Unknown_76561198448653226 (SteamID: 76561198448653226) из файла D:/1/24722.log
-[2025-12-02 17:53:34,221][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,222][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,222][INFO] - LogParser - Игрок подключился: Unknown_76561198019873330 (SteamID: 76561198019873330) из файла D:/1/24722.log
-[2025-12-02 17:53:34,222][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,222][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,222][INFO] - LogParser - Игрок подключился: Unknown_76561198040199345 (SteamID: 76561198040199345) из файла D:/1/24722.log
-[2025-12-02 17:53:34,222][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,222][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,223][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,223][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,223][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,224][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,224][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,224][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,224][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,225][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,225][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,225][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,225][INFO] - LogParser - Игрок подключился: Unknown_76561198084546219 (SteamID: 76561198084546219) из файла D:/1/24722.log
-[2025-12-02 17:53:34,225][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,226][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,226][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,226][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,227][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,227][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,227][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,228][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,228][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,228][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,228][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,229][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,229][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,229][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,229][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,230][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,230][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,230][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,230][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,230][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,230][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,230][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,232][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,233][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,233][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,233][INFO] - LogParser - Игрок подключился: Unknown_76561198448653226 (SteamID: 76561198448653226) из файла D:/1/24722.log
-[2025-12-02 17:53:34,233][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,233][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,234][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,234][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,234][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,235][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,235][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,236][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,236][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,236][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,236][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,237][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,237][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,237][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,237][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,238][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,238][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,238][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,238][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,239][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,239][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,239][INFO] - LogParser - Игрок отключился: Unknown_76561198019873330 (SteamID: 76561198019873330) из файла D:/1/24722.log
-[2025-12-02 17:53:34,239][INFO] - LogParser - Игрок отключился: Unknown_76561198448653226 (SteamID: 76561198448653226) из файла D:/1/24722.log
-[2025-12-02 17:53:34,240][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,240][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,240][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,240][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,240][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,241][INFO] - LogParser - Игрок отключился: Unknown_76561198084546219 (SteamID: 76561198084546219) из файла D:/1/24722.log
-[2025-12-02 17:53:34,241][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,241][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,241][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,242][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,242][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,242][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:53:34,243][DEBUG] - LogParser - Начальный размер файла D:/1/24722.log: 1127799
-[2025-12-02 17:53:35,184][DEBUG] - Mediator - Передаем запрос обработчику GetPlayerCountQuery
-[2025-12-02 17:53:35,184][DEBUG] - Mediator - Передаем запрос обработчику GetConnectedPlayersQuery
-[2025-12-02 17:53:35,184][INFO] - MainApp - Application finished.
-[2025-12-02 17:57:51,466][INFO] - MainApp - Starting application...
-[2025-12-02 17:57:51,467][DEBUG] - Mediator - Подписываем обработчик async_print_player на событие PlayerJoinedEvent
-[2025-12-02 17:57:51,467][DEBUG] - Mediator - Подписываем обработчик sync_print_player на событие PlayerJoinedEvent
-[2025-12-02 17:57:51,467][DEBUG] - Mediator - Подписываем обработчик handle_ddos_event на событие DdosEvent
-[2025-12-02 17:57:51,467][DEBUG] - Mediator - Регистрируем обработчик <lambda> для запроса GetPlayerCountQuery
-[2025-12-02 17:57:51,467][DEBUG] - Mediator - Публикуем событие: PlayerJoinedEvent
-[2025-12-02 17:57:51,469][DEBUG] - LogParser - Начинаю парсинг 1 лог-файлов: ['D:/1/24722.log']
-[2025-12-02 17:57:52,471][DEBUG] - Mediator - Передаем запрос обработчику GetPlayerCountQuery
-[2025-12-02 17:57:52,471][ERROR] - Mediator - Нет обработчика для запроса type
-[2025-12-02 17:57:52,471][INFO] - MainApp - Application finished.
-[2025-12-02 17:59:16,923][INFO] - MainApp - Starting application...
-[2025-12-02 17:59:16,924][DEBUG] - Mediator - Подписываем обработчик async_print_player на событие PlayerJoinedEvent
-[2025-12-02 17:59:16,924][DEBUG] - Mediator - Подписываем обработчик sync_print_player на событие PlayerJoinedEvent
-[2025-12-02 17:59:16,924][DEBUG] - Mediator - Подписываем обработчик handle_ddos_event на событие DdosEvent
-[2025-12-02 17:59:16,924][DEBUG] - Mediator - Регистрируем обработчик <lambda> для запроса GetPlayerCountQuery
-[2025-12-02 17:59:16,924][DEBUG] - Mediator - Публикуем событие: PlayerJoinedEvent
-[2025-12-02 17:59:16,925][DEBUG] - LogParser - Начинаю парсинг 1 лог-файлов: ['D:/1/24722.log']
-[2025-12-02 17:59:16,925][DEBUG] - Mediator - Регистрируем обработчик _handle_get_players_query для запроса GetPlayerCountQuery
-[2025-12-02 17:59:16,927][DEBUG] - LogParser - Начинаю парсинг файла: D:/1/24722.log
-[2025-12-02 17:59:16,933][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,934][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,934][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,935][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,935][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,936][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,936][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,936][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,936][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,936][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,938][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,939][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,939][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,940][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,940][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,941][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,942][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,943][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,943][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,943][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,943][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,943][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,944][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,944][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,944][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,944][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,945][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,945][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,945][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,946][INFO] - LogParser - Игрок подключился: Unknown_76561198039198830 (SteamID: 76561198039198830) из файла D:/1/24722.log
-[2025-12-02 17:59:16,946][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,946][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,946][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,946][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,948][INFO] - LogParser - Игрок подключился: Unknown_76561198346036900 (SteamID: 76561198346036900) из файла D:/1/24722.log
-[2025-12-02 17:59:16,948][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,948][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,949][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,949][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,949][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,950][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,950][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,951][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,951][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,952][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,952][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,952][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,952][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,953][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,953][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,953][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,953][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,954][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,954][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,954][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,955][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,955][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,955][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,955][INFO] - LogParser - Игрок подключился: Unknown_76561198084546219 (SteamID: 76561198084546219) из файла D:/1/24722.log
-[2025-12-02 17:59:16,956][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,956][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,956][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,956][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,957][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,957][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,957][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,957][INFO] - LogParser - Игрок отключился: Unknown_76561198084546219 (SteamID: 76561198084546219) из файла D:/1/24722.log
-[2025-12-02 17:59:16,958][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,958][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,958][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,959][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,959][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,959][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,960][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,960][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,960][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,960][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,961][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,961][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,961][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,961][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,962][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,962][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,962][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,962][INFO] - LogParser - Игрок подключился: Unknown_76561198151453668 (SteamID: 76561198151453668) из файла D:/1/24722.log
-[2025-12-02 17:59:16,963][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,963][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,963][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,964][INFO] - LogParser - Игрок отключился: Unknown_76561198151453668 (SteamID: 76561198151453668) из файла D:/1/24722.log
-[2025-12-02 17:59:16,964][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,965][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,965][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,965][INFO] - LogParser - Игрок подключился: Unknown_76561198448653226 (SteamID: 76561198448653226) из файла D:/1/24722.log
-[2025-12-02 17:59:16,965][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,966][INFO] - LogParser - Игрок отключился: Unknown_76561198346036900 (SteamID: 76561198346036900) из файла D:/1/24722.log
-[2025-12-02 17:59:16,966][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,966][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,967][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,967][INFO] - LogParser - Игрок отключился: Unknown_76561198448653226 (SteamID: 76561198448653226) из файла D:/1/24722.log
-[2025-12-02 17:59:16,967][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,967][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,967][INFO] - LogParser - Игрок подключился: Unknown_76561198084546219 (SteamID: 76561198084546219) из файла D:/1/24722.log
-[2025-12-02 17:59:16,969][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,969][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,969][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,970][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,970][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,970][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,970][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,971][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,971][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,971][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,972][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,972][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,972][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,973][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,973][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,973][INFO] - LogParser - Игрок подключился: Unknown_76561198078372219 (SteamID: 76561198078372219) из файла D:/1/24722.log
-[2025-12-02 17:59:16,973][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,974][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,974][INFO] - LogParser - Игрок подключился: Unknown_76561198448653226 (SteamID: 76561198448653226) из файла D:/1/24722.log
-[2025-12-02 17:59:16,974][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,974][INFO] - LogParser - Игрок отключился: Unknown_76561198084546219 (SteamID: 76561198084546219) из файла D:/1/24722.log
-[2025-12-02 17:59:16,975][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,975][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,975][INFO] - LogParser - Игрок отключился: Unknown_76561198448653226 (SteamID: 76561198448653226) из файла D:/1/24722.log
-[2025-12-02 17:59:16,976][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,976][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,976][INFO] - LogParser - Игрок подключился: Unknown_76561198019873330 (SteamID: 76561198019873330) из файла D:/1/24722.log
-[2025-12-02 17:59:16,976][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,976][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,976][INFO] - LogParser - Игрок подключился: Unknown_76561198040199345 (SteamID: 76561198040199345) из файла D:/1/24722.log
-[2025-12-02 17:59:16,976][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,977][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,977][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,977][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,978][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,978][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,978][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,978][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,979][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,979][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,979][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,979][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,980][INFO] - LogParser - Игрок подключился: Unknown_76561198084546219 (SteamID: 76561198084546219) из файла D:/1/24722.log
-[2025-12-02 17:59:16,980][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,980][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,980][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,980][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,981][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,981][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,982][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,982][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,982][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,983][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,983][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,983][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,983][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,984][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,984][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,984][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,984][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,984][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,984][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,984][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,986][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,986][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,986][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,987][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,987][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,987][INFO] - LogParser - Игрок подключился: Unknown_76561198448653226 (SteamID: 76561198448653226) из файла D:/1/24722.log
-[2025-12-02 17:59:16,987][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,988][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,988][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,988][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,989][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,989][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,989][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,990][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,990][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,990][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,990][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,990][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,991][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,991][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,991][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,991][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,992][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,992][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,992][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,992][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,993][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,993][INFO] - LogParser - Игрок отключился: Unknown_76561198019873330 (SteamID: 76561198019873330) из файла D:/1/24722.log
-[2025-12-02 17:59:16,993][INFO] - LogParser - Игрок отключился: Unknown_76561198448653226 (SteamID: 76561198448653226) из файла D:/1/24722.log
-[2025-12-02 17:59:16,993][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,993][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,994][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,994][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,994][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,994][INFO] - LogParser - Игрок отключился: Unknown_76561198084546219 (SteamID: 76561198084546219) из файла D:/1/24722.log
-[2025-12-02 17:59:16,994][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,996][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,996][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,997][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,997][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,997][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 17:59:16,998][DEBUG] - LogParser - Начальный размер файла D:/1/24722.log: 1127799
-[2025-12-02 17:59:17,945][DEBUG] - Mediator - Передаем запрос обработчику GetPlayerCountQuery
-[2025-12-02 17:59:17,945][ERROR] - Mediator - Нет обработчика для запроса type
-[2025-12-02 17:59:17,945][INFO] - MainApp - Application finished.
-[2025-12-02 18:11:59,197][INFO] - MainApp - Starting application...
-[2025-12-02 18:11:59,198][DEBUG] - Mediator - Подписываем обработчик async_print_player на событие PlayerJoinedEvent
-[2025-12-02 18:11:59,198][DEBUG] - Mediator - Подписываем обработчик sync_print_player на событие PlayerJoinedEvent
-[2025-12-02 18:11:59,198][DEBUG] - Mediator - Подписываем обработчик handle_ddos_event на событие DdosEvent
-[2025-12-02 18:11:59,198][DEBUG] - Mediator - Регистрируем обработчик <lambda> для запроса GetPlayerCountQuery
-[2025-12-02 18:11:59,199][DEBUG] - Mediator - Публикуем событие: PlayerJoinedEvent
-[2025-12-02 18:11:59,199][DEBUG] - LogParser - Начинаю парсинг 1 лог-файлов: ['D:/1/24722.log']
-[2025-12-02 18:11:59,199][DEBUG] - Mediator - Регистрируем обработчик _handle_get_players_query для запроса GetPlayerCountQuery
-[2025-12-02 18:11:59,201][DEBUG] - LogParser - Начинаю парсинг файла: D:/1/24722.log
-[2025-12-02 18:11:59,207][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,208][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,208][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,208][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,210][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,210][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,210][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,211][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,211][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,211][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,211][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,213][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,213][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,213][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,214][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,214][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,215][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,216][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,216][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,216][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,217][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,217][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,218][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,218][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,218][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,220][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,220][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,220][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,221][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,221][INFO] - LogParser - Игрок подключился: Unknown_76561198039198830 (SteamID: 76561198039198830) из файла D:/1/24722.log
-[2025-12-02 18:11:59,221][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,222][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,222][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,223][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,223][INFO] - LogParser - Игрок подключился: Unknown_76561198346036900 (SteamID: 76561198346036900) из файла D:/1/24722.log
-[2025-12-02 18:11:59,223][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,223][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,224][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,224][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,224][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,224][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,225][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,225][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,225][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,226][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,226][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,227][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,227][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,227][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,227][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,228][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,228][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,228][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,229][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,229][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,229][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,229][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,229][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,229][INFO] - LogParser - Игрок подключился: Unknown_76561198084546219 (SteamID: 76561198084546219) из файла D:/1/24722.log
-[2025-12-02 18:11:59,231][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,231][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,231][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,232][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,232][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,232][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,232][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,232][INFO] - LogParser - Игрок отключился: Unknown_76561198084546219 (SteamID: 76561198084546219) из файла D:/1/24722.log
-[2025-12-02 18:11:59,233][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,233][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,233][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,234][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,235][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,235][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,235][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,235][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,236][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,236][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,236][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,236][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,237][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,237][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,237][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,237][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,238][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,238][INFO] - LogParser - Игрок подключился: Unknown_76561198151453668 (SteamID: 76561198151453668) из файла D:/1/24722.log
-[2025-12-02 18:11:59,238][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,239][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,239][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,240][INFO] - LogParser - Игрок отключился: Unknown_76561198151453668 (SteamID: 76561198151453668) из файла D:/1/24722.log
-[2025-12-02 18:11:59,240][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,240][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,240][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,240][INFO] - LogParser - Игрок подключился: Unknown_76561198448653226 (SteamID: 76561198448653226) из файла D:/1/24722.log
-[2025-12-02 18:11:59,241][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,241][INFO] - LogParser - Игрок отключился: Unknown_76561198346036900 (SteamID: 76561198346036900) из файла D:/1/24722.log
-[2025-12-02 18:11:59,242][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,242][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,242][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,243][INFO] - LogParser - Игрок отключился: Unknown_76561198448653226 (SteamID: 76561198448653226) из файла D:/1/24722.log
-[2025-12-02 18:11:59,243][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,243][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,243][INFO] - LogParser - Игрок подключился: Unknown_76561198084546219 (SteamID: 76561198084546219) из файла D:/1/24722.log
-[2025-12-02 18:11:59,244][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,244][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,244][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,244][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,244][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,246][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,246][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,246][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,246][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,247][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,247][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,248][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,248][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,248][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,248][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,248][INFO] - LogParser - Игрок подключился: Unknown_76561198078372219 (SteamID: 76561198078372219) из файла D:/1/24722.log
-[2025-12-02 18:11:59,249][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,249][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,249][INFO] - LogParser - Игрок подключился: Unknown_76561198448653226 (SteamID: 76561198448653226) из файла D:/1/24722.log
-[2025-12-02 18:11:59,249][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,250][INFO] - LogParser - Игрок отключился: Unknown_76561198084546219 (SteamID: 76561198084546219) из файла D:/1/24722.log
-[2025-12-02 18:11:59,250][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,250][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,251][INFO] - LogParser - Игрок отключился: Unknown_76561198448653226 (SteamID: 76561198448653226) из файла D:/1/24722.log
-[2025-12-02 18:11:59,251][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,251][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,252][INFO] - LogParser - Игрок подключился: Unknown_76561198019873330 (SteamID: 76561198019873330) из файла D:/1/24722.log
-[2025-12-02 18:11:59,252][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,252][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,253][INFO] - LogParser - Игрок подключился: Unknown_76561198040199345 (SteamID: 76561198040199345) из файла D:/1/24722.log
-[2025-12-02 18:11:59,253][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,253][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,253][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,254][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,254][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,254][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,254][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,255][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,255][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,255][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,256][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,256][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,256][INFO] - LogParser - Игрок подключился: Unknown_76561198084546219 (SteamID: 76561198084546219) из файла D:/1/24722.log
-[2025-12-02 18:11:59,256][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,256][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,257][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,257][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,257][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,258][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,258][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,259][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,259][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,259][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,260][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,260][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,260][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,260][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,260][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,261][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,261][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,261][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,261][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,262][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,262][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,262][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,263][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,263][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,263][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,263][INFO] - LogParser - Игрок подключился: Unknown_76561198448653226 (SteamID: 76561198448653226) из файла D:/1/24722.log
-[2025-12-02 18:11:59,263][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,264][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,264][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,264][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,265][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,265][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,266][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,266][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,266][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,266][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,268][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,268][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,268][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,269][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,269][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,269][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,269][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,270][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,270][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,270][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,270][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,271][INFO] - LogParser - Игрок отключился: Unknown_76561198019873330 (SteamID: 76561198019873330) из файла D:/1/24722.log
-[2025-12-02 18:11:59,271][INFO] - LogParser - Игрок отключился: Unknown_76561198448653226 (SteamID: 76561198448653226) из файла D:/1/24722.log
-[2025-12-02 18:11:59,271][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,271][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,271][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,272][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,272][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,272][INFO] - LogParser - Игрок отключился: Unknown_76561198084546219 (SteamID: 76561198084546219) из файла D:/1/24722.log
-[2025-12-02 18:11:59,272][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,273][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,273][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,274][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,274][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,274][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:11:59,275][DEBUG] - LogParser - Начальный размер файла D:/1/24722.log: 1127799
-[2025-12-02 18:12:00,207][DEBUG] - Mediator - Передаем запрос обработчику GetPlayerCountQuery
-[2025-12-02 18:12:00,207][ERROR] - Mediator - Нет обработчика для запроса type
-[2025-12-02 18:12:00,207][INFO] - MainApp - Application finished.
-[2025-12-02 18:13:19,127][INFO] - MainApp - Starting application...
-[2025-12-02 18:13:19,127][DEBUG] - Mediator - Подписываем обработчик async_print_player на событие PlayerJoinedEvent
-[2025-12-02 18:13:19,127][DEBUG] - Mediator - Подписываем обработчик sync_print_player на событие PlayerJoinedEvent
-[2025-12-02 18:13:19,128][DEBUG] - Mediator - Подписываем обработчик handle_ddos_event на событие DdosEvent
-[2025-12-02 18:13:19,128][DEBUG] - Mediator - Регистрируем обработчик <lambda> для запроса GetPlayerCountQuery
-[2025-12-02 18:13:19,128][DEBUG] - Mediator - Публикуем событие: PlayerJoinedEvent
-[2025-12-02 18:13:19,129][DEBUG] - LogParser - Начинаю парсинг 1 лог-файлов: ['D:/1/24722.log']
-[2025-12-02 18:13:19,129][DEBUG] - Mediator - Регистрируем обработчик _handle_get_players_query для запроса GetPlayerCountQuery
-[2025-12-02 18:13:19,130][DEBUG] - LogParser - Начинаю парсинг файла: D:/1/24722.log
-[2025-12-02 18:13:19,137][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,138][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,138][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,140][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,141][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,141][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,141][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,142][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,142][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,143][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,143][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,144][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,145][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,145][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,145][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,146][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,147][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,148][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,148][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,149][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,149][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,149][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,149][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,151][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,151][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,151][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,152][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,152][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,152][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,153][INFO] - LogParser - Игрок подключился: Unknown_76561198039198830 (SteamID: 76561198039198830) из файла D:/1/24722.log
-[2025-12-02 18:13:19,153][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,153][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,153][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,153][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,154][INFO] - LogParser - Игрок подключился: Unknown_76561198346036900 (SteamID: 76561198346036900) из файла D:/1/24722.log
-[2025-12-02 18:13:19,154][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,154][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,154][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,155][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,155][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,155][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,155][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,157][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,157][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,158][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,158][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,159][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,159][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,159][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,160][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,160][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,160][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,161][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,161][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,161][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,161][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,162][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,162][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,162][INFO] - LogParser - Игрок подключился: Unknown_76561198084546219 (SteamID: 76561198084546219) из файла D:/1/24722.log
-[2025-12-02 18:13:19,162][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,163][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,163][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,164][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,164][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,164][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,165][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,165][INFO] - LogParser - Игрок отключился: Unknown_76561198084546219 (SteamID: 76561198084546219) из файла D:/1/24722.log
-[2025-12-02 18:13:19,165][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,167][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,167][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,167][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,168][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,168][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,168][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,169][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,169][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,169][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,169][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,170][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,170][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,170][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,171][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,171][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,171][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,171][INFO] - LogParser - Игрок подключился: Unknown_76561198151453668 (SteamID: 76561198151453668) из файла D:/1/24722.log
-[2025-12-02 18:13:19,172][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,172][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,172][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,173][INFO] - LogParser - Игрок отключился: Unknown_76561198151453668 (SteamID: 76561198151453668) из файла D:/1/24722.log
-[2025-12-02 18:13:19,174][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,174][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,174][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,174][INFO] - LogParser - Игрок подключился: Unknown_76561198448653226 (SteamID: 76561198448653226) из файла D:/1/24722.log
-[2025-12-02 18:13:19,175][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,175][INFO] - LogParser - Игрок отключился: Unknown_76561198346036900 (SteamID: 76561198346036900) из файла D:/1/24722.log
-[2025-12-02 18:13:19,175][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,176][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,176][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,176][INFO] - LogParser - Игрок отключился: Unknown_76561198448653226 (SteamID: 76561198448653226) из файла D:/1/24722.log
-[2025-12-02 18:13:19,176][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,177][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,177][INFO] - LogParser - Игрок подключился: Unknown_76561198084546219 (SteamID: 76561198084546219) из файла D:/1/24722.log
-[2025-12-02 18:13:19,177][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,178][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,178][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,179][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,179][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,179][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,180][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,180][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,180][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,180][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,181][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,181][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,182][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,182][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,182][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,182][INFO] - LogParser - Игрок подключился: Unknown_76561198078372219 (SteamID: 76561198078372219) из файла D:/1/24722.log
-[2025-12-02 18:13:19,183][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,183][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,183][INFO] - LogParser - Игрок подключился: Unknown_76561198448653226 (SteamID: 76561198448653226) из файла D:/1/24722.log
-[2025-12-02 18:13:19,183][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,184][INFO] - LogParser - Игрок отключился: Unknown_76561198084546219 (SteamID: 76561198084546219) из файла D:/1/24722.log
-[2025-12-02 18:13:19,184][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,185][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,185][INFO] - LogParser - Игрок отключился: Unknown_76561198448653226 (SteamID: 76561198448653226) из файла D:/1/24722.log
-[2025-12-02 18:13:19,185][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,185][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,187][INFO] - LogParser - Игрок подключился: Unknown_76561198019873330 (SteamID: 76561198019873330) из файла D:/1/24722.log
-[2025-12-02 18:13:19,187][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,187][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,187][INFO] - LogParser - Игрок подключился: Unknown_76561198040199345 (SteamID: 76561198040199345) из файла D:/1/24722.log
-[2025-12-02 18:13:19,187][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,188][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,188][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,188][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,189][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,189][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,189][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,189][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,190][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,190][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,190][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,191][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,191][INFO] - LogParser - Игрок подключился: Unknown_76561198084546219 (SteamID: 76561198084546219) из файла D:/1/24722.log
-[2025-12-02 18:13:19,191][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,191][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,192][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,192][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,192][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,193][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,193][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,194][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,194][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,194][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,194][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,195][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,195][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,195][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,195][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,195][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,195][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,196][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,196][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,196][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,196][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,198][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,198][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,199][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,199][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,199][INFO] - LogParser - Игрок подключился: Unknown_76561198448653226 (SteamID: 76561198448653226) из файла D:/1/24722.log
-[2025-12-02 18:13:19,199][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,200][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,200][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,200][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,201][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,201][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,202][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,202][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,202][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,202][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,203][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,203][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,204][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,204][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,204][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,205][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,205][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,205][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,205][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,206][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,207][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,207][INFO] - LogParser - Игрок отключился: Unknown_76561198019873330 (SteamID: 76561198019873330) из файла D:/1/24722.log
-[2025-12-02 18:13:19,207][INFO] - LogParser - Игрок отключился: Unknown_76561198448653226 (SteamID: 76561198448653226) из файла D:/1/24722.log
-[2025-12-02 18:13:19,207][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,208][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,208][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,208][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,209][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,209][INFO] - LogParser - Игрок отключился: Unknown_76561198084546219 (SteamID: 76561198084546219) из файла D:/1/24722.log
-[2025-12-02 18:13:19,209][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,210][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,210][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,211][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,211][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,212][DEBUG] - Mediator - Публикуем событие: DdosEvent
-[2025-12-02 18:13:19,212][DEBUG] - LogParser - Начальный offset файла D:/1/24722.log: 1127799
-[2025-12-02 18:13:20,150][DEBUG] - Mediator - Передаем запрос обработчику GetPlayerCountQuery
-[2025-12-02 18:13:20,150][ERROR] - Mediator - Нет обработчика для запроса type
-[2025-12-02 18:13:20,150][INFO] - MainApp - Application finished.
+[2025-12-02 20:54:35,507][INFO] - MainApp - Starting application...
+[2025-12-02 20:54:35,508][DEBUG] - Mediator - Подписываем обработчик async_print_player на событие PlayerJoinedEvent
+[2025-12-02 20:54:35,508][DEBUG] - Mediator - Подписываем обработчик sync_print_player на событие PlayerJoinedEvent
+[2025-12-02 20:54:35,508][DEBUG] - Mediator - Подписываем обработчик handle_ddos_event на событие DdosEvent
+[2025-12-02 20:54:35,508][DEBUG] - Mediator - Регистрируем обработчик <lambda> для запроса GetPlayerCountQuery
+[2025-12-02 20:54:35,509][DEBUG] - LogParser - Загружено 8 игроков из ./data/players_data.json
+[2025-12-02 20:54:35,509][DEBUG] - Mediator - Передаем запрос обработчику GetPlayerCountQuery
+[2025-12-02 20:54:35,509][INFO] - MainApp - Application finished.
+[2025-12-02 20:54:35,509][DEBUG] - LogParser - Парсинг 1 лог-файлов: ['D:/1/24722.log']
+[2025-12-02 20:54:35,509][DEBUG] - Mediator - Регистрируем обработчик get_connected_players для запроса GetPlayerCountQuery
+[2025-12-02 20:54:35,510][DEBUG] - LogParser - [DDOSProtection] INFO: Фоновая задача DDOSProtection остановлена.
+[2025-12-02 20:55:17,755][INFO] - MainApp - Starting application...
+[2025-12-02 20:55:17,756][DEBUG] - Mediator - Подписываем обработчик async_print_player на событие PlayerJoinedEvent
+[2025-12-02 20:55:17,756][DEBUG] - Mediator - Подписываем обработчик sync_print_player на событие PlayerJoinedEvent
+[2025-12-02 20:55:17,756][DEBUG] - Mediator - Подписываем обработчик handle_ddos_event на событие DdosEvent
+[2025-12-02 20:55:17,756][DEBUG] - Mediator - Регистрируем обработчик <lambda> для запроса GetPlayerCountQuery
+[2025-12-02 20:55:17,757][DEBUG] - LogParser - Загружено 8 игроков из ./data/players_data.json
+[2025-12-02 20:55:17,757][DEBUG] - Mediator - Передаем запрос обработчику GetPlayerCountQuery
+[2025-12-02 20:55:17,757][INFO] - MainApp - Application finished.
+[2025-12-02 20:55:17,757][DEBUG] - LogParser - Парсинг 1 лог-файлов: ['D:/1/24722.log']
+[2025-12-02 20:55:17,757][DEBUG] - Mediator - Регистрируем обработчик get_connected_players для запроса GetPlayerCountQuery
+[2025-12-02 20:55:17,757][DEBUG] - LogParser - [DDOSProtection] INFO: Фоновая задача DDOSProtection остановлена.
+[2025-12-02 20:55:43,894][INFO] - MainApp - Starting application...
+[2025-12-02 20:55:43,896][DEBUG] - Mediator - Подписываем обработчик async_print_player на событие PlayerJoinedEvent
+[2025-12-02 20:55:43,896][DEBUG] - Mediator - Подписываем обработчик sync_print_player на событие PlayerJoinedEvent
+[2025-12-02 20:55:43,896][DEBUG] - Mediator - Подписываем обработчик handle_ddos_event на событие DdosEvent
+[2025-12-02 20:55:43,896][DEBUG] - Mediator - Регистрируем обработчик <lambda> для запроса GetPlayerCountQuery
+[2025-12-02 20:55:43,897][DEBUG] - LogParser - Загружено 8 игроков из ./data/players_data.json
+[2025-12-02 20:55:43,897][DEBUG] - Mediator - Передаем запрос обработчику GetPlayerCountQuery
+[2025-12-02 20:55:43,897][INFO] - MainApp - Application finished.
+[2025-12-02 20:55:43,897][DEBUG] - LogParser - Парсинг 1 лог-файлов: ['D:/1/24722.log']
+[2025-12-02 20:55:43,897][DEBUG] - Mediator - Регистрируем обработчик get_connected_players для запроса GetPlayerCountQuery
+[2025-12-02 20:55:43,898][DEBUG] - LogParser - [DDOSProtection] INFO: Фоновая задача DDOSProtection остановлена.
+[2025-12-02 20:56:02,617][INFO] - MainApp - Starting application...
+[2025-12-02 20:56:02,618][DEBUG] - Mediator - Подписываем обработчик async_print_player на событие PlayerJoinedEvent
+[2025-12-02 20:56:02,618][DEBUG] - Mediator - Подписываем обработчик sync_print_player на событие PlayerJoinedEvent
+[2025-12-02 20:56:02,618][DEBUG] - Mediator - Подписываем обработчик handle_ddos_event на событие DdosEvent
+[2025-12-02 20:56:02,618][DEBUG] - Mediator - Регистрируем обработчик <lambda> для запроса GetPlayerCountQuery
+[2025-12-02 20:56:02,619][DEBUG] - LogParser - Загружено 8 игроков из ./data/players_data.json
+[2025-12-02 20:56:02,619][DEBUG] - Mediator - Передаем запрос обработчику GetPlayerCountQuery
+[2025-12-02 20:56:02,619][INFO] - MainApp - Application finished.
+[2025-12-02 20:56:02,619][DEBUG] - LogParser - Парсинг 1 лог-файлов: ['D:/1/24722.log']
+[2025-12-02 20:56:02,620][DEBUG] - Mediator - Регистрируем обработчик get_connected_players для запроса GetPlayerCountQuery
+[2025-12-02 20:56:02,622][DEBUG] - LogParser - [DDOSProtection] INFO: Фоновая задача DDOSProtection остановлена.
+[2025-12-02 20:56:37,612][INFO] - MainApp - Starting application...
+[2025-12-02 20:56:37,612][DEBUG] - Mediator - Подписываем обработчик async_print_player на событие PlayerJoinedEvent
+[2025-12-02 20:56:37,612][DEBUG] - Mediator - Подписываем обработчик sync_print_player на событие PlayerJoinedEvent
+[2025-12-02 20:56:37,612][DEBUG] - Mediator - Подписываем обработчик handle_ddos_event на событие DdosEvent
+[2025-12-02 20:56:37,612][DEBUG] - Mediator - Регистрируем обработчик <lambda> для запроса GetPlayerCountQuery
+[2025-12-02 20:56:37,613][DEBUG] - LogParser - Загружено 8 игроков из ./data/players_data.json
+[2025-12-02 20:56:37,613][DEBUG] - Mediator - Передаем запрос обработчику GetPlayerCountQuery
+[2025-12-02 20:56:37,613][INFO] - MainApp - Application finished.
+[2025-12-02 20:56:37,615][DEBUG] - LogParser - Парсинг 1 лог-файлов: ['D:/1/24722.log']
+[2025-12-02 20:56:37,615][DEBUG] - Mediator - Регистрируем обработчик get_connected_players для запроса GetPlayerCountQuery
+[2025-12-02 20:56:37,616][DEBUG] - LogParser - [DDOSProtection] INFO: Фоновая задача DDOSProtection остановлена.
+[2025-12-02 20:56:48,448][INFO] - MainApp - Starting application...
+[2025-12-02 20:56:48,448][DEBUG] - Mediator - Подписываем обработчик async_print_player на событие PlayerJoinedEvent
+[2025-12-02 20:56:48,449][DEBUG] - Mediator - Подписываем обработчик sync_print_player на событие PlayerJoinedEvent
+[2025-12-02 20:56:48,449][DEBUG] - Mediator - Подписываем обработчик handle_ddos_event на событие DdosEvent
+[2025-12-02 20:56:48,449][DEBUG] - Mediator - Регистрируем обработчик <lambda> для запроса GetPlayerCountQuery
+[2025-12-02 20:56:48,449][DEBUG] - LogParser - Загружено 8 игроков из ./data/players_data.json
+[2025-12-02 20:56:48,450][DEBUG] - Mediator - Публикуем событие: PlayerJoinedEvent
+[2025-12-02 20:56:48,450][DEBUG] - LogParser - Парсинг 1 лог-файлов: ['D:/1/24722.log']
+[2025-12-02 20:56:48,450][DEBUG] - Mediator - Регистрируем обработчик get_connected_players для запроса GetPlayerCountQuery
+[2025-12-02 20:56:48,452][DEBUG] - LogParser - Парсинг файла: D:/1/24722.log
+[2025-12-02 20:56:48,468][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198039198830
+[2025-12-02 20:56:48,468][INFO] - LogParser - Игрок подключился: 320 (SteamID: 76561198039198830)
+[2025-12-02 20:56:48,468][DEBUG] - LogParser - Сопоставлено: SteamID 76561198039198830 -> Nick 320
+[2025-12-02 20:56:48,469][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198346036900
+[2025-12-02 20:56:48,469][INFO] - LogParser - Игрок подключился: Sergo22rus (SteamID: 76561198346036900)
+[2025-12-02 20:56:48,469][DEBUG] - LogParser - Сопоставлено: SteamID 76561198346036900 -> Nick Sergo22rus
+[2025-12-02 20:56:48,472][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198084546219
+[2025-12-02 20:56:48,472][INFO] - LogParser - Игрок подключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 20:56:48,472][DEBUG] - LogParser - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter
+[2025-12-02 20:56:48,473][INFO] - LogParser - Игрок отключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 20:56:48,474][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198151453668
+[2025-12-02 20:56:48,474][INFO] - LogParser - Игрок подключился: DIABLERO (SteamID: 76561198151453668)
+[2025-12-02 20:56:48,474][DEBUG] - LogParser - Сопоставлено: SteamID 76561198151453668 -> Nick DIABLERO
+[2025-12-02 20:56:48,476][INFO] - LogParser - Игрок отключился: DIABLERO (SteamID: 76561198151453668)
+[2025-12-02 20:56:48,476][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198448653226
+[2025-12-02 20:56:48,476][INFO] - LogParser - Игрок подключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 20:56:48,476][DEBUG] - LogParser - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik
+[2025-12-02 20:56:48,477][INFO] - LogParser - Игрок отключился: Sergo22rus (SteamID: 76561198346036900)
+[2025-12-02 20:56:48,478][INFO] - LogParser - Игрок отключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 20:56:48,478][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198084546219
+[2025-12-02 20:56:48,478][INFO] - LogParser - Игрок подключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 20:56:48,478][DEBUG] - LogParser - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter
+[2025-12-02 20:56:48,480][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198078372219
+[2025-12-02 20:56:48,480][INFO] - LogParser - Игрок подключился: Gangsta (SteamID: 76561198078372219)
+[2025-12-02 20:56:48,480][DEBUG] - LogParser - Сопоставлено: SteamID 76561198078372219 -> Nick Gangsta
+[2025-12-02 20:56:48,480][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198448653226
+[2025-12-02 20:56:48,480][INFO] - LogParser - Игрок подключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 20:56:48,480][DEBUG] - LogParser - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik
+[2025-12-02 20:56:48,481][INFO] - LogParser - Игрок отключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 20:56:48,481][INFO] - LogParser - Игрок отключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 20:56:48,482][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198019873330
+[2025-12-02 20:56:48,482][INFO] - LogParser - Игрок подключился: scar (SteamID: 76561198019873330)
+[2025-12-02 20:56:48,482][DEBUG] - LogParser - Сопоставлено: SteamID 76561198019873330 -> Nick scar
+[2025-12-02 20:56:48,482][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198040199345
+[2025-12-02 20:56:48,482][INFO] - LogParser - Игрок подключился: Godyn (SteamID: 76561198040199345)
+[2025-12-02 20:56:48,482][DEBUG] - LogParser - Сопоставлено: SteamID 76561198040199345 -> Nick Godyn
+[2025-12-02 20:56:48,483][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198084546219
+[2025-12-02 20:56:48,483][INFO] - LogParser - Игрок подключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 20:56:48,483][DEBUG] - LogParser - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter
+[2025-12-02 20:56:48,485][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198448653226
+[2025-12-02 20:56:48,485][INFO] - LogParser - Игрок подключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 20:56:48,485][DEBUG] - LogParser - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik
+[2025-12-02 20:56:48,487][INFO] - LogParser - Игрок отключился: scar (SteamID: 76561198019873330)
+[2025-12-02 20:56:48,487][INFO] - LogParser - Игрок отключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 20:56:48,488][INFO] - LogParser - Игрок отключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 20:56:48,490][DEBUG] - LogParser - Offset файла D:/1/24722.log: 1127698
+[2025-12-02 20:56:49,457][DEBUG] - Mediator - Передаем запрос обработчику GetPlayerCountQuery
+[2025-12-02 20:56:49,457][INFO] - MainApp - Application finished.
+[2025-12-02 20:56:49,473][DEBUG] - LogParser - [DDOSProtection] INFO: Фоновая задача DDOSProtection остановлена.
+[2025-12-02 20:58:07,346][INFO] - MainApp - Starting application...
+[2025-12-02 20:58:07,346][DEBUG] - Mediator - Подписываем обработчик handle_ddos_event на событие DdosEvent
+[2025-12-02 20:58:07,346][DEBUG] - Mediator - Регистрируем обработчик <lambda> для запроса GetPlayerCountQuery
+[2025-12-02 20:58:07,347][DEBUG] - LogParser - Загружено 8 игроков из ./data/players_data.json
+[2025-12-02 20:58:07,347][DEBUG] - Mediator - Публикуем событие: PlayerJoinedEvent
+[2025-12-02 20:58:07,347][DEBUG] - Mediator - Передаем запрос обработчику GetPlayerCountQuery
+[2025-12-02 20:58:07,348][INFO] - MainApp - Application finished.
+[2025-12-02 20:58:07,348][DEBUG] - LogParser - Парсинг 1 лог-файлов: ['D:/1/24722.log']
+[2025-12-02 20:58:07,348][DEBUG] - Mediator - Регистрируем обработчик get_connected_players для запроса GetPlayerCountQuery
+[2025-12-02 20:58:07,348][DEBUG] - LogParser - [DDOSProtection] INFO: Фоновая задача DDOSProtection остановлена.
+[2025-12-02 20:59:15,250][INFO] - MainApp - Starting application...
+[2025-12-02 20:59:15,252][DEBUG] - Mediator - Подписываем обработчик handle_ddos_event на событие DdosEvent
+[2025-12-02 20:59:15,252][DEBUG] - Mediator - Регистрируем обработчик <lambda> для запроса GetPlayerCountQuery
+[2025-12-02 20:59:15,253][DEBUG] - LogParser - Загружено 8 игроков из ./data/players_data.json
+[2025-12-02 20:59:15,253][DEBUG] - Mediator - Публикуем событие: PlayerJoinedEvent
+[2025-12-02 20:59:15,253][DEBUG] - Mediator - Передаем запрос обработчику GetPlayerCountQuery
+[2025-12-02 20:59:15,253][DEBUG] - LogParser - Парсинг 1 лог-файлов: ['D:/1/24722.log']
+[2025-12-02 20:59:15,253][DEBUG] - Mediator - Регистрируем обработчик get_connected_players для запроса GetPlayerCountQuery
+[2025-12-02 20:59:15,253][DEBUG] - LogParser - Парсинг файла: D:/1/24722.log
+[2025-12-02 20:59:15,268][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198039198830
+[2025-12-02 20:59:15,268][INFO] - LogParser - Игрок подключился: 320 (SteamID: 76561198039198830)
+[2025-12-02 20:59:15,269][DEBUG] - LogParser - Сопоставлено: SteamID 76561198039198830 -> Nick 320
+[2025-12-02 20:59:15,269][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198346036900
+[2025-12-02 20:59:15,269][INFO] - LogParser - Игрок подключился: Sergo22rus (SteamID: 76561198346036900)
+[2025-12-02 20:59:15,269][DEBUG] - LogParser - Сопоставлено: SteamID 76561198346036900 -> Nick Sergo22rus
+[2025-12-02 20:59:15,271][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198084546219
+[2025-12-02 20:59:15,272][INFO] - LogParser - Игрок подключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 20:59:15,272][DEBUG] - LogParser - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter
+[2025-12-02 20:59:15,273][INFO] - LogParser - Игрок отключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 20:59:15,274][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198151453668
+[2025-12-02 20:59:15,274][INFO] - LogParser - Игрок подключился: DIABLERO (SteamID: 76561198151453668)
+[2025-12-02 20:59:15,274][DEBUG] - LogParser - Сопоставлено: SteamID 76561198151453668 -> Nick DIABLERO
+[2025-12-02 20:59:15,275][INFO] - LogParser - Игрок отключился: DIABLERO (SteamID: 76561198151453668)
+[2025-12-02 20:59:15,275][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198448653226
+[2025-12-02 20:59:15,275][INFO] - LogParser - Игрок подключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 20:59:15,275][DEBUG] - LogParser - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik
+[2025-12-02 20:59:15,276][INFO] - LogParser - Игрок отключился: Sergo22rus (SteamID: 76561198346036900)
+[2025-12-02 20:59:15,277][INFO] - LogParser - Игрок отключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 20:59:15,277][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198084546219
+[2025-12-02 20:59:15,277][INFO] - LogParser - Игрок подключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 20:59:15,277][DEBUG] - LogParser - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter
+[2025-12-02 20:59:15,278][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198078372219
+[2025-12-02 20:59:15,278][INFO] - LogParser - Игрок подключился: Gangsta (SteamID: 76561198078372219)
+[2025-12-02 20:59:15,278][DEBUG] - LogParser - Сопоставлено: SteamID 76561198078372219 -> Nick Gangsta
+[2025-12-02 20:59:15,279][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198448653226
+[2025-12-02 20:59:15,279][INFO] - LogParser - Игрок подключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 20:59:15,279][DEBUG] - LogParser - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik
+[2025-12-02 20:59:15,279][INFO] - LogParser - Игрок отключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 20:59:15,280][INFO] - LogParser - Игрок отключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 20:59:15,280][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198019873330
+[2025-12-02 20:59:15,280][INFO] - LogParser - Игрок подключился: scar (SteamID: 76561198019873330)
+[2025-12-02 20:59:15,280][DEBUG] - LogParser - Сопоставлено: SteamID 76561198019873330 -> Nick scar
+[2025-12-02 20:59:15,281][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198040199345
+[2025-12-02 20:59:15,281][INFO] - LogParser - Игрок подключился: Godyn (SteamID: 76561198040199345)
+[2025-12-02 20:59:15,281][DEBUG] - LogParser - Сопоставлено: SteamID 76561198040199345 -> Nick Godyn
+[2025-12-02 20:59:15,282][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198084546219
+[2025-12-02 20:59:15,282][INFO] - LogParser - Игрок подключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 20:59:15,282][DEBUG] - LogParser - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter
+[2025-12-02 20:59:15,283][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198448653226
+[2025-12-02 20:59:15,283][INFO] - LogParser - Игрок подключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 20:59:15,283][DEBUG] - LogParser - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik
+[2025-12-02 20:59:15,285][INFO] - LogParser - Игрок отключился: scar (SteamID: 76561198019873330)
+[2025-12-02 20:59:15,285][INFO] - LogParser - Игрок отключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 20:59:15,286][INFO] - LogParser - Игрок отключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 20:59:15,287][DEBUG] - LogParser - Offset файла D:/1/24722.log: 1127698
+[2025-12-02 20:59:27,660][DEBUG] - LogParser - [DDOSProtection] INFO: Фоновая задача DDOSProtection остановлена.
+[2025-12-02 21:01:13,167][INFO] - MainApp - Starting application...
+[2025-12-02 21:01:13,168][DEBUG] - LogParser - Загружено 8 игроков из ./data/players_data.json
+[2025-12-02 21:01:13,168][DEBUG] - Mediator - Публикуем событие: PlayerJoinedEvent
+[2025-12-02 21:01:13,170][ERROR] - Mediator - Нет обработчика для запроса GetPlayerCountQuery
+[2025-12-02 21:01:13,170][DEBUG] - LogParser - Парсинг 1 лог-файлов: ['D:/1/24722.log']
+[2025-12-02 21:01:13,170][DEBUG] - Mediator - Регистрируем обработчик get_connected_players для запроса GetPlayerCountQuery
+[2025-12-02 21:01:13,170][DEBUG] - LogParser - [DDOSProtection] INFO: Фоновая задача DDOSProtection остановлена.
+[2025-12-02 21:02:46,065][INFO] - MainApp - Starting application...
+[2025-12-02 21:02:46,066][DEBUG] - LogParser - Загружено 8 игроков из ./data/players_data.json
+[2025-12-02 21:02:46,067][INFO] - MainApp - Application finished.
+[2025-12-02 21:02:46,067][DEBUG] - LogParser - Парсинг 1 лог-файлов: ['D:/1/24722.log']
+[2025-12-02 21:02:46,067][DEBUG] - Mediator - Регистрируем обработчик get_connected_players для запроса GetPlayerCountQuery
+[2025-12-02 21:02:46,067][DEBUG] - LogParser - [DDOSProtection] INFO: Фоновая задача DDOSProtection остановлена.
+[2025-12-02 21:05:33,404][INFO] - MainApp - Starting application...
+[2025-12-02 21:05:33,405][DEBUG] - LogParser - Загружено 8 игроков из ./data/players_data.json
+[2025-12-02 21:05:33,405][DEBUG] - LogParser - Парсинг 1 лог-файлов: ['D:/1/24722.log']
+[2025-12-02 21:05:33,406][DEBUG] - Mediator - Регистрируем обработчик get_connected_players для запроса GetPlayerCountQuery
+[2025-12-02 21:05:33,406][DEBUG] - LogParser - Парсинг файла: D:/1/24722.log
+[2025-12-02 21:05:33,424][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198039198830
+[2025-12-02 21:05:33,424][INFO] - LogParser - Игрок подключился: 320 (SteamID: 76561198039198830)
+[2025-12-02 21:05:33,424][DEBUG] - LogParser - Сопоставлено: SteamID 76561198039198830 -> Nick 320
+[2025-12-02 21:05:33,425][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198346036900
+[2025-12-02 21:05:33,425][INFO] - LogParser - Игрок подключился: Sergo22rus (SteamID: 76561198346036900)
+[2025-12-02 21:05:33,425][DEBUG] - LogParser - Сопоставлено: SteamID 76561198346036900 -> Nick Sergo22rus
+[2025-12-02 21:05:33,430][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198084546219
+[2025-12-02 21:05:33,430][INFO] - LogParser - Игрок подключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:05:33,430][DEBUG] - LogParser - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter
+[2025-12-02 21:05:33,430][INFO] - LogParser - Игрок отключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:05:33,431][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198151453668
+[2025-12-02 21:05:33,432][INFO] - LogParser - Игрок подключился: DIABLERO (SteamID: 76561198151453668)
+[2025-12-02 21:05:33,432][DEBUG] - LogParser - Сопоставлено: SteamID 76561198151453668 -> Nick DIABLERO
+[2025-12-02 21:05:33,433][INFO] - LogParser - Игрок отключился: DIABLERO (SteamID: 76561198151453668)
+[2025-12-02 21:05:33,433][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198448653226
+[2025-12-02 21:05:33,433][INFO] - LogParser - Игрок подключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:05:33,433][DEBUG] - LogParser - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik
+[2025-12-02 21:05:33,434][INFO] - LogParser - Игрок отключился: Sergo22rus (SteamID: 76561198346036900)
+[2025-12-02 21:05:33,435][INFO] - LogParser - Игрок отключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:05:33,435][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198084546219
+[2025-12-02 21:05:33,435][INFO] - LogParser - Игрок подключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:05:33,435][DEBUG] - LogParser - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter
+[2025-12-02 21:05:33,436][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198078372219
+[2025-12-02 21:05:33,437][INFO] - LogParser - Игрок подключился: Gangsta (SteamID: 76561198078372219)
+[2025-12-02 21:05:33,437][DEBUG] - LogParser - Сопоставлено: SteamID 76561198078372219 -> Nick Gangsta
+[2025-12-02 21:05:33,437][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198448653226
+[2025-12-02 21:05:33,437][INFO] - LogParser - Игрок подключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:05:33,437][DEBUG] - LogParser - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik
+[2025-12-02 21:05:33,437][INFO] - LogParser - Игрок отключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:05:33,438][INFO] - LogParser - Игрок отключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:05:33,438][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198019873330
+[2025-12-02 21:05:33,438][INFO] - LogParser - Игрок подключился: scar (SteamID: 76561198019873330)
+[2025-12-02 21:05:33,439][DEBUG] - LogParser - Сопоставлено: SteamID 76561198019873330 -> Nick scar
+[2025-12-02 21:05:33,439][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198040199345
+[2025-12-02 21:05:33,439][INFO] - LogParser - Игрок подключился: Godyn (SteamID: 76561198040199345)
+[2025-12-02 21:05:33,439][DEBUG] - LogParser - Сопоставлено: SteamID 76561198040199345 -> Nick Godyn
+[2025-12-02 21:05:33,439][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198084546219
+[2025-12-02 21:05:33,439][INFO] - LogParser - Игрок подключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:05:33,439][DEBUG] - LogParser - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter
+[2025-12-02 21:05:33,440][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198448653226
+[2025-12-02 21:05:33,440][INFO] - LogParser - Игрок подключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:05:33,440][DEBUG] - LogParser - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik
+[2025-12-02 21:05:33,443][INFO] - LogParser - Игрок отключился: scar (SteamID: 76561198019873330)
+[2025-12-02 21:05:33,443][INFO] - LogParser - Игрок отключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:05:33,444][INFO] - LogParser - Игрок отключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:05:33,446][DEBUG] - LogParser - Offset файла D:/1/24722.log: 1127698
+[2025-12-02 21:05:35,509][DEBUG] - LogParser - [DDOSProtection] INFO: Фоновая задача DDOSProtection остановлена.
+[2025-12-02 21:08:28,624][INFO] - MainApp - Starting application...
+[2025-12-02 21:08:28,625][DEBUG] - LogParser - Загружено 8 игроков из ./data/players_data.json
+[2025-12-02 21:08:28,625][DEBUG] - LogParser - Парсинг 1 лог-файлов: ['D:/1/24722.log']
+[2025-12-02 21:08:28,625][DEBUG] - LogParser - Парсинг файла: D:/1/24722.log
+[2025-12-02 21:08:28,642][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198039198830
+[2025-12-02 21:08:28,642][INFO] - LogParser - Игрок подключился: 320 (SteamID: 76561198039198830)
+[2025-12-02 21:08:28,642][DEBUG] - LogParser - Сопоставлено: SteamID 76561198039198830 -> Nick 320
+[2025-12-02 21:08:28,642][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198346036900
+[2025-12-02 21:08:28,642][INFO] - LogParser - Игрок подключился: Sergo22rus (SteamID: 76561198346036900)
+[2025-12-02 21:08:28,642][DEBUG] - LogParser - Сопоставлено: SteamID 76561198346036900 -> Nick Sergo22rus
+[2025-12-02 21:08:28,645][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198084546219
+[2025-12-02 21:08:28,645][INFO] - LogParser - Игрок подключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:08:28,645][DEBUG] - LogParser - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter
+[2025-12-02 21:08:28,646][INFO] - LogParser - Игрок отключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:08:28,647][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198151453668
+[2025-12-02 21:08:28,647][INFO] - LogParser - Игрок подключился: DIABLERO (SteamID: 76561198151453668)
+[2025-12-02 21:08:28,647][DEBUG] - LogParser - Сопоставлено: SteamID 76561198151453668 -> Nick DIABLERO
+[2025-12-02 21:08:28,648][INFO] - LogParser - Игрок отключился: DIABLERO (SteamID: 76561198151453668)
+[2025-12-02 21:08:28,649][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198448653226
+[2025-12-02 21:08:28,649][INFO] - LogParser - Игрок подключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:08:28,649][DEBUG] - LogParser - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik
+[2025-12-02 21:08:28,649][INFO] - LogParser - Игрок отключился: Sergo22rus (SteamID: 76561198346036900)
+[2025-12-02 21:08:28,650][INFO] - LogParser - Игрок отключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:08:28,650][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198084546219
+[2025-12-02 21:08:28,650][INFO] - LogParser - Игрок подключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:08:28,650][DEBUG] - LogParser - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter
+[2025-12-02 21:08:28,652][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198078372219
+[2025-12-02 21:08:28,652][INFO] - LogParser - Игрок подключился: Gangsta (SteamID: 76561198078372219)
+[2025-12-02 21:08:28,652][DEBUG] - LogParser - Сопоставлено: SteamID 76561198078372219 -> Nick Gangsta
+[2025-12-02 21:08:28,653][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198448653226
+[2025-12-02 21:08:28,653][INFO] - LogParser - Игрок подключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:08:28,653][DEBUG] - LogParser - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik
+[2025-12-02 21:08:28,653][INFO] - LogParser - Игрок отключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:08:28,654][INFO] - LogParser - Игрок отключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:08:28,654][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198019873330
+[2025-12-02 21:08:28,655][INFO] - LogParser - Игрок подключился: scar (SteamID: 76561198019873330)
+[2025-12-02 21:08:28,655][DEBUG] - LogParser - Сопоставлено: SteamID 76561198019873330 -> Nick scar
+[2025-12-02 21:08:28,655][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198040199345
+[2025-12-02 21:08:28,655][INFO] - LogParser - Игрок подключился: Godyn (SteamID: 76561198040199345)
+[2025-12-02 21:08:28,655][DEBUG] - LogParser - Сопоставлено: SteamID 76561198040199345 -> Nick Godyn
+[2025-12-02 21:08:28,656][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198084546219
+[2025-12-02 21:08:28,656][INFO] - LogParser - Игрок подключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:08:28,656][DEBUG] - LogParser - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter
+[2025-12-02 21:08:28,658][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198448653226
+[2025-12-02 21:08:28,659][INFO] - LogParser - Игрок подключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:08:28,659][DEBUG] - LogParser - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik
+[2025-12-02 21:08:28,660][INFO] - LogParser - Игрок отключился: scar (SteamID: 76561198019873330)
+[2025-12-02 21:08:28,660][INFO] - LogParser - Игрок отключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:08:28,661][INFO] - LogParser - Игрок отключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:08:28,663][DEBUG] - LogParser - Offset файла D:/1/24722.log: 1127698
+[2025-12-02 21:08:31,030][INFO] - LogParser - Остановка LogParser...
+[2025-12-02 21:08:31,030][DEBUG] - LogParser - DDOSProtection остановлен.
+[2025-12-02 21:08:31,030][DEBUG] - LogParser - [DDOSProtection] INFO: Фоновая задача DDOSProtection остановлена.
+[2025-12-02 21:08:33,632][INFO] - MainApp - Connected players: 3
+[2025-12-02 21:10:33,104][INFO] - MainApp - Starting application...
+[2025-12-02 21:10:33,105][DEBUG] - LogParser - Загружено 8 игроков из ./data/players_data.json
+[2025-12-02 21:10:33,105][DEBUG] - LogParser - Парсинг 1 лог-файлов: ['D:/1/24722.log']
+[2025-12-02 21:10:33,105][DEBUG] - LogParser - Парсинг файла: D:/1/24722.log
+[2025-12-02 21:10:33,122][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198039198830
+[2025-12-02 21:10:33,122][INFO] - LogParser - Игрок подключился: 320 (SteamID: 76561198039198830)
+[2025-12-02 21:10:33,122][DEBUG] - LogParser - Сопоставлено: SteamID 76561198039198830 -> Nick 320
+[2025-12-02 21:10:33,122][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198346036900
+[2025-12-02 21:10:33,122][INFO] - LogParser - Игрок подключился: Sergo22rus (SteamID: 76561198346036900)
+[2025-12-02 21:10:33,122][DEBUG] - LogParser - Сопоставлено: SteamID 76561198346036900 -> Nick Sergo22rus
+[2025-12-02 21:10:33,126][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198084546219
+[2025-12-02 21:10:33,126][INFO] - LogParser - Игрок подключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:10:33,126][DEBUG] - LogParser - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter
+[2025-12-02 21:10:33,127][INFO] - LogParser - Игрок отключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:10:33,128][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198151453668
+[2025-12-02 21:10:33,128][INFO] - LogParser - Игрок подключился: DIABLERO (SteamID: 76561198151453668)
+[2025-12-02 21:10:33,128][DEBUG] - LogParser - Сопоставлено: SteamID 76561198151453668 -> Nick DIABLERO
+[2025-12-02 21:10:33,129][INFO] - LogParser - Игрок отключился: DIABLERO (SteamID: 76561198151453668)
+[2025-12-02 21:10:33,130][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198448653226
+[2025-12-02 21:10:33,130][INFO] - LogParser - Игрок подключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:10:33,130][DEBUG] - LogParser - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik
+[2025-12-02 21:10:33,130][INFO] - LogParser - Игрок отключился: Sergo22rus (SteamID: 76561198346036900)
+[2025-12-02 21:10:33,131][INFO] - LogParser - Игрок отключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:10:33,132][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198084546219
+[2025-12-02 21:10:33,132][INFO] - LogParser - Игрок подключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:10:33,132][DEBUG] - LogParser - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter
+[2025-12-02 21:10:33,133][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198078372219
+[2025-12-02 21:10:33,133][INFO] - LogParser - Игрок подключился: Gangsta (SteamID: 76561198078372219)
+[2025-12-02 21:10:33,133][DEBUG] - LogParser - Сопоставлено: SteamID 76561198078372219 -> Nick Gangsta
+[2025-12-02 21:10:33,134][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198448653226
+[2025-12-02 21:10:33,134][INFO] - LogParser - Игрок подключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:10:33,134][DEBUG] - LogParser - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik
+[2025-12-02 21:10:33,134][INFO] - LogParser - Игрок отключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:10:33,136][INFO] - LogParser - Игрок отключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:10:33,136][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198019873330
+[2025-12-02 21:10:33,136][INFO] - LogParser - Игрок подключился: scar (SteamID: 76561198019873330)
+[2025-12-02 21:10:33,136][DEBUG] - LogParser - Сопоставлено: SteamID 76561198019873330 -> Nick scar
+[2025-12-02 21:10:33,136][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198040199345
+[2025-12-02 21:10:33,137][INFO] - LogParser - Игрок подключился: Godyn (SteamID: 76561198040199345)
+[2025-12-02 21:10:33,137][DEBUG] - LogParser - Сопоставлено: SteamID 76561198040199345 -> Nick Godyn
+[2025-12-02 21:10:33,137][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198084546219
+[2025-12-02 21:10:33,137][INFO] - LogParser - Игрок подключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:10:33,137][DEBUG] - LogParser - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter
+[2025-12-02 21:10:33,139][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198448653226
+[2025-12-02 21:10:33,139][INFO] - LogParser - Игрок подключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:10:33,139][DEBUG] - LogParser - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik
+[2025-12-02 21:10:33,141][INFO] - LogParser - Игрок отключился: scar (SteamID: 76561198019873330)
+[2025-12-02 21:10:33,141][INFO] - LogParser - Игрок отключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:10:33,142][INFO] - LogParser - Игрок отключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:10:33,144][DEBUG] - LogParser - Offset файла D:/1/24722.log: 1127698
+[2025-12-02 21:10:38,116][INFO] - MainApp - Connected players: 3
+[2025-12-02 21:10:48,113][INFO] - LogParser - Остановка LogParser...
+[2025-12-02 21:10:48,113][DEBUG] - LogParser - DDOSProtection остановлен.
+[2025-12-02 21:10:48,114][DEBUG] - LogParser - [DDOSProtection] INFO: Фоновая задача DDOSProtection остановлена.
+[2025-12-02 21:11:58,901][INFO] - MainApp - Starting application...
+[2025-12-02 21:11:58,903][DEBUG] - LogParser - Загружено 8 игроков из ./data/players_data.json
+[2025-12-02 21:11:58,903][DEBUG] - LogParser - Парсинг 1 лог-файлов: ['D:/1/24722.log']
+[2025-12-02 21:11:58,903][DEBUG] - LogParser - Парсинг файла: D:/1/24722.log
+[2025-12-02 21:11:58,919][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198039198830
+[2025-12-02 21:11:58,919][INFO] - LogParser - Игрок подключился: 320 (SteamID: 76561198039198830)
+[2025-12-02 21:11:58,919][DEBUG] - LogParser - Сопоставлено: SteamID 76561198039198830 -> Nick 320
+[2025-12-02 21:11:58,919][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198346036900
+[2025-12-02 21:11:58,919][INFO] - LogParser - Игрок подключился: Sergo22rus (SteamID: 76561198346036900)
+[2025-12-02 21:11:58,921][DEBUG] - LogParser - Сопоставлено: SteamID 76561198346036900 -> Nick Sergo22rus
+[2025-12-02 21:11:58,922][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198084546219
+[2025-12-02 21:11:58,922][INFO] - LogParser - Игрок подключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:11:58,922][DEBUG] - LogParser - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter
+[2025-12-02 21:11:58,923][INFO] - LogParser - Игрок отключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:11:58,924][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198151453668
+[2025-12-02 21:11:58,925][INFO] - LogParser - Игрок подключился: DIABLERO (SteamID: 76561198151453668)
+[2025-12-02 21:11:58,925][DEBUG] - LogParser - Сопоставлено: SteamID 76561198151453668 -> Nick DIABLERO
+[2025-12-02 21:11:58,927][INFO] - LogParser - Игрок отключился: DIABLERO (SteamID: 76561198151453668)
+[2025-12-02 21:11:58,927][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198448653226
+[2025-12-02 21:11:58,927][INFO] - LogParser - Игрок подключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:11:58,927][DEBUG] - LogParser - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik
+[2025-12-02 21:11:58,928][INFO] - LogParser - Игрок отключился: Sergo22rus (SteamID: 76561198346036900)
+[2025-12-02 21:11:58,928][INFO] - LogParser - Игрок отключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:11:58,929][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198084546219
+[2025-12-02 21:11:58,929][INFO] - LogParser - Игрок подключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:11:58,930][DEBUG] - LogParser - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter
+[2025-12-02 21:11:58,931][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198078372219
+[2025-12-02 21:11:58,931][INFO] - LogParser - Игрок подключился: Gangsta (SteamID: 76561198078372219)
+[2025-12-02 21:11:58,931][DEBUG] - LogParser - Сопоставлено: SteamID 76561198078372219 -> Nick Gangsta
+[2025-12-02 21:11:58,931][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198448653226
+[2025-12-02 21:11:58,932][INFO] - LogParser - Игрок подключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:11:58,932][DEBUG] - LogParser - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik
+[2025-12-02 21:11:58,933][INFO] - LogParser - Игрок отключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:11:58,933][INFO] - LogParser - Игрок отключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:11:58,933][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198019873330
+[2025-12-02 21:11:58,933][INFO] - LogParser - Игрок подключился: scar (SteamID: 76561198019873330)
+[2025-12-02 21:11:58,933][DEBUG] - LogParser - Сопоставлено: SteamID 76561198019873330 -> Nick scar
+[2025-12-02 21:11:58,934][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198040199345
+[2025-12-02 21:11:58,934][INFO] - LogParser - Игрок подключился: Godyn (SteamID: 76561198040199345)
+[2025-12-02 21:11:58,935][DEBUG] - LogParser - Сопоставлено: SteamID 76561198040199345 -> Nick Godyn
+[2025-12-02 21:11:58,935][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198084546219
+[2025-12-02 21:11:58,935][INFO] - LogParser - Игрок подключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:11:58,935][DEBUG] - LogParser - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter
+[2025-12-02 21:11:58,937][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198448653226
+[2025-12-02 21:11:58,937][INFO] - LogParser - Игрок подключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:11:58,937][DEBUG] - LogParser - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik
+[2025-12-02 21:11:58,939][INFO] - LogParser - Игрок отключился: scar (SteamID: 76561198019873330)
+[2025-12-02 21:11:58,939][INFO] - LogParser - Игрок отключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:11:58,940][INFO] - LogParser - Игрок отключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:11:58,942][DEBUG] - LogParser - Offset файла D:/1/24722.log: 1127698
+[2025-12-02 21:12:01,785][INFO] - LogParser - Остановка LogParser...
+[2025-12-02 21:12:01,785][DEBUG] - LogParser - DDOSProtection остановлен.
+[2025-12-02 21:12:01,785][DEBUG] - LogParser - [DDOSProtection] INFO: Фоновая задача DDOSProtection остановлена.
+[2025-12-02 21:12:03,917][INFO] - MainApp - Connected players: 3
+[2025-12-02 21:13:23,044][INFO] - MainApp - Starting application...
+[2025-12-02 21:13:23,045][DEBUG] - LogParser - Загружено 8 игроков из ./data/players_data.json
+[2025-12-02 21:13:23,046][DEBUG] - LogParser - Парсинг 1 лог-файлов: ['D:/1/24722.log']
+[2025-12-02 21:13:23,046][DEBUG] - LogParser - Парсинг файла: D:/1/24722.log
+[2025-12-02 21:13:23,062][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198039198830
+[2025-12-02 21:13:23,063][INFO] - LogParser - Игрок подключился: 320 (SteamID: 76561198039198830)
+[2025-12-02 21:13:23,063][DEBUG] - LogParser - Сопоставлено: SteamID 76561198039198830 -> Nick 320
+[2025-12-02 21:13:23,063][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198346036900
+[2025-12-02 21:13:23,063][INFO] - LogParser - Игрок подключился: Sergo22rus (SteamID: 76561198346036900)
+[2025-12-02 21:13:23,063][DEBUG] - LogParser - Сопоставлено: SteamID 76561198346036900 -> Nick Sergo22rus
+[2025-12-02 21:13:23,066][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198084546219
+[2025-12-02 21:13:23,066][INFO] - LogParser - Игрок подключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:13:23,066][DEBUG] - LogParser - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter
+[2025-12-02 21:13:23,067][INFO] - LogParser - Игрок отключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:13:23,068][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198151453668
+[2025-12-02 21:13:23,068][INFO] - LogParser - Игрок подключился: DIABLERO (SteamID: 76561198151453668)
+[2025-12-02 21:13:23,068][DEBUG] - LogParser - Сопоставлено: SteamID 76561198151453668 -> Nick DIABLERO
+[2025-12-02 21:13:23,070][INFO] - LogParser - Игрок отключился: DIABLERO (SteamID: 76561198151453668)
+[2025-12-02 21:13:23,070][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198448653226
+[2025-12-02 21:13:23,070][INFO] - LogParser - Игрок подключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:13:23,070][DEBUG] - LogParser - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik
+[2025-12-02 21:13:23,071][INFO] - LogParser - Игрок отключился: Sergo22rus (SteamID: 76561198346036900)
+[2025-12-02 21:13:23,072][INFO] - LogParser - Игрок отключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:13:23,073][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198084546219
+[2025-12-02 21:13:23,073][INFO] - LogParser - Игрок подключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:13:23,073][DEBUG] - LogParser - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter
+[2025-12-02 21:13:23,074][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198078372219
+[2025-12-02 21:13:23,074][INFO] - LogParser - Игрок подключился: Gangsta (SteamID: 76561198078372219)
+[2025-12-02 21:13:23,074][DEBUG] - LogParser - Сопоставлено: SteamID 76561198078372219 -> Nick Gangsta
+[2025-12-02 21:13:23,075][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198448653226
+[2025-12-02 21:13:23,075][INFO] - LogParser - Игрок подключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:13:23,075][DEBUG] - LogParser - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik
+[2025-12-02 21:13:23,075][INFO] - LogParser - Игрок отключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:13:23,076][INFO] - LogParser - Игрок отключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:13:23,076][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198019873330
+[2025-12-02 21:13:23,077][INFO] - LogParser - Игрок подключился: scar (SteamID: 76561198019873330)
+[2025-12-02 21:13:23,077][DEBUG] - LogParser - Сопоставлено: SteamID 76561198019873330 -> Nick scar
+[2025-12-02 21:13:23,077][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198040199345
+[2025-12-02 21:13:23,077][INFO] - LogParser - Игрок подключился: Godyn (SteamID: 76561198040199345)
+[2025-12-02 21:13:23,077][DEBUG] - LogParser - Сопоставлено: SteamID 76561198040199345 -> Nick Godyn
+[2025-12-02 21:13:23,078][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198084546219
+[2025-12-02 21:13:23,078][INFO] - LogParser - Игрок подключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:13:23,078][DEBUG] - LogParser - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter
+[2025-12-02 21:13:23,080][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198448653226
+[2025-12-02 21:13:23,080][INFO] - LogParser - Игрок подключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:13:23,080][DEBUG] - LogParser - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik
+[2025-12-02 21:13:23,082][INFO] - LogParser - Игрок отключился: scar (SteamID: 76561198019873330)
+[2025-12-02 21:13:23,082][INFO] - LogParser - Игрок отключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:13:23,082][INFO] - LogParser - Игрок отключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:13:23,085][DEBUG] - LogParser - Offset файла D:/1/24722.log: 1127698
+[2025-12-02 21:13:26,740][DEBUG] - LogParser - [DDOSProtection] INFO: Фоновая задача DDOSProtection остановлена.
+[2025-12-02 21:13:36,117][INFO] - MainApp - Starting application...
+[2025-12-02 21:13:36,118][DEBUG] - LogParser - Загружено 8 игроков из ./data/players_data.json
+[2025-12-02 21:13:36,118][DEBUG] - LogParser - Парсинг 1 лог-файлов: ['D:/1/24722.log']
+[2025-12-02 21:13:36,119][DEBUG] - LogParser - Парсинг файла: D:/1/24722.log
+[2025-12-02 21:13:36,134][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198039198830
+[2025-12-02 21:13:36,134][INFO] - LogParser - Игрок подключился: 320 (SteamID: 76561198039198830)
+[2025-12-02 21:13:36,134][DEBUG] - LogParser - Сопоставлено: SteamID 76561198039198830 -> Nick 320
+[2025-12-02 21:13:36,134][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198346036900
+[2025-12-02 21:13:36,134][INFO] - LogParser - Игрок подключился: Sergo22rus (SteamID: 76561198346036900)
+[2025-12-02 21:13:36,134][DEBUG] - LogParser - Сопоставлено: SteamID 76561198346036900 -> Nick Sergo22rus
+[2025-12-02 21:13:36,137][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198084546219
+[2025-12-02 21:13:36,137][INFO] - LogParser - Игрок подключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:13:36,137][DEBUG] - LogParser - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter
+[2025-12-02 21:13:36,138][INFO] - LogParser - Игрок отключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:13:36,139][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198151453668
+[2025-12-02 21:13:36,139][INFO] - LogParser - Игрок подключился: DIABLERO (SteamID: 76561198151453668)
+[2025-12-02 21:13:36,139][DEBUG] - LogParser - Сопоставлено: SteamID 76561198151453668 -> Nick DIABLERO
+[2025-12-02 21:13:36,140][INFO] - LogParser - Игрок отключился: DIABLERO (SteamID: 76561198151453668)
+[2025-12-02 21:13:36,140][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198448653226
+[2025-12-02 21:13:36,140][INFO] - LogParser - Игрок подключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:13:36,140][DEBUG] - LogParser - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik
+[2025-12-02 21:13:36,141][INFO] - LogParser - Игрок отключился: Sergo22rus (SteamID: 76561198346036900)
+[2025-12-02 21:13:36,142][INFO] - LogParser - Игрок отключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:13:36,142][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198084546219
+[2025-12-02 21:13:36,143][INFO] - LogParser - Игрок подключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:13:36,143][DEBUG] - LogParser - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter
+[2025-12-02 21:13:36,144][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198078372219
+[2025-12-02 21:13:36,144][INFO] - LogParser - Игрок подключился: Gangsta (SteamID: 76561198078372219)
+[2025-12-02 21:13:36,144][DEBUG] - LogParser - Сопоставлено: SteamID 76561198078372219 -> Nick Gangsta
+[2025-12-02 21:13:36,145][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198448653226
+[2025-12-02 21:13:36,145][INFO] - LogParser - Игрок подключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:13:36,145][DEBUG] - LogParser - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik
+[2025-12-02 21:13:36,145][INFO] - LogParser - Игрок отключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:13:36,146][INFO] - LogParser - Игрок отключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:13:36,146][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198019873330
+[2025-12-02 21:13:36,146][INFO] - LogParser - Игрок подключился: scar (SteamID: 76561198019873330)
+[2025-12-02 21:13:36,146][DEBUG] - LogParser - Сопоставлено: SteamID 76561198019873330 -> Nick scar
+[2025-12-02 21:13:36,147][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198040199345
+[2025-12-02 21:13:36,147][INFO] - LogParser - Игрок подключился: Godyn (SteamID: 76561198040199345)
+[2025-12-02 21:13:36,147][DEBUG] - LogParser - Сопоставлено: SteamID 76561198040199345 -> Nick Godyn
+[2025-12-02 21:13:36,147][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198084546219
+[2025-12-02 21:13:36,147][INFO] - LogParser - Игрок подключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:13:36,148][DEBUG] - LogParser - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter
+[2025-12-02 21:13:36,149][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198448653226
+[2025-12-02 21:13:36,149][INFO] - LogParser - Игрок подключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:13:36,149][DEBUG] - LogParser - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik
+[2025-12-02 21:13:36,151][INFO] - LogParser - Игрок отключился: scar (SteamID: 76561198019873330)
+[2025-12-02 21:13:36,151][INFO] - LogParser - Игрок отключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:13:36,151][INFO] - LogParser - Игрок отключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:13:36,153][DEBUG] - LogParser - Offset файла D:/1/24722.log: 1127698
+[2025-12-02 21:13:41,128][INFO] - MainApp - Connected players: 3
+[2025-12-02 21:14:54,430][INFO] - LogParser - Остановка LogParser...
+[2025-12-02 21:14:54,430][DEBUG] - LogParser - DDOSProtection остановлен.
+[2025-12-02 21:14:54,431][DEBUG] - LogParser - [DDOSProtection] INFO: Фоновая задача DDOSProtection остановлена.
+[2025-12-02 21:14:58,386][INFO] - MainApp - Starting application...
+[2025-12-02 21:14:58,387][DEBUG] - LogParser - Загружено 8 игроков из ./data/players_data.json
+[2025-12-02 21:14:58,387][DEBUG] - LogParser - Парсинг 1 лог-файлов: ['D:/1/24722.log']
+[2025-12-02 21:14:58,388][DEBUG] - LogParser - Парсинг файла: D:/1/24722.log
+[2025-12-02 21:14:58,404][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198039198830
+[2025-12-02 21:14:58,404][INFO] - LogParser - Игрок подключился: 320 (SteamID: 76561198039198830)
+[2025-12-02 21:14:58,404][DEBUG] - LogParser - Сопоставлено: SteamID 76561198039198830 -> Nick 320
+[2025-12-02 21:14:58,405][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198346036900
+[2025-12-02 21:14:58,405][INFO] - LogParser - Игрок подключился: Sergo22rus (SteamID: 76561198346036900)
+[2025-12-02 21:14:58,405][DEBUG] - LogParser - Сопоставлено: SteamID 76561198346036900 -> Nick Sergo22rus
+[2025-12-02 21:14:58,407][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198084546219
+[2025-12-02 21:14:58,407][INFO] - LogParser - Игрок подключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:14:58,407][DEBUG] - LogParser - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter
+[2025-12-02 21:14:58,408][INFO] - LogParser - Игрок отключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:14:58,409][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198151453668
+[2025-12-02 21:14:58,409][INFO] - LogParser - Игрок подключился: DIABLERO (SteamID: 76561198151453668)
+[2025-12-02 21:14:58,409][DEBUG] - LogParser - Сопоставлено: SteamID 76561198151453668 -> Nick DIABLERO
+[2025-12-02 21:14:58,411][INFO] - LogParser - Игрок отключился: DIABLERO (SteamID: 76561198151453668)
+[2025-12-02 21:14:58,411][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198448653226
+[2025-12-02 21:14:58,411][INFO] - LogParser - Игрок подключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:14:58,411][DEBUG] - LogParser - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik
+[2025-12-02 21:14:58,412][INFO] - LogParser - Игрок отключился: Sergo22rus (SteamID: 76561198346036900)
+[2025-12-02 21:14:58,413][INFO] - LogParser - Игрок отключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:14:58,413][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198084546219
+[2025-12-02 21:14:58,413][INFO] - LogParser - Игрок подключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:14:58,413][DEBUG] - LogParser - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter
+[2025-12-02 21:14:58,415][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198078372219
+[2025-12-02 21:14:58,415][INFO] - LogParser - Игрок подключился: Gangsta (SteamID: 76561198078372219)
+[2025-12-02 21:14:58,415][DEBUG] - LogParser - Сопоставлено: SteamID 76561198078372219 -> Nick Gangsta
+[2025-12-02 21:14:58,415][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198448653226
+[2025-12-02 21:14:58,416][INFO] - LogParser - Игрок подключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:14:58,416][DEBUG] - LogParser - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik
+[2025-12-02 21:14:58,416][INFO] - LogParser - Игрок отключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:14:58,416][INFO] - LogParser - Игрок отключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:14:58,417][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198019873330
+[2025-12-02 21:14:58,417][INFO] - LogParser - Игрок подключился: scar (SteamID: 76561198019873330)
+[2025-12-02 21:14:58,417][DEBUG] - LogParser - Сопоставлено: SteamID 76561198019873330 -> Nick scar
+[2025-12-02 21:14:58,417][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198040199345
+[2025-12-02 21:14:58,417][INFO] - LogParser - Игрок подключился: Godyn (SteamID: 76561198040199345)
+[2025-12-02 21:14:58,417][DEBUG] - LogParser - Сопоставлено: SteamID 76561198040199345 -> Nick Godyn
+[2025-12-02 21:14:58,418][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198084546219
+[2025-12-02 21:14:58,418][INFO] - LogParser - Игрок подключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:14:58,418][DEBUG] - LogParser - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter
+[2025-12-02 21:14:58,420][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198448653226
+[2025-12-02 21:14:58,420][INFO] - LogParser - Игрок подключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:14:58,420][DEBUG] - LogParser - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik
+[2025-12-02 21:14:58,421][INFO] - LogParser - Игрок отключился: scar (SteamID: 76561198019873330)
+[2025-12-02 21:14:58,421][INFO] - LogParser - Игрок отключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:14:58,422][INFO] - LogParser - Игрок отключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:14:58,423][DEBUG] - LogParser - Offset файла D:/1/24722.log: 1127698
+[2025-12-02 21:15:00,582][DEBUG] - LogParser - [DDOSProtection] INFO: Фоновая задача DDOSProtection остановлена.
+[2025-12-02 21:15:58,680][INFO] - MainApp - Starting application...
+[2025-12-02 21:15:58,681][DEBUG] - LogParser - Загружено 8 игроков из ./data/players_data.json
+[2025-12-02 21:15:58,681][DEBUG] - LogParser - Парсинг 1 лог-файлов: ['D:/1/24722.log']
+[2025-12-02 21:15:58,681][DEBUG] - LogParser - Парсинг файла: D:/1/24722.log
+[2025-12-02 21:15:58,696][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198039198830
+[2025-12-02 21:15:58,697][INFO] - LogParser - Игрок подключился: 320 (SteamID: 76561198039198830)
+[2025-12-02 21:15:58,697][DEBUG] - LogParser - Сопоставлено: SteamID 76561198039198830 -> Nick 320
+[2025-12-02 21:15:58,697][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198346036900
+[2025-12-02 21:15:58,697][INFO] - LogParser - Игрок подключился: Sergo22rus (SteamID: 76561198346036900)
+[2025-12-02 21:15:58,697][DEBUG] - LogParser - Сопоставлено: SteamID 76561198346036900 -> Nick Sergo22rus
+[2025-12-02 21:15:58,700][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198084546219
+[2025-12-02 21:15:58,700][INFO] - LogParser - Игрок подключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:15:58,700][DEBUG] - LogParser - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter
+[2025-12-02 21:15:58,700][INFO] - LogParser - Игрок отключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:15:58,701][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198151453668
+[2025-12-02 21:15:58,702][INFO] - LogParser - Игрок подключился: DIABLERO (SteamID: 76561198151453668)
+[2025-12-02 21:15:58,702][DEBUG] - LogParser - Сопоставлено: SteamID 76561198151453668 -> Nick DIABLERO
+[2025-12-02 21:15:58,703][INFO] - LogParser - Игрок отключился: DIABLERO (SteamID: 76561198151453668)
+[2025-12-02 21:15:58,703][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198448653226
+[2025-12-02 21:15:58,703][INFO] - LogParser - Игрок подключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:15:58,703][DEBUG] - LogParser - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik
+[2025-12-02 21:15:58,704][INFO] - LogParser - Игрок отключился: Sergo22rus (SteamID: 76561198346036900)
+[2025-12-02 21:15:58,705][INFO] - LogParser - Игрок отключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:15:58,705][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198084546219
+[2025-12-02 21:15:58,705][INFO] - LogParser - Игрок подключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:15:58,705][DEBUG] - LogParser - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter
+[2025-12-02 21:15:58,706][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198078372219
+[2025-12-02 21:15:58,706][INFO] - LogParser - Игрок подключился: Gangsta (SteamID: 76561198078372219)
+[2025-12-02 21:15:58,706][DEBUG] - LogParser - Сопоставлено: SteamID 76561198078372219 -> Nick Gangsta
+[2025-12-02 21:15:58,707][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198448653226
+[2025-12-02 21:15:58,707][INFO] - LogParser - Игрок подключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:15:58,707][DEBUG] - LogParser - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik
+[2025-12-02 21:15:58,707][INFO] - LogParser - Игрок отключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:15:58,708][INFO] - LogParser - Игрок отключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:15:58,708][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198019873330
+[2025-12-02 21:15:58,708][INFO] - LogParser - Игрок подключился: scar (SteamID: 76561198019873330)
+[2025-12-02 21:15:58,708][DEBUG] - LogParser - Сопоставлено: SteamID 76561198019873330 -> Nick scar
+[2025-12-02 21:15:58,709][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198040199345
+[2025-12-02 21:15:58,709][INFO] - LogParser - Игрок подключился: Godyn (SteamID: 76561198040199345)
+[2025-12-02 21:15:58,709][DEBUG] - LogParser - Сопоставлено: SteamID 76561198040199345 -> Nick Godyn
+[2025-12-02 21:15:58,709][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198084546219
+[2025-12-02 21:15:58,710][INFO] - LogParser - Игрок подключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:15:58,710][DEBUG] - LogParser - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter
+[2025-12-02 21:15:58,712][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198448653226
+[2025-12-02 21:15:58,712][INFO] - LogParser - Игрок подключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:15:58,712][DEBUG] - LogParser - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik
+[2025-12-02 21:15:58,713][INFO] - LogParser - Игрок отключился: scar (SteamID: 76561198019873330)
+[2025-12-02 21:15:58,714][INFO] - LogParser - Игрок отключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:15:58,714][INFO] - LogParser - Игрок отключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:15:58,716][DEBUG] - LogParser - Offset файла D:/1/24722.log: 1127698
+[2025-12-02 21:16:00,646][DEBUG] - LogParser - [DDOSProtection] INFO: Фоновая задача DDOSProtection остановлена.
+[2025-12-02 21:16:59,995][INFO] - MainApp - Starting application...
+[2025-12-02 21:16:59,997][DEBUG] - LogParser - Загружено 8 игроков из ./data/players_data.json
+[2025-12-02 21:16:59,997][DEBUG] - LogParser - Парсинг 1 лог-файлов: ['D:/1/24722.log']
+[2025-12-02 21:16:59,997][DEBUG] - LogParser - Парсинг файла: D:/1/24722.log
+[2025-12-02 21:17:00,022][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198039198830
+[2025-12-02 21:17:00,022][INFO] - LogParser - Игрок подключился: 320 (SteamID: 76561198039198830)
+[2025-12-02 21:17:00,022][DEBUG] - LogParser - Сопоставлено: SteamID 76561198039198830 -> Nick 320
+[2025-12-02 21:17:00,023][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198346036900
+[2025-12-02 21:17:00,023][INFO] - LogParser - Игрок подключился: Sergo22rus (SteamID: 76561198346036900)
+[2025-12-02 21:17:00,023][DEBUG] - LogParser - Сопоставлено: SteamID 76561198346036900 -> Nick Sergo22rus
+[2025-12-02 21:17:00,025][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198084546219
+[2025-12-02 21:17:00,025][INFO] - LogParser - Игрок подключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:17:00,025][DEBUG] - LogParser - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter
+[2025-12-02 21:17:00,026][INFO] - LogParser - Игрок отключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:17:00,027][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198151453668
+[2025-12-02 21:17:00,027][INFO] - LogParser - Игрок подключился: DIABLERO (SteamID: 76561198151453668)
+[2025-12-02 21:17:00,027][DEBUG] - LogParser - Сопоставлено: SteamID 76561198151453668 -> Nick DIABLERO
+[2025-12-02 21:17:00,028][INFO] - LogParser - Игрок отключился: DIABLERO (SteamID: 76561198151453668)
+[2025-12-02 21:17:00,029][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198448653226
+[2025-12-02 21:17:00,029][INFO] - LogParser - Игрок подключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:17:00,029][DEBUG] - LogParser - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik
+[2025-12-02 21:17:00,029][INFO] - LogParser - Игрок отключился: Sergo22rus (SteamID: 76561198346036900)
+[2025-12-02 21:17:00,030][INFO] - LogParser - Игрок отключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:17:00,030][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198084546219
+[2025-12-02 21:17:00,030][INFO] - LogParser - Игрок подключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:17:00,030][DEBUG] - LogParser - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter
+[2025-12-02 21:17:00,032][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198078372219
+[2025-12-02 21:17:00,033][INFO] - LogParser - Игрок подключился: Gangsta (SteamID: 76561198078372219)
+[2025-12-02 21:17:00,033][DEBUG] - LogParser - Сопоставлено: SteamID 76561198078372219 -> Nick Gangsta
+[2025-12-02 21:17:00,033][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198448653226
+[2025-12-02 21:17:00,033][INFO] - LogParser - Игрок подключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:17:00,033][DEBUG] - LogParser - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik
+[2025-12-02 21:17:00,033][INFO] - LogParser - Игрок отключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:17:00,034][INFO] - LogParser - Игрок отключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:17:00,034][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198019873330
+[2025-12-02 21:17:00,035][INFO] - LogParser - Игрок подключился: scar (SteamID: 76561198019873330)
+[2025-12-02 21:17:00,035][DEBUG] - LogParser - Сопоставлено: SteamID 76561198019873330 -> Nick scar
+[2025-12-02 21:17:00,035][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198040199345
+[2025-12-02 21:17:00,035][INFO] - LogParser - Игрок подключился: Godyn (SteamID: 76561198040199345)
+[2025-12-02 21:17:00,035][DEBUG] - LogParser - Сопоставлено: SteamID 76561198040199345 -> Nick Godyn
+[2025-12-02 21:17:00,036][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198084546219
+[2025-12-02 21:17:00,036][INFO] - LogParser - Игрок подключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:17:00,036][DEBUG] - LogParser - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter
+[2025-12-02 21:17:00,037][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198448653226
+[2025-12-02 21:17:00,037][INFO] - LogParser - Игрок подключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:17:00,037][DEBUG] - LogParser - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik
+[2025-12-02 21:17:00,039][INFO] - LogParser - Игрок отключился: scar (SteamID: 76561198019873330)
+[2025-12-02 21:17:00,039][INFO] - LogParser - Игрок отключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:17:00,040][INFO] - LogParser - Игрок отключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:17:00,042][DEBUG] - LogParser - Offset файла D:/1/24722.log: 1127698
+[2025-12-02 21:17:04,996][INFO] - MainApp - Connected players: 3
+[2025-12-02 21:17:08,901][INFO] - LogParser - Остановка LogParser...
+[2025-12-02 21:17:08,901][DEBUG] - LogParser - DDOSProtection остановлен.
+[2025-12-02 21:17:08,901][DEBUG] - LogParser - [DDOSProtection] INFO: Фоновая задача DDOSProtection остановлена.
+[2025-12-02 21:18:15,200][INFO] - MainApp - Starting application...
+[2025-12-02 21:18:15,201][DEBUG] - LogParser - Загружено 8 игроков из ./data/players_data.json
+[2025-12-02 21:18:15,201][DEBUG] - LogParser - Парсинг 1 лог-файлов: ['D:/1/24722.log']
+[2025-12-02 21:18:15,201][DEBUG] - LogParser - Парсинг файла: D:/1/24722.log
+[2025-12-02 21:18:15,217][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198039198830
+[2025-12-02 21:18:15,218][INFO] - LogParser - Игрок подключился: 320 (SteamID: 76561198039198830)
+[2025-12-02 21:18:15,218][DEBUG] - LogParser - Сопоставлено: SteamID 76561198039198830 -> Nick 320
+[2025-12-02 21:18:15,218][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198346036900
+[2025-12-02 21:18:15,218][INFO] - LogParser - Игрок подключился: Sergo22rus (SteamID: 76561198346036900)
+[2025-12-02 21:18:15,219][DEBUG] - LogParser - Сопоставлено: SteamID 76561198346036900 -> Nick Sergo22rus
+[2025-12-02 21:18:15,221][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198084546219
+[2025-12-02 21:18:15,221][INFO] - LogParser - Игрок подключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:18:15,221][DEBUG] - LogParser - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter
+[2025-12-02 21:18:15,222][INFO] - LogParser - Игрок отключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:18:15,223][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198151453668
+[2025-12-02 21:18:15,223][INFO] - LogParser - Игрок подключился: DIABLERO (SteamID: 76561198151453668)
+[2025-12-02 21:18:15,223][DEBUG] - LogParser - Сопоставлено: SteamID 76561198151453668 -> Nick DIABLERO
+[2025-12-02 21:18:15,224][INFO] - LogParser - Игрок отключился: DIABLERO (SteamID: 76561198151453668)
+[2025-12-02 21:18:15,225][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198448653226
+[2025-12-02 21:18:15,225][INFO] - LogParser - Игрок подключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:18:15,225][DEBUG] - LogParser - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik
+[2025-12-02 21:18:15,225][INFO] - LogParser - Игрок отключился: Sergo22rus (SteamID: 76561198346036900)
+[2025-12-02 21:18:15,226][INFO] - LogParser - Игрок отключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:18:15,227][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198084546219
+[2025-12-02 21:18:15,227][INFO] - LogParser - Игрок подключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:18:15,227][DEBUG] - LogParser - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter
+[2025-12-02 21:18:15,228][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198078372219
+[2025-12-02 21:18:15,228][INFO] - LogParser - Игрок подключился: Gangsta (SteamID: 76561198078372219)
+[2025-12-02 21:18:15,228][DEBUG] - LogParser - Сопоставлено: SteamID 76561198078372219 -> Nick Gangsta
+[2025-12-02 21:18:15,229][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198448653226
+[2025-12-02 21:18:15,229][INFO] - LogParser - Игрок подключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:18:15,229][DEBUG] - LogParser - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik
+[2025-12-02 21:18:15,229][INFO] - LogParser - Игрок отключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:18:15,230][INFO] - LogParser - Игрок отключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:18:15,230][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198019873330
+[2025-12-02 21:18:15,230][INFO] - LogParser - Игрок подключился: scar (SteamID: 76561198019873330)
+[2025-12-02 21:18:15,230][DEBUG] - LogParser - Сопоставлено: SteamID 76561198019873330 -> Nick scar
+[2025-12-02 21:18:15,230][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198040199345
+[2025-12-02 21:18:15,232][INFO] - LogParser - Игрок подключился: Godyn (SteamID: 76561198040199345)
+[2025-12-02 21:18:15,232][DEBUG] - LogParser - Сопоставлено: SteamID 76561198040199345 -> Nick Godyn
+[2025-12-02 21:18:15,232][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198084546219
+[2025-12-02 21:18:15,232][INFO] - LogParser - Игрок подключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:18:15,232][DEBUG] - LogParser - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter
+[2025-12-02 21:18:15,234][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198448653226
+[2025-12-02 21:18:15,234][INFO] - LogParser - Игрок подключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:18:15,234][DEBUG] - LogParser - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik
+[2025-12-02 21:18:15,236][INFO] - LogParser - Игрок отключился: scar (SteamID: 76561198019873330)
+[2025-12-02 21:18:15,236][INFO] - LogParser - Игрок отключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:18:15,237][INFO] - LogParser - Игрок отключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:18:15,239][DEBUG] - LogParser - Offset файла D:/1/24722.log: 1127698
+[2025-12-02 21:18:17,078][INFO] - LogParser - Остановка LogParser...
+[2025-12-02 21:18:17,078][DEBUG] - LogParser - DDOSProtection остановлен.
+[2025-12-02 21:18:17,080][DEBUG] - LogParser - [DDOSProtection] INFO: Фоновая задача DDOSProtection остановлена.
+[2025-12-02 21:18:20,200][INFO] - MainApp - Connected players: 3
+[2025-12-02 21:21:14,778][INFO] - MainApp - Starting application...
+[2025-12-02 21:21:14,779][DEBUG] - LogParser - Загружено 8 игроков из ./data/players_data.json
+[2025-12-02 21:21:14,779][DEBUG] - LogParser - Парсинг 1 лог-файлов: ['D:/1/24722.log']
+[2025-12-02 21:21:14,779][DEBUG] - LogParser - Парсинг файла: D:/1/24722.log
+[2025-12-02 21:21:14,796][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198039198830
+[2025-12-02 21:21:14,796][INFO] - LogParser - Игрок подключился: 320 (SteamID: 76561198039198830)
+[2025-12-02 21:21:14,797][DEBUG] - LogParser - Сопоставлено: SteamID 76561198039198830 -> Nick 320
+[2025-12-02 21:21:14,797][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198346036900
+[2025-12-02 21:21:14,797][INFO] - LogParser - Игрок подключился: Sergo22rus (SteamID: 76561198346036900)
+[2025-12-02 21:21:14,797][DEBUG] - LogParser - Сопоставлено: SteamID 76561198346036900 -> Nick Sergo22rus
+[2025-12-02 21:21:14,800][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198084546219
+[2025-12-02 21:21:14,800][INFO] - LogParser - Игрок подключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:21:14,800][DEBUG] - LogParser - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter
+[2025-12-02 21:21:14,800][INFO] - LogParser - Игрок отключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:21:14,802][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198151453668
+[2025-12-02 21:21:14,802][INFO] - LogParser - Игрок подключился: DIABLERO (SteamID: 76561198151453668)
+[2025-12-02 21:21:14,802][DEBUG] - LogParser - Сопоставлено: SteamID 76561198151453668 -> Nick DIABLERO
+[2025-12-02 21:21:14,804][INFO] - LogParser - Игрок отключился: DIABLERO (SteamID: 76561198151453668)
+[2025-12-02 21:21:14,804][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198448653226
+[2025-12-02 21:21:14,804][INFO] - LogParser - Игрок подключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:21:14,804][DEBUG] - LogParser - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik
+[2025-12-02 21:21:14,805][INFO] - LogParser - Игрок отключился: Sergo22rus (SteamID: 76561198346036900)
+[2025-12-02 21:21:14,806][INFO] - LogParser - Игрок отключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:21:14,806][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198084546219
+[2025-12-02 21:21:14,806][INFO] - LogParser - Игрок подключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:21:14,806][DEBUG] - LogParser - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter
+[2025-12-02 21:21:14,807][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198078372219
+[2025-12-02 21:21:14,808][INFO] - LogParser - Игрок подключился: Gangsta (SteamID: 76561198078372219)
+[2025-12-02 21:21:14,808][DEBUG] - LogParser - Сопоставлено: SteamID 76561198078372219 -> Nick Gangsta
+[2025-12-02 21:21:14,808][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198448653226
+[2025-12-02 21:21:14,808][INFO] - LogParser - Игрок подключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:21:14,808][DEBUG] - LogParser - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik
+[2025-12-02 21:21:14,809][INFO] - LogParser - Игрок отключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:21:14,809][INFO] - LogParser - Игрок отключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:21:14,810][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198019873330
+[2025-12-02 21:21:14,810][INFO] - LogParser - Игрок подключился: scar (SteamID: 76561198019873330)
+[2025-12-02 21:21:14,810][DEBUG] - LogParser - Сопоставлено: SteamID 76561198019873330 -> Nick scar
+[2025-12-02 21:21:14,810][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198040199345
+[2025-12-02 21:21:14,810][INFO] - LogParser - Игрок подключился: Godyn (SteamID: 76561198040199345)
+[2025-12-02 21:21:14,810][DEBUG] - LogParser - Сопоставлено: SteamID 76561198040199345 -> Nick Godyn
+[2025-12-02 21:21:14,810][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198084546219
+[2025-12-02 21:21:14,810][INFO] - LogParser - Игрок подключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:21:14,810][DEBUG] - LogParser - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter
+[2025-12-02 21:21:14,813][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198448653226
+[2025-12-02 21:21:14,813][INFO] - LogParser - Игрок подключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:21:14,813][DEBUG] - LogParser - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik
+[2025-12-02 21:21:14,815][INFO] - LogParser - Игрок отключился: scar (SteamID: 76561198019873330)
+[2025-12-02 21:21:14,815][INFO] - LogParser - Игрок отключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:21:14,816][INFO] - LogParser - Игрок отключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:21:14,818][DEBUG] - LogParser - Offset файла D:/1/24722.log: 1127698
+[2025-12-02 21:21:19,774][INFO] - MainApp - Connected players: 3
+[2025-12-02 21:21:33,898][INFO] - MainApp - Starting application...
+[2025-12-02 21:21:33,899][DEBUG] - LogParser - Загружено 8 игроков из ./data/players_data.json
+[2025-12-02 21:21:33,899][DEBUG] - LogParser - Парсинг 1 лог-файлов: ['D:/1/24722.log']
+[2025-12-02 21:21:33,900][DEBUG] - LogParser - Парсинг файла: D:/1/24722.log
+[2025-12-02 21:21:33,916][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198039198830
+[2025-12-02 21:21:33,916][INFO] - LogParser - Игрок подключился: 320 (SteamID: 76561198039198830)
+[2025-12-02 21:21:33,916][DEBUG] - LogParser - Сопоставлено: SteamID 76561198039198830 -> Nick 320
+[2025-12-02 21:21:33,916][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198346036900
+[2025-12-02 21:21:33,916][INFO] - LogParser - Игрок подключился: Sergo22rus (SteamID: 76561198346036900)
+[2025-12-02 21:21:33,916][DEBUG] - LogParser - Сопоставлено: SteamID 76561198346036900 -> Nick Sergo22rus
+[2025-12-02 21:21:33,919][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198084546219
+[2025-12-02 21:21:33,919][INFO] - LogParser - Игрок подключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:21:33,919][DEBUG] - LogParser - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter
+[2025-12-02 21:21:33,919][INFO] - LogParser - Игрок отключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:21:33,921][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198151453668
+[2025-12-02 21:21:33,921][INFO] - LogParser - Игрок подключился: DIABLERO (SteamID: 76561198151453668)
+[2025-12-02 21:21:33,921][DEBUG] - LogParser - Сопоставлено: SteamID 76561198151453668 -> Nick DIABLERO
+[2025-12-02 21:21:33,922][INFO] - LogParser - Игрок отключился: DIABLERO (SteamID: 76561198151453668)
+[2025-12-02 21:21:33,922][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198448653226
+[2025-12-02 21:21:33,922][INFO] - LogParser - Игрок подключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:21:33,923][DEBUG] - LogParser - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik
+[2025-12-02 21:21:33,923][INFO] - LogParser - Игрок отключился: Sergo22rus (SteamID: 76561198346036900)
+[2025-12-02 21:21:33,924][INFO] - LogParser - Игрок отключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:21:33,924][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198084546219
+[2025-12-02 21:21:33,924][INFO] - LogParser - Игрок подключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:21:33,924][DEBUG] - LogParser - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter
+[2025-12-02 21:21:33,925][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198078372219
+[2025-12-02 21:21:33,926][INFO] - LogParser - Игрок подключился: Gangsta (SteamID: 76561198078372219)
+[2025-12-02 21:21:33,926][DEBUG] - LogParser - Сопоставлено: SteamID 76561198078372219 -> Nick Gangsta
+[2025-12-02 21:21:33,926][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198448653226
+[2025-12-02 21:21:33,926][INFO] - LogParser - Игрок подключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:21:33,926][DEBUG] - LogParser - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik
+[2025-12-02 21:21:33,926][INFO] - LogParser - Игрок отключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:21:33,927][INFO] - LogParser - Игрок отключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:21:33,927][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198019873330
+[2025-12-02 21:21:33,928][INFO] - LogParser - Игрок подключился: scar (SteamID: 76561198019873330)
+[2025-12-02 21:21:33,928][DEBUG] - LogParser - Сопоставлено: SteamID 76561198019873330 -> Nick scar
+[2025-12-02 21:21:33,928][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198040199345
+[2025-12-02 21:21:33,928][INFO] - LogParser - Игрок подключился: Godyn (SteamID: 76561198040199345)
+[2025-12-02 21:21:33,928][DEBUG] - LogParser - Сопоставлено: SteamID 76561198040199345 -> Nick Godyn
+[2025-12-02 21:21:33,929][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198084546219
+[2025-12-02 21:21:33,929][INFO] - LogParser - Игрок подключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:21:33,929][DEBUG] - LogParser - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter
+[2025-12-02 21:21:33,931][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198448653226
+[2025-12-02 21:21:33,931][INFO] - LogParser - Игрок подключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:21:33,931][DEBUG] - LogParser - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik
+[2025-12-02 21:21:33,932][INFO] - LogParser - Игрок отключился: scar (SteamID: 76561198019873330)
+[2025-12-02 21:21:33,932][INFO] - LogParser - Игрок отключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:21:33,933][INFO] - LogParser - Игрок отключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:21:33,935][DEBUG] - LogParser - Offset файла D:/1/24722.log: 1127698
+[2025-12-02 21:21:35,642][INFO] - LogParser - Остановка LogParser...
+[2025-12-02 21:21:35,643][DEBUG] - LogParser - DDOSProtection остановлен.
+[2025-12-02 21:21:35,643][DEBUG] - LogParser - [DDOSProtection] INFO: Фоновая задача DDOSProtection остановлена.
