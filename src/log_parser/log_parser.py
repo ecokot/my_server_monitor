@@ -26,21 +26,19 @@ class LogParser(LoggerMixin):
     - Не зависит от медиатора
     """
 
-    def __init__(self, mediator=None, config=None, shutdown_event: asyncio.Event = None): # Добавлен shutdown_event
+    def __init__(self, mediator=None, config=None, shutdown_event: asyncio.Event = None):
         super().__init__()
         self.mediator = mediator
         self.config = config or (mediator.config if mediator else None)
         if not self.config:
             raise ValueError("Config не предоставлен")
 
-        # Принимаем и сохраняем shutdown_event
         if shutdown_event is None:
             raise ValueError("shutdown_event не предоставлен")
         self.shutdown_event = shutdown_event
 
-        self.log_files = []
-        self.connected_players = {}  # steam_id -> {name, log_file, login_time}
-        self.players_data = {}  # Все игроки из файла
+        self.connected_players = {}  # server_id -> {steam_id -> player_data}
+        self.players_data = {}  # Все игроки (не зависит от сервера)
         self.players_data_file = self.config.get("PLAYERS_DATA_FILE", "./data/players_data.json")
         self.tasks = []
         self.pending_steam_id = None
@@ -59,6 +57,21 @@ class LogParser(LoggerMixin):
 
         # Загружаем данные игроков
         self._load_players_data()
+
+        # Инициализируем подключение серверов: log_file -> server_id
+        self.log_file_to_server_id = self._build_log_file_mapping()
+
+    def _build_log_file_mapping(self):
+        """Создаёт маппинг: путь к логу → server_id"""
+        mapping = {}
+        servers_config = self.config.get("SERVERS", {})
+        for server_id, server_info in servers_config.items():
+            game_log_files = server_info.get("GAME_LOG_FILES", [])
+            if isinstance(game_log_files, str):
+                game_log_files = [game_log_files]
+            for log_file in game_log_files:
+                mapping[os.path.normpath(log_file)] = server_id
+        return mapping
 
     def _load_players_data(self):
         """Загружает данные всех игроков из JSON-файла"""
@@ -213,50 +226,53 @@ class LogParser(LoggerMixin):
         if not line:
             return
 
-        # 0. Сначала: проверка, не является ли строка "Join succeeded" и есть ли ожидание ID
+        # Нормализуем путь
+        norm_path = os.path.normpath(log_file_path)
+        server_id = self.log_file_to_server_id.get(norm_path)
+        if not server_id:
+            self.logger.warning(f"Неизвестный файл лога, не привязан к server_id: {log_file_path}")
+            # Можно пропустить или использовать 'unknown'
+            return
+
+        # 0. Сначала: проверка, не является ли строка "Join succeeded" и есть ли ожидание ID (на сервере)
         join_match = JOIN_PATTERN_SERVER.search(line)
         if self.pending_steam_id and join_match:
             steam_id = self.pending_steam_id
             player_name = join_match.group(1)
 
-            self.logger.debug(f"Сопоставлено: SteamID {steam_id} -> Nick {player_name}")
+            self.logger.debug(f"Сопоставлено: SteamID {steam_id} -> Nick {player_name} на сервере {server_id}")
 
-            # 🔽 Проверяем: есть ли игрок в сети с этим steam_id?
-            existing_player = self.connected_players.get(steam_id)
+            # Инициализируем сервер, если нужно
+            if server_id not in self.connected_players:
+                self.connected_players[server_id] = {}
 
-            # Если игрока нет — добавляем как нового
+            existing_player = self.connected_players[server_id].get(steam_id)
+
             if not existing_player:
                 # Обновляем/сохраняем в players_data
                 current_name = self.players_data.get(steam_id, {}).get("name")
                 if not current_name or current_name != player_name:
                     self.players_data[steam_id] = {"name": player_name}
                     self._save_players_data()
-                    self.logger.debug(f"Обновлено имя через Join: {steam_id} -> {player_name}")
 
                 # Добавляем в онлайн
-                self.connected_players[steam_id] = {
+                self.connected_players[server_id][steam_id] = {
                     "name": player_name,
                     "log_file": log_file_path,
                     "login_time": datetime.now().isoformat()
                 }
-                self.logger.info(f"Игрок подключился: {player_name} (SteamID: {steam_id})")
+                self.logger.info(f"Игрок подключился: {player_name} (SteamID: {steam_id}) к серверу {server_id}")
 
-            # 🔽 Если есть, НО имя временное (Unknown_...) — обновляем
             elif existing_player["name"].startswith("Unknown_"):
                 old_name = existing_player["name"]
-                # Обновляем имя в онлайн
                 existing_player["name"] = player_name
-                # Обновляем в players_data
                 self.players_data[steam_id] = {"name": player_name}
                 self._save_players_data()
                 self.logger.debug(f"Обновлено имя игрока {steam_id}: {old_name} → {player_name}")
                 self.logger.info(f"Игрок теперь известен: {player_name} (SteamID: {steam_id})")
 
-            # 🔽 Если уже полноценное имя — ничего не делаем (возможно, дубль)
-
-            # Сбрасываем ожидание
             self.pending_steam_id = None
-
+            return
 
         # 1. DDoS Detection (остаётся)
         if is_history:
@@ -266,25 +282,30 @@ class LogParser(LoggerMixin):
                 if not self.ddos_protection.is_blocked(ip):
                     self.ddos_protection.add_request(ip, timestamp_str)
 
-        # 2. Отдельно: ловим PostLogin Account — ставим в ожидание
+        # 2. PostLogin — ожидание ника
         post_login_match = LOGIN_PATTERN_SERVER.search(line)
         if post_login_match:
             steam_id = post_login_match.group(1)
             self.pending_steam_id = steam_id
-            self.logger.debug(f"Обнаружен SteamID, ожидаем ник: {steam_id}")
+            self.logger.debug(f"Обнаружен SteamID {steam_id}, ожидаем ник на сервере {server_id}")
+            return
 
-        # 3. Player Login (основной парсинг — остаётся)
+        # 3. Основной вход
         login_match = UNIFIED_LOGIN_PATTERN.search(line)
         if login_match:
             steam_id = login_match.group(1) or login_match.group(3)
-            parsed_name = login_match.group(2)  # Может быть None
+            parsed_name = login_match.group(2)
 
             if not steam_id:
                 return
 
-            if steam_id in self.connected_players:
-                if self.connected_players[steam_id]['log_file'] != log_file_path:
-                    self.logger.debug(f"Игрок {steam_id} уже в сети, но из другого файла. Пропускаем.")
+            # Инициализируем сервер
+            if server_id not in self.connected_players:
+                self.connected_players[server_id] = {}
+
+            # Проверяем, есть ли уже на этом сервере
+            if steam_id in self.connected_players[server_id]:
+                self.logger.debug(f"Игрок {steam_id} уже в сети на сервере {server_id}. Пропускаем.")
                 return
 
             current_entry = self.players_data.get(steam_id)
@@ -292,7 +313,6 @@ class LogParser(LoggerMixin):
                 if not current_entry or current_entry.get("name") != parsed_name:
                     self.players_data[steam_id] = {"name": parsed_name}
                     self._save_players_data()
-                    self.logger.debug(f"Обновлено имя игрока {steam_id}: {parsed_name}")
                 final_name = parsed_name
             else:
                 final_name = current_entry["name"] if current_entry else f"Unknown_{steam_id}"
@@ -300,32 +320,41 @@ class LogParser(LoggerMixin):
             if steam_id not in self.players_data:
                 self.players_data[steam_id] = {"name": final_name}
                 self._save_players_data()
-                self.logger.debug(f"Зарегистрирован игрок без имени: {steam_id} -> {final_name}")
 
-            self.connected_players[steam_id] = {
+            self.connected_players[server_id][steam_id] = {
                 "name": final_name,
                 "log_file": log_file_path,
-                "login_time": datetime.now().isoformat(),
-                "pending_steam_id": self.pending_steam_id
+                "login_time": datetime.now().isoformat()
             }
-            self.logger.info(f"Игрок подключился: {final_name} (SteamID: {steam_id})")
+            self.logger.info(f"Игрок подключился: {final_name} (SteamID: {steam_id}) к серверу {server_id}")
             return
 
-        # 4. Player Logout — остаётся
+        # 4. Выход
         logout_match = LOGOUT_PATTERN_LOBBY.search(line) or LOGOUT_PATTERN_SERVER.search(line)
         if logout_match:
             steam_id = logout_match.group(1).strip()
-            if steam_id in self.connected_players:
-                player_name = self.connected_players[steam_id]["name"]
-                del self.connected_players[steam_id]
-                self.logger.info(f"Игрок отключился: {player_name} (SteamID: {steam_id})")
+
+            if server_id in self.connected_players and steam_id in self.connected_players[server_id]:
+                player_name = self.connected_players[server_id][steam_id]["name"]
+                del self.connected_players[server_id][steam_id]
+                self.logger.info(f"Игрок отключился: {player_name} (SteamID: {steam_id}) с сервера {server_id}")
             else:
-                self.logger.debug(f"Отключение неотслеживаемого игрока: {steam_id}")
+                self.logger.debug(f"Отключение неотслеживаемого игрока: {steam_id} с сервера {server_id}")
             return
 
     def get_connected_players(self, query=None):
-        """Возвращает копию онлайн-игроков (для GetPlayerCountQuery)"""
-        return {sid: data["name"] for sid, data in self.connected_players.items()}
+        """
+        Обработчик GetPlayerCountQuery.
+        :param query: Объект с .server_id или None
+        :return: Количество игроков
+        """
+        if query is None or not hasattr(query, "server_id"):
+            # Если нет server_id — возвращаем общее количество
+            total = sum(len(players) for players in self.connected_players.values())
+            return total
+
+        server_id = query.server_id
+        return len(self.connected_players.get(server_id, {}))
 
     @property
     def player_count(self):

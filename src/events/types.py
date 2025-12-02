@@ -10,7 +10,7 @@ class PlayerJoinedEvent:
 
 @dataclass
 class GetPlayerCountQuery:
-    pass
+    server_id: str
 
 @dataclass
 class DdosEvent:

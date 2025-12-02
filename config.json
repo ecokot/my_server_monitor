@@ -25,8 +25,7 @@
             "SERVER_NAME": "[RU][PVE]Siberian MOE",
             "QUERY_PORT": 12888,
             "GAME_PORT": 11888,
-            "GAME_LOG_FILES": ["D:/1/24722.log"],
-            "GAME_LOG_LEVEL": "DEBUG"
+            "GAME_LOG_FILES": ["D:/1/24722.log"]
         }
     }
 }
