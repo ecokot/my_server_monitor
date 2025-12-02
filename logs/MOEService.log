@@ -824,3 +824,652 @@
 [2025-12-02 21:21:35,642][INFO] - LogParser - Остановка LogParser...
 [2025-12-02 21:21:35,643][DEBUG] - LogParser - DDOSProtection остановлен.
 [2025-12-02 21:21:35,643][DEBUG] - LogParser - [DDOSProtection] INFO: Фоновая задача DDOSProtection остановлена.
+[2025-12-02 21:25:21,577][INFO] - MainApp - Starting application...
+[2025-12-02 21:25:21,578][DEBUG] - LogParser - Загружено 8 игроков из ./data/players_data.json
+[2025-12-02 21:25:21,578][DEBUG] - LogParser - Парсинг 1 лог-файлов: ['D:/1/24722.log']
+[2025-12-02 21:25:21,578][DEBUG] - LogParser - Парсинг файла: D:/1/24722.log
+[2025-12-02 21:25:21,594][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198039198830
+[2025-12-02 21:25:21,594][INFO] - LogParser - Игрок подключился: 320 (SteamID: 76561198039198830)
+[2025-12-02 21:25:21,594][DEBUG] - LogParser - Сопоставлено: SteamID 76561198039198830 -> Nick 320
+[2025-12-02 21:25:21,595][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198346036900
+[2025-12-02 21:25:21,595][INFO] - LogParser - Игрок подключился: Sergo22rus (SteamID: 76561198346036900)
+[2025-12-02 21:25:21,595][DEBUG] - LogParser - Сопоставлено: SteamID 76561198346036900 -> Nick Sergo22rus
+[2025-12-02 21:25:21,597][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198084546219
+[2025-12-02 21:25:21,597][INFO] - LogParser - Игрок подключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:25:21,597][DEBUG] - LogParser - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter
+[2025-12-02 21:25:21,598][INFO] - LogParser - Игрок отключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:25:21,599][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198151453668
+[2025-12-02 21:25:21,599][INFO] - LogParser - Игрок подключился: DIABLERO (SteamID: 76561198151453668)
+[2025-12-02 21:25:21,599][DEBUG] - LogParser - Сопоставлено: SteamID 76561198151453668 -> Nick DIABLERO
+[2025-12-02 21:25:21,600][INFO] - LogParser - Игрок отключился: DIABLERO (SteamID: 76561198151453668)
+[2025-12-02 21:25:21,600][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198448653226
+[2025-12-02 21:25:21,600][INFO] - LogParser - Игрок подключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:25:21,600][DEBUG] - LogParser - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik
+[2025-12-02 21:25:21,602][INFO] - LogParser - Игрок отключился: Sergo22rus (SteamID: 76561198346036900)
+[2025-12-02 21:25:21,603][INFO] - LogParser - Игрок отключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:25:21,603][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198084546219
+[2025-12-02 21:25:21,604][INFO] - LogParser - Игрок подключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:25:21,604][DEBUG] - LogParser - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter
+[2025-12-02 21:25:21,605][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198078372219
+[2025-12-02 21:25:21,605][INFO] - LogParser - Игрок подключился: Gangsta (SteamID: 76561198078372219)
+[2025-12-02 21:25:21,605][DEBUG] - LogParser - Сопоставлено: SteamID 76561198078372219 -> Nick Gangsta
+[2025-12-02 21:25:21,606][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198448653226
+[2025-12-02 21:25:21,606][INFO] - LogParser - Игрок подключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:25:21,606][DEBUG] - LogParser - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik
+[2025-12-02 21:25:21,606][INFO] - LogParser - Игрок отключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:25:21,607][INFO] - LogParser - Игрок отключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:25:21,607][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198019873330
+[2025-12-02 21:25:21,607][INFO] - LogParser - Игрок подключился: scar (SteamID: 76561198019873330)
+[2025-12-02 21:25:21,607][DEBUG] - LogParser - Сопоставлено: SteamID 76561198019873330 -> Nick scar
+[2025-12-02 21:25:21,607][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198040199345
+[2025-12-02 21:25:21,608][INFO] - LogParser - Игрок подключился: Godyn (SteamID: 76561198040199345)
+[2025-12-02 21:25:21,608][DEBUG] - LogParser - Сопоставлено: SteamID 76561198040199345 -> Nick Godyn
+[2025-12-02 21:25:21,608][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198084546219
+[2025-12-02 21:25:21,608][INFO] - LogParser - Игрок подключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:25:21,608][DEBUG] - LogParser - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter
+[2025-12-02 21:25:21,610][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198448653226
+[2025-12-02 21:25:21,610][INFO] - LogParser - Игрок подключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:25:21,610][DEBUG] - LogParser - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik
+[2025-12-02 21:25:21,612][INFO] - LogParser - Игрок отключился: scar (SteamID: 76561198019873330)
+[2025-12-02 21:25:21,612][INFO] - LogParser - Игрок отключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:25:21,612][INFO] - LogParser - Игрок отключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:25:21,614][DEBUG] - LogParser - Offset файла D:/1/24722.log: 1127698
+[2025-12-02 21:25:23,997][INFO] - LogParser - Остановка LogParser...
+[2025-12-02 21:25:23,997][DEBUG] - LogParser - DDOSProtection остановлен.!
+[2025-12-02 21:25:23,997][DEBUG] - LogParser - [DDOSProtection] INFO: Фоновая задача DDOSProtection остановлена.
+[2025-12-02 21:25:26,568][INFO] - MainApp - Connected players: 3
+[2025-12-02 21:29:16,142][INFO] - MainApp - Starting application...
+[2025-12-02 21:29:16,143][DEBUG] - LogParser - Загружено 8 игроков из ./data/players_data.json
+[2025-12-02 21:29:16,144][DEBUG] - LogParser - Парсинг 1 лог-файлов: ['D:/1/24722.log']
+[2025-12-02 21:29:16,144][DEBUG] - LogParser - Парсинг файла: D:/1/24722.log
+[2025-12-02 21:29:16,164][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198039198830
+[2025-12-02 21:29:16,164][INFO] - LogParser - Игрок подключился: 320 (SteamID: 76561198039198830)
+[2025-12-02 21:29:16,164][DEBUG] - LogParser - Сопоставлено: SteamID 76561198039198830 -> Nick 320
+[2025-12-02 21:29:16,165][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198346036900
+[2025-12-02 21:29:16,165][INFO] - LogParser - Игрок подключился: Sergo22rus (SteamID: 76561198346036900)
+[2025-12-02 21:29:16,165][DEBUG] - LogParser - Сопоставлено: SteamID 76561198346036900 -> Nick Sergo22rus
+[2025-12-02 21:29:16,167][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198084546219
+[2025-12-02 21:29:16,167][INFO] - LogParser - Игрок подключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:29:16,167][DEBUG] - LogParser - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter
+[2025-12-02 21:29:16,168][INFO] - LogParser - Игрок отключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:29:16,169][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198151453668
+[2025-12-02 21:29:16,169][INFO] - LogParser - Игрок подключился: DIABLERO (SteamID: 76561198151453668)
+[2025-12-02 21:29:16,169][DEBUG] - LogParser - Сопоставлено: SteamID 76561198151453668 -> Nick DIABLERO
+[2025-12-02 21:29:16,170][INFO] - LogParser - Игрок отключился: DIABLERO (SteamID: 76561198151453668)
+[2025-12-02 21:29:16,170][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198448653226
+[2025-12-02 21:29:16,170][INFO] - LogParser - Игрок подключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:29:16,170][DEBUG] - LogParser - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik
+[2025-12-02 21:29:16,172][INFO] - LogParser - Игрок отключился: Sergo22rus (SteamID: 76561198346036900)
+[2025-12-02 21:29:16,173][INFO] - LogParser - Игрок отключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:29:16,173][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198084546219
+[2025-12-02 21:29:16,173][INFO] - LogParser - Игрок подключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:29:16,173][DEBUG] - LogParser - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter
+[2025-12-02 21:29:16,174][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198078372219
+[2025-12-02 21:29:16,174][INFO] - LogParser - Игрок подключился: Gangsta (SteamID: 76561198078372219)
+[2025-12-02 21:29:16,175][DEBUG] - LogParser - Сопоставлено: SteamID 76561198078372219 -> Nick Gangsta
+[2025-12-02 21:29:16,175][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198448653226
+[2025-12-02 21:29:16,175][INFO] - LogParser - Игрок подключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:29:16,175][DEBUG] - LogParser - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik
+[2025-12-02 21:29:16,175][INFO] - LogParser - Игрок отключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:29:16,176][INFO] - LogParser - Игрок отключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:29:16,176][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198019873330
+[2025-12-02 21:29:16,176][INFO] - LogParser - Игрок подключился: scar (SteamID: 76561198019873330)
+[2025-12-02 21:29:16,176][DEBUG] - LogParser - Сопоставлено: SteamID 76561198019873330 -> Nick scar
+[2025-12-02 21:29:16,177][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198040199345
+[2025-12-02 21:29:16,177][INFO] - LogParser - Игрок подключился: Godyn (SteamID: 76561198040199345)
+[2025-12-02 21:29:16,177][DEBUG] - LogParser - Сопоставлено: SteamID 76561198040199345 -> Nick Godyn
+[2025-12-02 21:29:16,177][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198084546219
+[2025-12-02 21:29:16,177][INFO] - LogParser - Игрок подключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:29:16,177][DEBUG] - LogParser - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter
+[2025-12-02 21:29:16,180][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198448653226
+[2025-12-02 21:29:16,180][INFO] - LogParser - Игрок подключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:29:16,180][DEBUG] - LogParser - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik
+[2025-12-02 21:29:16,182][INFO] - LogParser - Игрок отключился: scar (SteamID: 76561198019873330)
+[2025-12-02 21:29:16,182][INFO] - LogParser - Игрок отключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:29:16,183][INFO] - LogParser - Игрок отключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:29:16,184][DEBUG] - LogParser - Offset файла D:/1/24722.log: 1127698
+[2025-12-02 21:29:18,378][INFO] - LogParser - Остановка LogParser...
+[2025-12-02 21:29:18,378][DEBUG] - LogParser - DDOSProtection остановлен.
+[2025-12-02 21:29:18,378][DEBUG] - LogParser - [DDOSProtection] INFO: Фоновая задача DDOSProtection остановлена.
+[2025-12-02 21:29:32,250][INFO] - MainApp - Starting application...
+[2025-12-02 21:29:32,252][DEBUG] - LogParser - Загружено 8 игроков из ./data/players_data.json
+[2025-12-02 21:29:32,252][DEBUG] - LogParser - Парсинг 1 лог-файлов: ['D:/1/24722.log']
+[2025-12-02 21:29:32,252][DEBUG] - LogParser - Парсинг файла: D:/1/24722.log
+[2025-12-02 21:29:32,277][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198039198830
+[2025-12-02 21:29:32,278][INFO] - LogParser - Игрок подключился: 320 (SteamID: 76561198039198830)
+[2025-12-02 21:29:32,278][DEBUG] - LogParser - Сопоставлено: SteamID 76561198039198830 -> Nick 320
+[2025-12-02 21:29:32,279][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198346036900
+[2025-12-02 21:29:32,279][INFO] - LogParser - Игрок подключился: Sergo22rus (SteamID: 76561198346036900)
+[2025-12-02 21:29:32,279][DEBUG] - LogParser - Сопоставлено: SteamID 76561198346036900 -> Nick Sergo22rus
+[2025-12-02 21:29:32,282][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198084546219
+[2025-12-02 21:29:32,282][INFO] - LogParser - Игрок подключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:29:32,282][DEBUG] - LogParser - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter
+[2025-12-02 21:29:32,284][INFO] - LogParser - Игрок отключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:29:32,286][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198151453668
+[2025-12-02 21:29:32,286][INFO] - LogParser - Игрок подключился: DIABLERO (SteamID: 76561198151453668)
+[2025-12-02 21:29:32,286][DEBUG] - LogParser - Сопоставлено: SteamID 76561198151453668 -> Nick DIABLERO
+[2025-12-02 21:29:32,288][INFO] - LogParser - Игрок отключился: DIABLERO (SteamID: 76561198151453668)
+[2025-12-02 21:29:32,288][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198448653226
+[2025-12-02 21:29:32,288][INFO] - LogParser - Игрок подключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:29:32,288][DEBUG] - LogParser - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik
+[2025-12-02 21:29:32,289][INFO] - LogParser - Игрок отключился: Sergo22rus (SteamID: 76561198346036900)
+[2025-12-02 21:29:32,290][INFO] - LogParser - Игрок отключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:29:32,290][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198084546219
+[2025-12-02 21:29:32,290][INFO] - LogParser - Игрок подключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:29:32,290][DEBUG] - LogParser - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter
+[2025-12-02 21:29:32,294][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198078372219
+[2025-12-02 21:29:32,294][INFO] - LogParser - Игрок подключился: Gangsta (SteamID: 76561198078372219)
+[2025-12-02 21:29:32,294][DEBUG] - LogParser - Сопоставлено: SteamID 76561198078372219 -> Nick Gangsta
+[2025-12-02 21:29:32,295][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198448653226
+[2025-12-02 21:29:32,295][INFO] - LogParser - Игрок подключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:29:32,295][DEBUG] - LogParser - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik
+[2025-12-02 21:29:32,295][INFO] - LogParser - Игрок отключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:29:32,296][INFO] - LogParser - Игрок отключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:29:32,297][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198019873330
+[2025-12-02 21:29:32,297][INFO] - LogParser - Игрок подключился: scar (SteamID: 76561198019873330)
+[2025-12-02 21:29:32,297][DEBUG] - LogParser - Сопоставлено: SteamID 76561198019873330 -> Nick scar
+[2025-12-02 21:29:32,297][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198040199345
+[2025-12-02 21:29:32,297][INFO] - LogParser - Игрок подключился: Godyn (SteamID: 76561198040199345)
+[2025-12-02 21:29:32,297][DEBUG] - LogParser - Сопоставлено: SteamID 76561198040199345 -> Nick Godyn
+[2025-12-02 21:29:32,298][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198084546219
+[2025-12-02 21:29:32,300][INFO] - LogParser - Игрок подключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:29:32,300][DEBUG] - LogParser - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter
+[2025-12-02 21:29:32,302][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198448653226
+[2025-12-02 21:29:32,302][INFO] - LogParser - Игрок подключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:29:32,302][DEBUG] - LogParser - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik
+[2025-12-02 21:29:32,305][INFO] - LogParser - Игрок отключился: scar (SteamID: 76561198019873330)
+[2025-12-02 21:29:32,306][INFO] - LogParser - Игрок отключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:29:32,307][INFO] - LogParser - Игрок отключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:29:32,309][DEBUG] - LogParser - Offset файла D:/1/24722.log: 1127698
+[2025-12-02 21:29:37,264][INFO] - MainApp - Connected players: 3
+[2025-12-02 21:29:40,927][INFO] - LogParser - Остановка LogParser...
+[2025-12-02 21:29:40,928][DEBUG] - LogParser - DDOSProtection остановлен.
+[2025-12-02 21:29:40,928][DEBUG] - LogParser - [DDOSProtection] INFO: Фоновая задача DDOSProtection остановлена.
+[2025-12-02 21:29:59,217][INFO] - MainApp - Starting application...
+[2025-12-02 21:29:59,218][DEBUG] - LogParser - Загружено 8 игроков из ./data/players_data.json
+[2025-12-02 21:29:59,219][DEBUG] - LogParser - Парсинг 1 лог-файлов: ['D:/1/24722.log']
+[2025-12-02 21:29:59,219][DEBUG] - LogParser - Парсинг файла: D:/1/24722.log
+[2025-12-02 21:29:59,238][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198039198830
+[2025-12-02 21:29:59,238][INFO] - LogParser - Игрок подключился: 320 (SteamID: 76561198039198830)
+[2025-12-02 21:29:59,239][DEBUG] - LogParser - Сопоставлено: SteamID 76561198039198830 -> Nick 320
+[2025-12-02 21:29:59,239][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198346036900
+[2025-12-02 21:29:59,239][INFO] - LogParser - Игрок подключился: Sergo22rus (SteamID: 76561198346036900)
+[2025-12-02 21:29:59,239][DEBUG] - LogParser - Сопоставлено: SteamID 76561198346036900 -> Nick Sergo22rus
+[2025-12-02 21:29:59,242][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198084546219
+[2025-12-02 21:29:59,242][INFO] - LogParser - Игрок подключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:29:59,242][DEBUG] - LogParser - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter
+[2025-12-02 21:29:59,242][INFO] - LogParser - Игрок отключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:29:59,243][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198151453668
+[2025-12-02 21:29:59,243][INFO] - LogParser - Игрок подключился: DIABLERO (SteamID: 76561198151453668)
+[2025-12-02 21:29:59,243][DEBUG] - LogParser - Сопоставлено: SteamID 76561198151453668 -> Nick DIABLERO
+[2025-12-02 21:29:59,245][INFO] - LogParser - Игрок отключился: DIABLERO (SteamID: 76561198151453668)
+[2025-12-02 21:29:59,246][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198448653226
+[2025-12-02 21:29:59,246][INFO] - LogParser - Игрок подключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:29:59,246][DEBUG] - LogParser - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik
+[2025-12-02 21:29:59,246][INFO] - LogParser - Игрок отключился: Sergo22rus (SteamID: 76561198346036900)
+[2025-12-02 21:29:59,247][INFO] - LogParser - Игрок отключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:29:59,247][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198084546219
+[2025-12-02 21:29:59,247][INFO] - LogParser - Игрок подключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:29:59,247][DEBUG] - LogParser - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter
+[2025-12-02 21:29:59,249][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198078372219
+[2025-12-02 21:29:59,249][INFO] - LogParser - Игрок подключился: Gangsta (SteamID: 76561198078372219)
+[2025-12-02 21:29:59,249][DEBUG] - LogParser - Сопоставлено: SteamID 76561198078372219 -> Nick Gangsta
+[2025-12-02 21:29:59,249][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198448653226
+[2025-12-02 21:29:59,250][INFO] - LogParser - Игрок подключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:29:59,250][DEBUG] - LogParser - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik
+[2025-12-02 21:29:59,250][INFO] - LogParser - Игрок отключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:29:59,250][INFO] - LogParser - Игрок отключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:29:59,250][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198019873330
+[2025-12-02 21:29:59,250][INFO] - LogParser - Игрок подключился: scar (SteamID: 76561198019873330)
+[2025-12-02 21:29:59,251][DEBUG] - LogParser - Сопоставлено: SteamID 76561198019873330 -> Nick scar
+[2025-12-02 21:29:59,251][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198040199345
+[2025-12-02 21:29:59,251][INFO] - LogParser - Игрок подключился: Godyn (SteamID: 76561198040199345)
+[2025-12-02 21:29:59,251][DEBUG] - LogParser - Сопоставлено: SteamID 76561198040199345 -> Nick Godyn
+[2025-12-02 21:29:59,252][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198084546219
+[2025-12-02 21:29:59,252][INFO] - LogParser - Игрок подключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:29:59,252][DEBUG] - LogParser - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter
+[2025-12-02 21:29:59,254][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198448653226
+[2025-12-02 21:29:59,254][INFO] - LogParser - Игрок подключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:29:59,254][DEBUG] - LogParser - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik
+[2025-12-02 21:29:59,255][INFO] - LogParser - Игрок отключился: scar (SteamID: 76561198019873330)
+[2025-12-02 21:29:59,256][INFO] - LogParser - Игрок отключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:29:59,256][INFO] - LogParser - Игрок отключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:29:59,258][DEBUG] - LogParser - Offset файла D:/1/24722.log: 1127698
+[2025-12-02 21:30:05,728][INFO] - LogParser - Остановка LogParser...
+[2025-12-02 21:30:05,728][DEBUG] - LogParser - DDOSProtection остановлен.
+[2025-12-02 21:30:05,728][DEBUG] - LogParser - [DDOSProtection] INFO: Фоновая задача DDOSProtection остановлена.
+[2025-12-02 21:30:05,728][INFO] - MainApp - Connected players: 3
+[2025-12-02 21:30:12,952][INFO] - MainApp - Starting application...
+[2025-12-02 21:30:12,954][DEBUG] - LogParser - Загружено 8 игроков из ./data/players_data.json
+[2025-12-02 21:30:12,954][DEBUG] - LogParser - Парсинг 1 лог-файлов: ['D:/1/24722.log']
+[2025-12-02 21:30:12,954][DEBUG] - LogParser - Парсинг файла: D:/1/24722.log
+[2025-12-02 21:30:12,974][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198039198830
+[2025-12-02 21:30:12,974][INFO] - LogParser - Игрок подключился: 320 (SteamID: 76561198039198830)
+[2025-12-02 21:30:12,974][DEBUG] - LogParser - Сопоставлено: SteamID 76561198039198830 -> Nick 320
+[2025-12-02 21:30:12,975][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198346036900
+[2025-12-02 21:30:12,975][INFO] - LogParser - Игрок подключился: Sergo22rus (SteamID: 76561198346036900)
+[2025-12-02 21:30:12,975][DEBUG] - LogParser - Сопоставлено: SteamID 76561198346036900 -> Nick Sergo22rus
+[2025-12-02 21:30:12,977][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198084546219
+[2025-12-02 21:30:12,977][INFO] - LogParser - Игрок подключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:30:12,977][DEBUG] - LogParser - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter
+[2025-12-02 21:30:12,977][INFO] - LogParser - Игрок отключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:30:12,979][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198151453668
+[2025-12-02 21:30:12,979][INFO] - LogParser - Игрок подключился: DIABLERO (SteamID: 76561198151453668)
+[2025-12-02 21:30:12,979][DEBUG] - LogParser - Сопоставлено: SteamID 76561198151453668 -> Nick DIABLERO
+[2025-12-02 21:30:12,981][INFO] - LogParser - Игрок отключился: DIABLERO (SteamID: 76561198151453668)
+[2025-12-02 21:30:12,982][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198448653226
+[2025-12-02 21:30:12,982][INFO] - LogParser - Игрок подключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:30:12,982][DEBUG] - LogParser - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik
+[2025-12-02 21:30:12,982][INFO] - LogParser - Игрок отключился: Sergo22rus (SteamID: 76561198346036900)
+[2025-12-02 21:30:12,983][INFO] - LogParser - Игрок отключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:30:12,983][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198084546219
+[2025-12-02 21:30:12,983][INFO] - LogParser - Игрок подключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:30:12,983][DEBUG] - LogParser - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter
+[2025-12-02 21:30:12,985][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198078372219
+[2025-12-02 21:30:12,985][INFO] - LogParser - Игрок подключился: Gangsta (SteamID: 76561198078372219)
+[2025-12-02 21:30:12,985][DEBUG] - LogParser - Сопоставлено: SteamID 76561198078372219 -> Nick Gangsta
+[2025-12-02 21:30:12,985][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198448653226
+[2025-12-02 21:30:12,985][INFO] - LogParser - Игрок подключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:30:12,985][DEBUG] - LogParser - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik
+[2025-12-02 21:30:12,986][INFO] - LogParser - Игрок отключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:30:12,987][INFO] - LogParser - Игрок отключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:30:12,987][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198019873330
+[2025-12-02 21:30:12,987][INFO] - LogParser - Игрок подключился: scar (SteamID: 76561198019873330)
+[2025-12-02 21:30:12,987][DEBUG] - LogParser - Сопоставлено: SteamID 76561198019873330 -> Nick scar
+[2025-12-02 21:30:12,987][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198040199345
+[2025-12-02 21:30:12,988][INFO] - LogParser - Игрок подключился: Godyn (SteamID: 76561198040199345)
+[2025-12-02 21:30:12,988][DEBUG] - LogParser - Сопоставлено: SteamID 76561198040199345 -> Nick Godyn
+[2025-12-02 21:30:12,988][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198084546219
+[2025-12-02 21:30:12,988][INFO] - LogParser - Игрок подключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:30:12,988][DEBUG] - LogParser - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter
+[2025-12-02 21:30:12,990][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198448653226
+[2025-12-02 21:30:12,990][INFO] - LogParser - Игрок подключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:30:12,990][DEBUG] - LogParser - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik
+[2025-12-02 21:30:12,992][INFO] - LogParser - Игрок отключился: scar (SteamID: 76561198019873330)
+[2025-12-02 21:30:12,992][INFO] - LogParser - Игрок отключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:30:12,992][INFO] - LogParser - Игрок отключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:30:12,994][DEBUG] - LogParser - Offset файла D:/1/24722.log: 1127698
+[2025-12-02 21:30:17,968][INFO] - MainApp - Connected players: 3
+[2025-12-02 21:30:25,497][INFO] - LogParser - Остановка LogParser...
+[2025-12-02 21:30:44,206][DEBUG] - LogParser - DDOSProtection остановлен.
+[2025-12-02 21:30:52,575][DEBUG] - LogParser - [DDOSProtection] INFO: Фоновая задача DDOSProtection остановлена.
+[2025-12-02 21:31:16,506][INFO] - MainApp - Starting application...
+[2025-12-02 21:31:16,507][DEBUG] - LogParser - Загружено 8 игроков из ./data/players_data.json
+[2025-12-02 21:31:16,507][DEBUG] - LogParser - Парсинг 1 лог-файлов: ['D:/1/24722.log']
+[2025-12-02 21:31:16,507][DEBUG] - LogParser - Парсинг файла: D:/1/24722.log
+[2025-12-02 21:31:16,525][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198039198830
+[2025-12-02 21:31:16,525][INFO] - LogParser - Игрок подключился: 320 (SteamID: 76561198039198830)
+[2025-12-02 21:31:16,525][DEBUG] - LogParser - Сопоставлено: SteamID 76561198039198830 -> Nick 320
+[2025-12-02 21:31:16,527][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198346036900
+[2025-12-02 21:31:16,527][INFO] - LogParser - Игрок подключился: Sergo22rus (SteamID: 76561198346036900)
+[2025-12-02 21:31:16,527][DEBUG] - LogParser - Сопоставлено: SteamID 76561198346036900 -> Nick Sergo22rus
+[2025-12-02 21:31:16,529][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198084546219
+[2025-12-02 21:31:16,529][INFO] - LogParser - Игрок подключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:31:16,530][DEBUG] - LogParser - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter
+[2025-12-02 21:31:16,530][INFO] - LogParser - Игрок отключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:31:16,532][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198151453668
+[2025-12-02 21:31:16,532][INFO] - LogParser - Игрок подключился: DIABLERO (SteamID: 76561198151453668)
+[2025-12-02 21:31:16,532][DEBUG] - LogParser - Сопоставлено: SteamID 76561198151453668 -> Nick DIABLERO
+[2025-12-02 21:31:16,533][INFO] - LogParser - Игрок отключился: DIABLERO (SteamID: 76561198151453668)
+[2025-12-02 21:31:16,534][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198448653226
+[2025-12-02 21:31:16,534][INFO] - LogParser - Игрок подключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:31:16,534][DEBUG] - LogParser - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik
+[2025-12-02 21:31:16,535][INFO] - LogParser - Игрок отключился: Sergo22rus (SteamID: 76561198346036900)
+[2025-12-02 21:31:16,536][INFO] - LogParser - Игрок отключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:31:16,536][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198084546219
+[2025-12-02 21:31:16,537][INFO] - LogParser - Игрок подключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:31:16,537][DEBUG] - LogParser - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter
+[2025-12-02 21:31:16,538][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198078372219
+[2025-12-02 21:31:16,539][INFO] - LogParser - Игрок подключился: Gangsta (SteamID: 76561198078372219)
+[2025-12-02 21:31:16,539][DEBUG] - LogParser - Сопоставлено: SteamID 76561198078372219 -> Nick Gangsta
+[2025-12-02 21:31:16,539][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198448653226
+[2025-12-02 21:31:16,539][INFO] - LogParser - Игрок подключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:31:16,540][DEBUG] - LogParser - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik
+[2025-12-02 21:31:16,540][INFO] - LogParser - Игрок отключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:31:16,540][INFO] - LogParser - Игрок отключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:31:16,540][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198019873330
+[2025-12-02 21:31:16,542][INFO] - LogParser - Игрок подключился: scar (SteamID: 76561198019873330)
+[2025-12-02 21:31:16,542][DEBUG] - LogParser - Сопоставлено: SteamID 76561198019873330 -> Nick scar
+[2025-12-02 21:31:16,542][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198040199345
+[2025-12-02 21:31:16,542][INFO] - LogParser - Игрок подключился: Godyn (SteamID: 76561198040199345)
+[2025-12-02 21:31:16,542][DEBUG] - LogParser - Сопоставлено: SteamID 76561198040199345 -> Nick Godyn
+[2025-12-02 21:31:16,543][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198084546219
+[2025-12-02 21:31:16,543][INFO] - LogParser - Игрок подключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:31:16,543][DEBUG] - LogParser - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter
+[2025-12-02 21:31:16,545][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198448653226
+[2025-12-02 21:31:16,545][INFO] - LogParser - Игрок подключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:31:16,545][DEBUG] - LogParser - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik
+[2025-12-02 21:31:16,547][INFO] - LogParser - Игрок отключился: scar (SteamID: 76561198019873330)
+[2025-12-02 21:31:16,547][INFO] - LogParser - Игрок отключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:31:16,548][INFO] - LogParser - Игрок отключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:31:16,550][DEBUG] - LogParser - Offset файла D:/1/24722.log: 1127698
+[2025-12-02 21:31:21,516][INFO] - MainApp - Connected players: 3
+[2025-12-02 21:31:23,231][INFO] - LogParser - Остановка LogParser...
+[2025-12-02 21:31:23,231][DEBUG] - LogParser - DDOSProtection остановлен.
+[2025-12-02 21:31:23,231][DEBUG] - LogParser - [DDOSProtection] INFO: Фоновая задача DDOSProtection остановлена.
+[2025-12-02 21:31:23,232][INFO] - MainApp - LogParser task was cancelled. Shutting down...
+[2025-12-02 21:31:23,232][INFO] - LogParser - Остановка LogParser...
+[2025-12-02 21:31:24,500][INFO] - MainApp - Starting application...
+[2025-12-02 21:31:24,501][DEBUG] - LogParser - Загружено 8 игроков из ./data/players_data.json
+[2025-12-02 21:31:24,501][DEBUG] - LogParser - Парсинг 1 лог-файлов: ['D:/1/24722.log']
+[2025-12-02 21:31:24,501][DEBUG] - LogParser - Парсинг файла: D:/1/24722.log
+[2025-12-02 21:31:24,517][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198039198830
+[2025-12-02 21:31:24,517][INFO] - LogParser - Игрок подключился: 320 (SteamID: 76561198039198830)
+[2025-12-02 21:31:24,517][DEBUG] - LogParser - Сопоставлено: SteamID 76561198039198830 -> Nick 320
+[2025-12-02 21:31:24,518][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198346036900
+[2025-12-02 21:31:24,518][INFO] - LogParser - Игрок подключился: Sergo22rus (SteamID: 76561198346036900)
+[2025-12-02 21:31:24,518][DEBUG] - LogParser - Сопоставлено: SteamID 76561198346036900 -> Nick Sergo22rus
+[2025-12-02 21:31:24,520][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198084546219
+[2025-12-02 21:31:24,520][INFO] - LogParser - Игрок подключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:31:24,520][DEBUG] - LogParser - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter
+[2025-12-02 21:31:24,520][INFO] - LogParser - Игрок отключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:31:24,523][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198151453668
+[2025-12-02 21:31:24,523][INFO] - LogParser - Игрок подключился: DIABLERO (SteamID: 76561198151453668)
+[2025-12-02 21:31:24,523][DEBUG] - LogParser - Сопоставлено: SteamID 76561198151453668 -> Nick DIABLERO
+[2025-12-02 21:31:24,524][INFO] - LogParser - Игрок отключился: DIABLERO (SteamID: 76561198151453668)
+[2025-12-02 21:31:24,524][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198448653226
+[2025-12-02 21:31:24,524][INFO] - LogParser - Игрок подключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:31:24,524][DEBUG] - LogParser - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik
+[2025-12-02 21:31:24,525][INFO] - LogParser - Игрок отключился: Sergo22rus (SteamID: 76561198346036900)
+[2025-12-02 21:31:24,526][INFO] - LogParser - Игрок отключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:31:24,526][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198084546219
+[2025-12-02 21:31:24,526][INFO] - LogParser - Игрок подключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:31:24,526][DEBUG] - LogParser - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter
+[2025-12-02 21:31:24,527][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198078372219
+[2025-12-02 21:31:24,528][INFO] - LogParser - Игрок подключился: Gangsta (SteamID: 76561198078372219)
+[2025-12-02 21:31:24,528][DEBUG] - LogParser - Сопоставлено: SteamID 76561198078372219 -> Nick Gangsta
+[2025-12-02 21:31:24,528][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198448653226
+[2025-12-02 21:31:24,528][INFO] - LogParser - Игрок подключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:31:24,528][DEBUG] - LogParser - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik
+[2025-12-02 21:31:24,528][INFO] - LogParser - Игрок отключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:31:24,529][INFO] - LogParser - Игрок отключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:31:24,529][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198019873330
+[2025-12-02 21:31:24,529][INFO] - LogParser - Игрок подключился: scar (SteamID: 76561198019873330)
+[2025-12-02 21:31:24,529][DEBUG] - LogParser - Сопоставлено: SteamID 76561198019873330 -> Nick scar
+[2025-12-02 21:31:24,529][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198040199345
+[2025-12-02 21:31:24,529][INFO] - LogParser - Игрок подключился: Godyn (SteamID: 76561198040199345)
+[2025-12-02 21:31:24,530][DEBUG] - LogParser - Сопоставлено: SteamID 76561198040199345 -> Nick Godyn
+[2025-12-02 21:31:24,530][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198084546219
+[2025-12-02 21:31:24,530][INFO] - LogParser - Игрок подключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:31:24,530][DEBUG] - LogParser - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter
+[2025-12-02 21:31:24,532][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198448653226
+[2025-12-02 21:31:24,533][INFO] - LogParser - Игрок подключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:31:24,533][DEBUG] - LogParser - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik
+[2025-12-02 21:31:24,534][INFO] - LogParser - Игрок отключился: scar (SteamID: 76561198019873330)
+[2025-12-02 21:31:24,534][INFO] - LogParser - Игрок отключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:31:24,535][INFO] - LogParser - Игрок отключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:31:24,537][DEBUG] - LogParser - Offset файла D:/1/24722.log: 1127698
+[2025-12-02 21:31:26,350][INFO] - LogParser - Остановка LogParser...
+[2025-12-02 21:31:26,350][DEBUG] - LogParser - DDOSProtection остановлен.
+[2025-12-02 21:31:26,350][DEBUG] - LogParser - [DDOSProtection] INFO: Фоновая задача DDOSProtection остановлена.
+[2025-12-02 21:32:13,071][INFO] - MainApp - Starting application...
+[2025-12-02 21:32:13,072][DEBUG] - LogParser - Загружено 8 игроков из ./data/players_data.json
+[2025-12-02 21:32:13,073][DEBUG] - LogParser - Парсинг 1 лог-файлов: ['D:/1/24722.log']
+[2025-12-02 21:32:13,073][DEBUG] - LogParser - Парсинг файла: D:/1/24722.log
+[2025-12-02 21:32:13,089][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198039198830
+[2025-12-02 21:32:13,089][INFO] - LogParser - Игрок подключился: 320 (SteamID: 76561198039198830)
+[2025-12-02 21:32:13,091][DEBUG] - LogParser - Сопоставлено: SteamID 76561198039198830 -> Nick 320
+[2025-12-02 21:32:13,091][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198346036900
+[2025-12-02 21:32:13,091][INFO] - LogParser - Игрок подключился: Sergo22rus (SteamID: 76561198346036900)
+[2025-12-02 21:32:13,091][DEBUG] - LogParser - Сопоставлено: SteamID 76561198346036900 -> Nick Sergo22rus
+[2025-12-02 21:32:13,094][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198084546219
+[2025-12-02 21:32:13,094][INFO] - LogParser - Игрок подключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:32:13,094][DEBUG] - LogParser - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter
+[2025-12-02 21:32:13,095][INFO] - LogParser - Игрок отключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:32:13,097][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198151453668
+[2025-12-02 21:32:13,097][INFO] - LogParser - Игрок подключился: DIABLERO (SteamID: 76561198151453668)
+[2025-12-02 21:32:13,097][DEBUG] - LogParser - Сопоставлено: SteamID 76561198151453668 -> Nick DIABLERO
+[2025-12-02 21:32:13,098][INFO] - LogParser - Игрок отключился: DIABLERO (SteamID: 76561198151453668)
+[2025-12-02 21:32:13,099][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198448653226
+[2025-12-02 21:32:13,099][INFO] - LogParser - Игрок подключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:32:13,099][DEBUG] - LogParser - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik
+[2025-12-02 21:32:13,099][INFO] - LogParser - Игрок отключился: Sergo22rus (SteamID: 76561198346036900)
+[2025-12-02 21:32:13,100][INFO] - LogParser - Игрок отключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:32:13,101][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198084546219
+[2025-12-02 21:32:13,101][INFO] - LogParser - Игрок подключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:32:13,101][DEBUG] - LogParser - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter
+[2025-12-02 21:32:13,102][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198078372219
+[2025-12-02 21:32:13,102][INFO] - LogParser - Игрок подключился: Gangsta (SteamID: 76561198078372219)
+[2025-12-02 21:32:13,103][DEBUG] - LogParser - Сопоставлено: SteamID 76561198078372219 -> Nick Gangsta
+[2025-12-02 21:32:13,103][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198448653226
+[2025-12-02 21:32:13,104][INFO] - LogParser - Игрок подключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:32:13,104][DEBUG] - LogParser - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik
+[2025-12-02 21:32:13,104][INFO] - LogParser - Игрок отключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:32:13,105][INFO] - LogParser - Игрок отключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:32:13,106][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198019873330
+[2025-12-02 21:32:13,106][INFO] - LogParser - Игрок подключился: scar (SteamID: 76561198019873330)
+[2025-12-02 21:32:13,106][DEBUG] - LogParser - Сопоставлено: SteamID 76561198019873330 -> Nick scar
+[2025-12-02 21:32:13,106][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198040199345
+[2025-12-02 21:32:13,106][INFO] - LogParser - Игрок подключился: Godyn (SteamID: 76561198040199345)
+[2025-12-02 21:32:13,106][DEBUG] - LogParser - Сопоставлено: SteamID 76561198040199345 -> Nick Godyn
+[2025-12-02 21:32:13,107][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198084546219
+[2025-12-02 21:32:13,107][INFO] - LogParser - Игрок подключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:32:13,107][DEBUG] - LogParser - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter
+[2025-12-02 21:32:13,109][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198448653226
+[2025-12-02 21:32:13,109][INFO] - LogParser - Игрок подключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:32:13,109][DEBUG] - LogParser - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik
+[2025-12-02 21:32:13,111][INFO] - LogParser - Игрок отключился: scar (SteamID: 76561198019873330)
+[2025-12-02 21:32:13,112][INFO] - LogParser - Игрок отключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:32:13,113][INFO] - LogParser - Игрок отключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:32:13,115][DEBUG] - LogParser - Offset файла D:/1/24722.log: 1127698
+[2025-12-02 21:32:14,536][INFO] - LogParser - Остановка LogParser...
+[2025-12-02 21:32:14,536][DEBUG] - LogParser - DDOSProtection остановлен.
+[2025-12-02 21:32:14,537][DEBUG] - LogParser - [DDOSProtection] INFO: Фоновая задача DDOSProtection остановлена.
+[2025-12-02 21:32:18,087][INFO] - MainApp - Connected players: 3
+[2025-12-02 21:32:23,093][INFO] - MainApp - Starting application...
+[2025-12-02 21:32:23,094][DEBUG] - LogParser - Загружено 8 игроков из ./data/players_data.json
+[2025-12-02 21:32:23,094][DEBUG] - LogParser - Парсинг 1 лог-файлов: ['D:/1/24722.log']
+[2025-12-02 21:32:23,096][DEBUG] - LogParser - Парсинг файла: D:/1/24722.log
+[2025-12-02 21:32:23,112][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198039198830
+[2025-12-02 21:32:23,112][INFO] - LogParser - Игрок подключился: 320 (SteamID: 76561198039198830)
+[2025-12-02 21:32:23,112][DEBUG] - LogParser - Сопоставлено: SteamID 76561198039198830 -> Nick 320
+[2025-12-02 21:32:23,113][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198346036900
+[2025-12-02 21:32:23,113][INFO] - LogParser - Игрок подключился: Sergo22rus (SteamID: 76561198346036900)
+[2025-12-02 21:32:23,113][DEBUG] - LogParser - Сопоставлено: SteamID 76561198346036900 -> Nick Sergo22rus
+[2025-12-02 21:32:23,116][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198084546219
+[2025-12-02 21:32:23,116][INFO] - LogParser - Игрок подключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:32:23,116][DEBUG] - LogParser - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter
+[2025-12-02 21:32:23,116][INFO] - LogParser - Игрок отключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:32:23,118][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198151453668
+[2025-12-02 21:32:23,118][INFO] - LogParser - Игрок подключился: DIABLERO (SteamID: 76561198151453668)
+[2025-12-02 21:32:23,118][DEBUG] - LogParser - Сопоставлено: SteamID 76561198151453668 -> Nick DIABLERO
+[2025-12-02 21:32:23,119][INFO] - LogParser - Игрок отключился: DIABLERO (SteamID: 76561198151453668)
+[2025-12-02 21:32:23,119][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198448653226
+[2025-12-02 21:32:23,119][INFO] - LogParser - Игрок подключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:32:23,119][DEBUG] - LogParser - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik
+[2025-12-02 21:32:23,120][INFO] - LogParser - Игрок отключился: Sergo22rus (SteamID: 76561198346036900)
+[2025-12-02 21:32:23,122][INFO] - LogParser - Игрок отключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:32:23,122][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198084546219
+[2025-12-02 21:32:23,122][INFO] - LogParser - Игрок подключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:32:23,122][DEBUG] - LogParser - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter
+[2025-12-02 21:32:23,123][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198078372219
+[2025-12-02 21:32:23,123][INFO] - LogParser - Игрок подключился: Gangsta (SteamID: 76561198078372219)
+[2025-12-02 21:32:23,123][DEBUG] - LogParser - Сопоставлено: SteamID 76561198078372219 -> Nick Gangsta
+[2025-12-02 21:32:23,124][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198448653226
+[2025-12-02 21:32:23,124][INFO] - LogParser - Игрок подключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:32:23,124][DEBUG] - LogParser - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik
+[2025-12-02 21:32:23,124][INFO] - LogParser - Игрок отключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:32:23,125][INFO] - LogParser - Игрок отключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:32:23,125][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198019873330
+[2025-12-02 21:32:23,125][INFO] - LogParser - Игрок подключился: scar (SteamID: 76561198019873330)
+[2025-12-02 21:32:23,126][DEBUG] - LogParser - Сопоставлено: SteamID 76561198019873330 -> Nick scar
+[2025-12-02 21:32:23,126][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198040199345
+[2025-12-02 21:32:23,126][INFO] - LogParser - Игрок подключился: Godyn (SteamID: 76561198040199345)
+[2025-12-02 21:32:23,126][DEBUG] - LogParser - Сопоставлено: SteamID 76561198040199345 -> Nick Godyn
+[2025-12-02 21:32:23,127][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198084546219
+[2025-12-02 21:32:23,127][INFO] - LogParser - Игрок подключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:32:23,127][DEBUG] - LogParser - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter
+[2025-12-02 21:32:23,129][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198448653226
+[2025-12-02 21:32:23,129][INFO] - LogParser - Игрок подключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:32:23,130][DEBUG] - LogParser - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik
+[2025-12-02 21:32:23,131][INFO] - LogParser - Игрок отключился: scar (SteamID: 76561198019873330)
+[2025-12-02 21:32:23,131][INFO] - LogParser - Игрок отключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:32:23,132][INFO] - LogParser - Игрок отключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:32:23,134][DEBUG] - LogParser - Offset файла D:/1/24722.log: 1127698
+[2025-12-02 21:32:24,632][INFO] - LogParser - Остановка LogParser...
+[2025-12-02 21:32:24,633][DEBUG] - LogParser - DDOSProtection остановлен.
+[2025-12-02 21:32:24,634][DEBUG] - LogParser - [DDOSProtection] INFO: Фоновая задача DDOSProtection остановлена.
+[2025-12-02 21:32:38,548][INFO] - MainApp - Starting application...
+[2025-12-02 21:32:38,549][DEBUG] - LogParser - Загружено 8 игроков из ./data/players_data.json
+[2025-12-02 21:32:38,549][DEBUG] - LogParser - Парсинг 1 лог-файлов: ['D:/1/24722.log']
+[2025-12-02 21:32:38,549][DEBUG] - LogParser - Парсинг файла: D:/1/24722.log
+[2025-12-02 21:32:38,565][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198039198830
+[2025-12-02 21:32:38,566][INFO] - LogParser - Игрок подключился: 320 (SteamID: 76561198039198830)
+[2025-12-02 21:32:38,566][DEBUG] - LogParser - Сопоставлено: SteamID 76561198039198830 -> Nick 320
+[2025-12-02 21:32:38,566][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198346036900
+[2025-12-02 21:32:38,566][INFO] - LogParser - Игрок подключился: Sergo22rus (SteamID: 76561198346036900)
+[2025-12-02 21:32:38,567][DEBUG] - LogParser - Сопоставлено: SteamID 76561198346036900 -> Nick Sergo22rus
+[2025-12-02 21:32:38,569][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198084546219
+[2025-12-02 21:32:38,569][INFO] - LogParser - Игрок подключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:32:38,569][DEBUG] - LogParser - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter
+[2025-12-02 21:32:38,570][INFO] - LogParser - Игрок отключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:32:38,571][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198151453668
+[2025-12-02 21:32:38,571][INFO] - LogParser - Игрок подключился: DIABLERO (SteamID: 76561198151453668)
+[2025-12-02 21:32:38,571][DEBUG] - LogParser - Сопоставлено: SteamID 76561198151453668 -> Nick DIABLERO
+[2025-12-02 21:32:38,572][INFO] - LogParser - Игрок отключился: DIABLERO (SteamID: 76561198151453668)
+[2025-12-02 21:32:38,574][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198448653226
+[2025-12-02 21:32:38,574][INFO] - LogParser - Игрок подключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:32:38,574][DEBUG] - LogParser - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik
+[2025-12-02 21:32:38,574][INFO] - LogParser - Игрок отключился: Sergo22rus (SteamID: 76561198346036900)
+[2025-12-02 21:32:38,575][INFO] - LogParser - Игрок отключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:32:38,576][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198084546219
+[2025-12-02 21:32:38,576][INFO] - LogParser - Игрок подключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:32:38,576][DEBUG] - LogParser - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter
+[2025-12-02 21:32:38,577][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198078372219
+[2025-12-02 21:32:38,577][INFO] - LogParser - Игрок подключился: Gangsta (SteamID: 76561198078372219)
+[2025-12-02 21:32:38,577][DEBUG] - LogParser - Сопоставлено: SteamID 76561198078372219 -> Nick Gangsta
+[2025-12-02 21:32:38,578][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198448653226
+[2025-12-02 21:32:38,578][INFO] - LogParser - Игрок подключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:32:38,578][DEBUG] - LogParser - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik
+[2025-12-02 21:32:38,578][INFO] - LogParser - Игрок отключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:32:38,579][INFO] - LogParser - Игрок отключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:32:38,580][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198019873330
+[2025-12-02 21:32:38,580][INFO] - LogParser - Игрок подключился: scar (SteamID: 76561198019873330)
+[2025-12-02 21:32:38,580][DEBUG] - LogParser - Сопоставлено: SteamID 76561198019873330 -> Nick scar
+[2025-12-02 21:32:38,580][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198040199345
+[2025-12-02 21:32:38,580][INFO] - LogParser - Игрок подключился: Godyn (SteamID: 76561198040199345)
+[2025-12-02 21:32:38,580][DEBUG] - LogParser - Сопоставлено: SteamID 76561198040199345 -> Nick Godyn
+[2025-12-02 21:32:38,581][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198084546219
+[2025-12-02 21:32:38,581][INFO] - LogParser - Игрок подключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:32:38,581][DEBUG] - LogParser - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter
+[2025-12-02 21:32:38,583][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198448653226
+[2025-12-02 21:32:38,583][INFO] - LogParser - Игрок подключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:32:38,583][DEBUG] - LogParser - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik
+[2025-12-02 21:32:38,585][INFO] - LogParser - Игрок отключился: scar (SteamID: 76561198019873330)
+[2025-12-02 21:32:38,585][INFO] - LogParser - Игрок отключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:32:38,586][INFO] - LogParser - Игрок отключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:32:38,589][DEBUG] - LogParser - Offset файла D:/1/24722.log: 1127698
+[2025-12-02 21:32:40,097][INFO] - LogParser - Остановка LogParser...
+[2025-12-02 21:32:40,097][DEBUG] - LogParser - DDOSProtection остановлен.
+[2025-12-02 21:32:40,097][DEBUG] - LogParser - [DDOSProtection] INFO: Фоновая задача DDOSProtection остановлена.
+[2025-12-02 21:33:16,732][INFO] - MainApp - Starting application...
+[2025-12-02 21:33:16,734][DEBUG] - LogParser - Загружено 8 игроков из ./data/players_data.json
+[2025-12-02 21:33:16,734][DEBUG] - LogParser - Парсинг 1 лог-файлов: ['D:/1/24722.log']
+[2025-12-02 21:33:16,734][DEBUG] - LogParser - Парсинг файла: D:/1/24722.log
+[2025-12-02 21:33:16,753][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198039198830
+[2025-12-02 21:33:16,754][INFO] - LogParser - Игрок подключился: 320 (SteamID: 76561198039198830)
+[2025-12-02 21:33:16,754][DEBUG] - LogParser - Сопоставлено: SteamID 76561198039198830 -> Nick 320
+[2025-12-02 21:33:16,754][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198346036900
+[2025-12-02 21:33:16,754][INFO] - LogParser - Игрок подключился: Sergo22rus (SteamID: 76561198346036900)
+[2025-12-02 21:33:16,754][DEBUG] - LogParser - Сопоставлено: SteamID 76561198346036900 -> Nick Sergo22rus
+[2025-12-02 21:33:16,756][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198084546219
+[2025-12-02 21:33:16,756][INFO] - LogParser - Игрок подключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:33:16,757][DEBUG] - LogParser - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter
+[2025-12-02 21:33:16,757][INFO] - LogParser - Игрок отключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:33:16,759][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198151453668
+[2025-12-02 21:33:16,759][INFO] - LogParser - Игрок подключился: DIABLERO (SteamID: 76561198151453668)
+[2025-12-02 21:33:16,759][DEBUG] - LogParser - Сопоставлено: SteamID 76561198151453668 -> Nick DIABLERO
+[2025-12-02 21:33:16,760][INFO] - LogParser - Игрок отключился: DIABLERO (SteamID: 76561198151453668)
+[2025-12-02 21:33:16,761][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198448653226
+[2025-12-02 21:33:16,761][INFO] - LogParser - Игрок подключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:33:16,761][DEBUG] - LogParser - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik
+[2025-12-02 21:33:16,761][INFO] - LogParser - Игрок отключился: Sergo22rus (SteamID: 76561198346036900)
+[2025-12-02 21:33:16,762][INFO] - LogParser - Игрок отключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:33:16,762][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198084546219
+[2025-12-02 21:33:16,762][INFO] - LogParser - Игрок подключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:33:16,762][DEBUG] - LogParser - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter
+[2025-12-02 21:33:16,764][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198078372219
+[2025-12-02 21:33:16,764][INFO] - LogParser - Игрок подключился: Gangsta (SteamID: 76561198078372219)
+[2025-12-02 21:33:16,764][DEBUG] - LogParser - Сопоставлено: SteamID 76561198078372219 -> Nick Gangsta
+[2025-12-02 21:33:16,765][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198448653226
+[2025-12-02 21:33:16,765][INFO] - LogParser - Игрок подключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:33:16,765][DEBUG] - LogParser - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik
+[2025-12-02 21:33:16,765][INFO] - LogParser - Игрок отключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:33:16,766][INFO] - LogParser - Игрок отключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:33:16,766][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198019873330
+[2025-12-02 21:33:16,766][INFO] - LogParser - Игрок подключился: scar (SteamID: 76561198019873330)
+[2025-12-02 21:33:16,766][DEBUG] - LogParser - Сопоставлено: SteamID 76561198019873330 -> Nick scar
+[2025-12-02 21:33:16,766][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198040199345
+[2025-12-02 21:33:16,766][INFO] - LogParser - Игрок подключился: Godyn (SteamID: 76561198040199345)
+[2025-12-02 21:33:16,766][DEBUG] - LogParser - Сопоставлено: SteamID 76561198040199345 -> Nick Godyn
+[2025-12-02 21:33:16,767][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198084546219
+[2025-12-02 21:33:16,767][INFO] - LogParser - Игрок подключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:33:16,767][DEBUG] - LogParser - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter
+[2025-12-02 21:33:16,769][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198448653226
+[2025-12-02 21:33:16,769][INFO] - LogParser - Игрок подключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:33:16,769][DEBUG] - LogParser - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik
+[2025-12-02 21:33:16,771][INFO] - LogParser - Игрок отключился: scar (SteamID: 76561198019873330)
+[2025-12-02 21:33:16,771][INFO] - LogParser - Игрок отключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:33:16,772][INFO] - LogParser - Игрок отключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:33:16,774][DEBUG] - LogParser - Offset файла D:/1/24722.log: 1127698
+[2025-12-02 21:33:19,025][INFO] - LogParser - Остановка LogParser...
+[2025-12-02 21:33:19,025][DEBUG] - LogParser - DDOSProtection остановлен.
+[2025-12-02 21:33:19,025][DEBUG] - LogParser - [DDOSProtection] INFO: Фоновая задача DDOSProtection остановлена.
+[2025-12-02 21:45:04,311][INFO] - MainApp - Starting application...
+[2025-12-02 21:45:04,311][DEBUG] - LogParser - Загружено 8 игроков из ./data/players_data.json
+[2025-12-02 21:45:04,311][DEBUG] - LogParser - Парсинг 1 лог-файлов: ['D:/1/24722.log']
+[2025-12-02 21:45:04,312][DEBUG] - LogParser - Парсинг файла: D:/1/24722.log
+[2025-12-02 21:45:04,329][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198039198830
+[2025-12-02 21:45:04,330][INFO] - LogParser - Игрок подключился: 320 (SteamID: 76561198039198830)
+[2025-12-02 21:45:04,330][DEBUG] - LogParser - Сопоставлено: SteamID 76561198039198830 -> Nick 320
+[2025-12-02 21:45:04,330][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198346036900
+[2025-12-02 21:45:04,330][INFO] - LogParser - Игрок подключился: Sergo22rus (SteamID: 76561198346036900)
+[2025-12-02 21:45:04,330][DEBUG] - LogParser - Сопоставлено: SteamID 76561198346036900 -> Nick Sergo22rus
+[2025-12-02 21:45:04,332][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198084546219
+[2025-12-02 21:45:04,332][INFO] - LogParser - Игрок подключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:45:04,332][DEBUG] - LogParser - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter
+[2025-12-02 21:45:04,333][INFO] - LogParser - Игрок отключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:45:04,335][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198151453668
+[2025-12-02 21:45:04,335][INFO] - LogParser - Игрок подключился: DIABLERO (SteamID: 76561198151453668)
+[2025-12-02 21:45:04,335][DEBUG] - LogParser - Сопоставлено: SteamID 76561198151453668 -> Nick DIABLERO
+[2025-12-02 21:45:04,337][INFO] - LogParser - Игрок отключился: DIABLERO (SteamID: 76561198151453668)
+[2025-12-02 21:45:04,337][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198448653226
+[2025-12-02 21:45:04,337][INFO] - LogParser - Игрок подключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:45:04,337][DEBUG] - LogParser - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik
+[2025-12-02 21:45:04,338][INFO] - LogParser - Игрок отключился: Sergo22rus (SteamID: 76561198346036900)
+[2025-12-02 21:45:04,339][INFO] - LogParser - Игрок отключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:45:04,339][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198084546219
+[2025-12-02 21:45:04,339][INFO] - LogParser - Игрок подключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:45:04,339][DEBUG] - LogParser - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter
+[2025-12-02 21:45:04,341][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198078372219
+[2025-12-02 21:45:04,341][INFO] - LogParser - Игрок подключился: Gangsta (SteamID: 76561198078372219)
+[2025-12-02 21:45:04,341][DEBUG] - LogParser - Сопоставлено: SteamID 76561198078372219 -> Nick Gangsta
+[2025-12-02 21:45:04,341][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198448653226
+[2025-12-02 21:45:04,342][INFO] - LogParser - Игрок подключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:45:04,342][DEBUG] - LogParser - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik
+[2025-12-02 21:45:04,342][INFO] - LogParser - Игрок отключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:45:04,342][INFO] - LogParser - Игрок отключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:45:04,342][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198019873330
+[2025-12-02 21:45:04,342][INFO] - LogParser - Игрок подключился: scar (SteamID: 76561198019873330)
+[2025-12-02 21:45:04,342][DEBUG] - LogParser - Сопоставлено: SteamID 76561198019873330 -> Nick scar
+[2025-12-02 21:45:04,342][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198040199345
+[2025-12-02 21:45:04,343][INFO] - LogParser - Игрок подключился: Godyn (SteamID: 76561198040199345)
+[2025-12-02 21:45:04,343][DEBUG] - LogParser - Сопоставлено: SteamID 76561198040199345 -> Nick Godyn
+[2025-12-02 21:45:04,343][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198084546219
+[2025-12-02 21:45:04,343][INFO] - LogParser - Игрок подключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:45:04,344][DEBUG] - LogParser - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter
+[2025-12-02 21:45:04,345][DEBUG] - LogParser - Обнаружен SteamID, ожидаем ник: 76561198448653226
+[2025-12-02 21:45:04,345][INFO] - LogParser - Игрок подключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:45:04,345][DEBUG] - LogParser - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik
+[2025-12-02 21:45:04,348][INFO] - LogParser - Игрок отключился: scar (SteamID: 76561198019873330)
+[2025-12-02 21:45:04,348][INFO] - LogParser - Игрок отключился: Pazik (SteamID: 76561198448653226)
+[2025-12-02 21:45:04,349][INFO] - LogParser - Игрок отключился: Ambidexter (SteamID: 76561198084546219)
+[2025-12-02 21:45:04,350][DEBUG] - LogParser - Offset файла D:/1/24722.log: 1127698
+[2025-12-02 21:45:09,325][INFO] - MainApp - Received shutdown signal. Cancelling LogParser task...
+[2025-12-02 21:45:09,325][INFO] - LogParser - LogParser.start_parsing: Задача была отменена.
+[2025-12-02 21:45:09,325][INFO] - MainApp - LogParser task was cancelled.
+[2025-12-02 21:45:09,326][INFO] - LogParser - Остановка LogParser...
+[2025-12-02 21:45:09,326][DEBUG] - LogParser - DDOSProtection остановлен.
+[2025-12-02 21:45:09,326][INFO] - LogParser - LogParser остановлен.
+[2025-12-02 21:45:09,326][INFO] - MainApp - Application shutdown complete.
+[2025-12-02 21:45:09,326][DEBUG] - LogParser - [DDOSProtection] INFO: Фоновая задача DDOSProtection остановлена.

@@ -43,7 +43,7 @@ class DDOSProtection:
         """Останавливает фоновую задачу"""
         if self.cleanup_task and not self.cleanup_task.done():
             self.cleanup_task.cancel()
-            self.log_callback("DDOSProtection остановлен.!")
+            self.log_callback("DDOSProtection остановлен.")
 
     def add_request(self, ip: str, timestamp: str):
         """

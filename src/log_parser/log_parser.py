@@ -1,3 +1,4 @@
+# src/log_parser/log_parser.py
 import os
 import asyncio
 import json
@@ -25,12 +26,17 @@ class LogParser(LoggerMixin):
     - Не зависит от медиатора
     """
 
-    def __init__(self, mediator=None, config=None):
+    def __init__(self, mediator=None, config=None, shutdown_event: asyncio.Event = None): # Добавлен shutdown_event
         super().__init__()
         self.mediator = mediator
         self.config = config or (mediator.config if mediator else None)
         if not self.config:
             raise ValueError("Config не предоставлен")
+
+        # Принимаем и сохраняем shutdown_event
+        if shutdown_event is None:
+            raise ValueError("shutdown_event не предоставлен")
+        self.shutdown_event = shutdown_event
 
         self.log_files = []
         self.connected_players = {}  # steam_id -> {name, log_file, login_time}
@@ -93,6 +99,11 @@ class LogParser(LoggerMixin):
         return log_files
 
     async def start_parsing(self):
+        # Проверяем сигнал остановки перед началом
+        if self.shutdown_event.is_set():
+            self.logger.info("LogParser: Получен сигнал остановки перед запуском.")
+            return
+
         self.log_files = self.get_configured_log_files()
         if not self.log_files:
             self.logger.warning("Не найдены пути к лог-файлам в конфиге.")
@@ -103,13 +114,36 @@ class LogParser(LoggerMixin):
         if self.mediator:
             self.mediator.register_handler(GetPlayerCountQuery, self.get_connected_players)
 
-        for log_file in self.log_files:
-            task = asyncio.create_task(self._parse_single_log(log_file))
-            self.tasks.append(task)
+        try:
+            for log_file in self.log_files:
+                # Проверяем сигнал остановки перед созданием задачи
+                if self.shutdown_event.is_set():
+                    self.logger.info("LogParser: Получен сигнал остановки, прерываю создание задач.")
+                    break
+                task = asyncio.create_task(self._parse_single_log(log_file))
+                self.tasks.append(task)
 
-        await asyncio.gather(*self.tasks, return_exceptions=True)
+            # Если задачи были созданы, ждем их завершения или сигнала остановки
+            if self.tasks:
+                await asyncio.gather(*self.tasks, return_exceptions=True)
+        except asyncio.CancelledError:
+            self.logger.info("LogParser.start_parsing: Задача была отменена.")
+            # Отменяем все созданные задачи
+            for task in self.tasks:
+                if not task.done():
+                    task.cancel()
+            # Ждем завершения отмененных задач
+            if self.tasks:
+                await asyncio.gather(*self.tasks, return_exceptions=True)
+            # Поднимаем исключение дальше, чтобы задача в MainApp тоже завершилась
+            raise
 
     async def _parse_single_log(self, log_file_path):
+        # Проверяем сигнал остановки перед началом парсинга файла
+        if self.shutdown_event.is_set():
+            self.logger.debug(f"LogParser: Получен сигнал остановки, пропускаю файл {log_file_path}.")
+            return
+
         if not os.path.exists(log_file_path):
             self.logger.error(f"Файл логов не найден: {log_file_path}")
             return
@@ -124,16 +158,27 @@ class LogParser(LoggerMixin):
                 lines = f.readlines()
 
             for line in lines:
+                # Проверяем сигнал остановки в цикле истории (опционально, для быстрого реагирования)
+                if self.shutdown_event.is_set():
+                    self.logger.debug(f"LogParser: Получен сигнал остановки, прерываю парсинг истории {log_file_path}.")
+                    return
                 await self._process_line(line.strip(), log_file_path, is_history=True)
         except Exception as e:
             self.logger.error(f"Ошибка при парсинге истории {log_file_path}: {e}")
 
     async def _parse_real_time(self, log_file_path):
+        # Проверяем сигнал остановки перед началом реального времени
+        if self.shutdown_event.is_set():
+            self.logger.debug(f"LogParser: Получен сигнал остановки, пропускаю реальный парсинг {log_file_path}.")
+            return
+
         offset_tracker = {'offset': os.path.getsize(log_file_path)}
         self.logger.debug(f"Offset файла {log_file_path}: {offset_tracker['offset']}")
 
+        # Внутренняя функция для обработки изменений файла
         async def handle_file_change(file_path):
-            if os.path.basename(file_path) != os.path.basename(log_file_path):
+            # Проверяем, что это нужный файл и не получен сигнал остановки
+            if os.path.basename(file_path) != os.path.basename(log_file_path) or self.shutdown_event.is_set():
                 return
             try:
                 with open(file_path, "r", encoding="utf-8", errors="replace") as f:
@@ -150,11 +195,18 @@ class LogParser(LoggerMixin):
                     offset_tracker['offset'] = current_offset
 
                 for line in new_lines:
+                    # Проверяем сигнал остановки при обработке каждой новой строки
+                    if self.shutdown_event.is_set():
+                        self.logger.debug(f"LogParser: Получен сигнал остановки, прерываю обработку строк {file_path}.")
+                        return # Выходим из handle_file_change
                     await self._process_line(line.strip(), file_path)
             except Exception as e:
                 self.logger.error(f"Ошибка при обработке файла {file_path}: {e}")
 
         loop = asyncio.get_event_loop()
+        # Передаем shutdown_event в watch_directory, если он может его использовать для остановки
+        # Если watch_directory не поддерживает событие остановки, нам нужно внести изменения и туда
+        # Пока что просто вызываем его
         await watch_directory(os.path.dirname(log_file_path), handle_file_change, loop)
 
     async def _process_line(self, line, log_file_path, is_history=False):
@@ -282,5 +334,14 @@ class LogParser(LoggerMixin):
     async def shutdown(self):
         """Корректное завершение парсера"""
         self.logger.info("Остановка LogParser...")
+        # Отменяем все задачи парсинга файлов
+        for task in self.tasks:
+            if not task.done():
+                task.cancel()
+        # Ждем завершения отмененных задач
+        if self.tasks:
+            await asyncio.gather(*self.tasks, return_exceptions=True)
+
         if hasattr(self, 'ddos_protection'):
             self.ddos_protection.stop()  # Останавливает фоновую задачу
+        self.logger.info("LogParser остановлен.")
