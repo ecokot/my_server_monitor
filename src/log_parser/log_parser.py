@@ -284,4 +284,3 @@ class LogParser(LoggerMixin):
         self.logger.info("Остановка LogParser...")
         if hasattr(self, 'ddos_protection'):
             self.ddos_protection.stop()  # Останавливает фоновую задачу
-            self.logger.debug("DDOSProtection остановлен.")
