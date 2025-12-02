@@ -2,7 +2,7 @@
 
 import asyncio
 from src.mediator.mediator import Mediator
-from src.events.types import PlayerJoinedEvent, GetPlayerCountQuery, DdosEvent, GetConnectedPlayersQuery
+from src.events.types import PlayerJoinedEvent, GetPlayerCountQuery, DdosEvent
 from src.config import Config
 from src.logger import LoggerMixin
 from src.log_parser.log_parser import LogParser
@@ -39,7 +39,7 @@ class MainApp(LoggerMixin):
 
         # Пример запроса количества подключенных игроков через медиатор (LogParser должен зарегистрировать обработчик)
         try:
-            connected_players = mediator.request(GetConnectedPlayersQuery())
+            connected_players = mediator.request(GetPlayerCountQuery)
             print(f"Connected players (from LogParser via mediator): {len(connected_players)} - {connected_players}")
         except ValueError:
             print("Обработчик GetConnectedPlayersQuery не зарегистрирован или не найден.")

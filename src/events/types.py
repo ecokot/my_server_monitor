@@ -20,11 +20,6 @@ class DdosEvent:
 
 
 @dataclass
-class GetConnectedPlayersQuery:
-    pass
-
-
-@dataclass
 class LogFileChangedEvent:
     file_path: str
     line: str
