@@ -23,3 +23,8 @@ class DdosEvent:
 class LogFileChangedEvent:
     file_path: str
     line: str
+
+@dataclass
+class PlayersChangedEvent:
+    server_id: str
+    players_data: Dict[str, Any] # {steam_id: player_data}

@@ -1,5 +1,5 @@
 {
-    "SERVER_IP":"192.168.1.3",
+    "SERVER_IP":"192.168.1.10",
     "VERSION_GAME": "1.114",
     "VERSION_FILE": "./data/game_version.json",
     "PLAYERS_DATA_FILE": "./data/players_data.json",

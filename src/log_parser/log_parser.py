@@ -1,35 +1,24 @@
 # src/log_parser/log_parser.py
+
 import os
 import asyncio
-import json
-from datetime import datetime
 from src.events.types import GetPlayerCountQuery
-from src.logger import LoggerMixin
-from src.constants import (
-    IP_TIMESTAMP_PATTERN,
-    UNIFIED_LOGIN_PATTERN,
-    LOGOUT_PATTERN_LOBBY,
-    LOGOUT_PATTERN_SERVER,
-    LOGIN_PATTERN_SERVER,
-    JOIN_PATTERN_SERVER
-)
 from src.utils.async_watchdog import watch_directory
 from src.log_parser.ddos_protection import DDOSProtection
 
+from src.log_parser.players_data_manager import PlayersDataManager
+from src.log_parser.line_processor import LogLineProcessor
 
-class LogParser(LoggerMixin):
+
+class LogParser:
     """
-    Единый модуль для парсинга логов:
-    - Отслеживает вход/выход игроков
-    - Сохраняет данные игроков
-    - Блокирует DDoS
-    - Не зависит от медиатора
+    Координирует работу парсинга
     """
 
-    def __init__(self, mediator=None, config=None, shutdown_event: asyncio.Event = None):
-        super().__init__()
+    def __init__(self, mediator=None, config=None, logger=None, shutdown_event: asyncio.Event = None):
         self.mediator = mediator
         self.config = config or (mediator.config if mediator else None)
+        self.logger = logger or (mediator.logger if mediator else None)
         if not self.config:
             raise ValueError("Config не предоставлен")
 
@@ -37,11 +26,16 @@ class LogParser(LoggerMixin):
             raise ValueError("shutdown_event не предоставлен")
         self.shutdown_event = shutdown_event
 
-        self.connected_players = {}  # server_id -> {steam_id -> player_data}
-        self.players_data = {}  # Все игроки (не зависит от сервера)
+        self.connected_players = {}
+
+        # --- Выносим логику ---
         self.players_data_file = self.config.get("PLAYERS_DATA_FILE", "./data/players_data.json")
+        self.player_manager = PlayersDataManager(self.players_data_file, self.logger, save_interval=300)
+        self.line_processor = LogLineProcessor(self.connected_players, self.player_manager, None,
+                                               self.mediator, self.logger)
+        # ---
+
         self.tasks = []
-        self.pending_steam_id = None
 
         # DDoS Protection
         ddos_config = self.config.get("DDOS", {})
@@ -51,12 +45,14 @@ class LogParser(LoggerMixin):
             log_callback=self.logger.debug,
             config_blocked_ips_file=ddos_config.get("BLOCKED_IPS_FILE", "./data/blocked_ips.json")
         )
+        # Установим ddos_protection в line_processor
+        self.line_processor.ddos_protection = self.ddos_protection
 
         loop = asyncio.get_event_loop()
         self.ddos_protection.start(loop)
 
         # Загружаем данные игроков
-        self._load_players_data()
+        self.player_manager.load()
 
         # Инициализируем подключение серверов: log_file -> server_id
         self.log_file_to_server_id = self._build_log_file_mapping()
@@ -73,33 +69,7 @@ class LogParser(LoggerMixin):
                 mapping[os.path.normpath(log_file)] = server_id
         return mapping
 
-    def _load_players_data(self):
-        """Загружает данные всех игроков из JSON-файла"""
-        if os.path.exists(self.players_data_file):
-            try:
-                with open(self.players_data_file, "r", encoding="utf-8") as f:
-                    data = json.load(f)
-                valid_data = {
-                    k: v for k, v in data.items()
-                    if isinstance(v, dict) and "name" in v
-                }
-                self.players_data = valid_data
-                self.logger.debug(f"Загружено {len(self.players_data)} игроков из {self.players_data_file}")
-            except (json.JSONDecodeError, OSError) as e:
-                self.logger.error(f"Ошибка загрузки players_data.json: {e}")
-        else:
-            os.makedirs(os.path.dirname(self.players_data_file), exist_ok=True)
-            self.players_data = {}
-            self.logger.debug(f"Файл {self.players_data_file} не найден. Создан пустой словарь.")
-
-    def _save_players_data(self):
-        """Сохраняет данные игроков в файл"""
-        try:
-            with open(self.players_data_file, "w", encoding="utf-8") as f:
-                json.dump(self.players_data, f, indent=4, ensure_ascii=False)
-            self.logger.debug("Данные игроков сохранены")
-        except OSError as e:
-            self.logger.error(f"Ошибка сохранения players_data.json: {e}")
+    # Удаляем старые методы _load_players_data и _save_players_data
 
     def get_configured_log_files(self):
         servers_config = self.config.get("SERVERS", {})
@@ -122,7 +92,7 @@ class LogParser(LoggerMixin):
             self.logger.warning("Не найдены пути к лог-файлам в конфиге.")
             return
 
-        self.logger.debug(f"Парсинг {len(self.log_files)} лог-файлов: {self.log_files}")
+        self.logger.debug(f"Парсинг {len(self.log_files)} лог-файлам: {self.log_files}")
 
         if self.mediator:
             self.mediator.register_handler(GetPlayerCountQuery, self.get_connected_players)
@@ -175,7 +145,11 @@ class LogParser(LoggerMixin):
                 if self.shutdown_event.is_set():
                     self.logger.debug(f"LogParser: Получен сигнал остановки, прерываю парсинг истории {log_file_path}.")
                     return
-                await self._process_line(line.strip(), log_file_path, is_history=True)
+                # Используем line_processor
+                norm_path = os.path.normpath(log_file_path)
+                server_id = self.log_file_to_server_id.get(norm_path)
+                if server_id:
+                    await self.line_processor.process_line(line.strip(), server_id, is_history=True)
         except Exception as e:
             self.logger.error(f"Ошибка при парсинге истории {log_file_path}: {e}")
 
@@ -211,136 +185,17 @@ class LogParser(LoggerMixin):
                     # Проверяем сигнал остановки при обработке каждой новой строки
                     if self.shutdown_event.is_set():
                         self.logger.debug(f"LogParser: Получен сигнал остановки, прерываю обработку строк {file_path}.")
-                        return # Выходим из handle_file_change
-                    await self._process_line(line.strip(), file_path)
+                        return  # Выходим из handle_file_change
+                    # Используем line_processor
+                    norm_path = os.path.normpath(file_path)
+                    server_id = self.log_file_to_server_id.get(norm_path)
+                    if server_id:
+                        await self.line_processor.process_line(line.strip(), server_id)
             except Exception as e:
                 self.logger.error(f"Ошибка при обработке файла {file_path}: {e}")
 
         loop = asyncio.get_event_loop()
-        # Передаем shutdown_event в watch_directory, если он может его использовать для остановки
-        # Если watch_directory не поддерживает событие остановки, нам нужно внести изменения и туда
-        # Пока что просто вызываем его
         await watch_directory(os.path.dirname(log_file_path), handle_file_change, loop)
-
-    async def _process_line(self, line, log_file_path, is_history=False):
-        if not line:
-            return
-
-        # Нормализуем путь
-        norm_path = os.path.normpath(log_file_path)
-        server_id = self.log_file_to_server_id.get(norm_path)
-        if not server_id:
-            self.logger.warning(f"Неизвестный файл лога, не привязан к server_id: {log_file_path}")
-            # Можно пропустить или использовать 'unknown'
-            return
-
-        # 0. Сначала: проверка, не является ли строка "Join succeeded" и есть ли ожидание ID (на сервере)
-        join_match = JOIN_PATTERN_SERVER.search(line)
-        if self.pending_steam_id and join_match:
-            steam_id = self.pending_steam_id
-            player_name = join_match.group(1)
-
-            self.logger.debug(f"Сопоставлено: SteamID {steam_id} -> Nick {player_name} на сервере {server_id}")
-
-            # Инициализируем сервер, если нужно
-            if server_id not in self.connected_players:
-                self.connected_players[server_id] = {}
-
-            existing_player = self.connected_players[server_id].get(steam_id)
-
-            if not existing_player:
-                # Обновляем/сохраняем в players_data
-                current_name = self.players_data.get(steam_id, {}).get("name")
-                if not current_name or current_name != player_name:
-                    self.players_data[steam_id] = {"name": player_name}
-                    self._save_players_data()
-
-                # Добавляем в онлайн
-                self.connected_players[server_id][steam_id] = {
-                    "name": player_name,
-                    "log_file": log_file_path,
-                    "login_time": datetime.now().isoformat()
-                }
-                self.logger.info(f"Игрок подключился: {player_name} (SteamID: {steam_id}) к серверу {server_id}")
-
-            elif existing_player["name"].startswith("Unknown_"):
-                old_name = existing_player["name"]
-                existing_player["name"] = player_name
-                self.players_data[steam_id] = {"name": player_name}
-                self._save_players_data()
-                self.logger.debug(f"Обновлено имя игрока {steam_id}: {old_name} → {player_name}")
-                self.logger.info(f"Игрок теперь известен: {player_name} (SteamID: {steam_id})")
-
-            self.pending_steam_id = None
-            return
-
-        # 1. DDoS Detection (остаётся)
-        if is_history:
-            ip_match = IP_TIMESTAMP_PATTERN.search(line)
-            if ip_match:
-                timestamp_str, ip = ip_match.groups()
-                if not self.ddos_protection.is_blocked(ip):
-                    self.ddos_protection.add_request(ip, timestamp_str)
-
-        # 2. PostLogin — ожидание ника
-        post_login_match = LOGIN_PATTERN_SERVER.search(line)
-        if post_login_match:
-            steam_id = post_login_match.group(1)
-            self.pending_steam_id = steam_id
-            self.logger.debug(f"Обнаружен SteamID {steam_id}, ожидаем ник на сервере {server_id}")
-            return
-
-        # 3. Основной вход
-        login_match = UNIFIED_LOGIN_PATTERN.search(line)
-        if login_match:
-            steam_id = login_match.group(1) or login_match.group(3)
-            parsed_name = login_match.group(2)
-
-            if not steam_id:
-                return
-
-            # Инициализируем сервер
-            if server_id not in self.connected_players:
-                self.connected_players[server_id] = {}
-
-            # Проверяем, есть ли уже на этом сервере
-            if steam_id in self.connected_players[server_id]:
-                self.logger.debug(f"Игрок {steam_id} уже в сети на сервере {server_id}. Пропускаем.")
-                return
-
-            current_entry = self.players_data.get(steam_id)
-            if parsed_name:
-                if not current_entry or current_entry.get("name") != parsed_name:
-                    self.players_data[steam_id] = {"name": parsed_name}
-                    self._save_players_data()
-                final_name = parsed_name
-            else:
-                final_name = current_entry["name"] if current_entry else f"Unknown_{steam_id}"
-
-            if steam_id not in self.players_data:
-                self.players_data[steam_id] = {"name": final_name}
-                self._save_players_data()
-
-            self.connected_players[server_id][steam_id] = {
-                "name": final_name,
-                "log_file": log_file_path,
-                "login_time": datetime.now().isoformat()
-            }
-            self.logger.info(f"Игрок подключился: {final_name} (SteamID: {steam_id}) к серверу {server_id}")
-            return
-
-        # 4. Выход
-        logout_match = LOGOUT_PATTERN_LOBBY.search(line) or LOGOUT_PATTERN_SERVER.search(line)
-        if logout_match:
-            steam_id = logout_match.group(1).strip()
-
-            if server_id in self.connected_players and steam_id in self.connected_players[server_id]:
-                player_name = self.connected_players[server_id][steam_id]["name"]
-                del self.connected_players[server_id][steam_id]
-                self.logger.info(f"Игрок отключился: {player_name} (SteamID: {steam_id}) с сервера {server_id}")
-            else:
-                self.logger.debug(f"Отключение неотслеживаемого игрока: {steam_id} с сервера {server_id}")
-            return
 
     def get_connected_players(self, query=None):
         """
@@ -349,12 +204,11 @@ class LogParser(LoggerMixin):
         :return: Количество игроков
         """
         if query is None or not hasattr(query, "server_id"):
-            # Если нет server_id — возвращаем общее количество
-            total = sum(len(players) for players in self.connected_players.values())
-            return total
-
+            # Если нет server_id — возвращаем пустой словарь
+            self.logger.error("Если нет server_id")
+            return {}
         server_id = query.server_id
-        return len(self.connected_players.get(server_id, {}))
+        return self.connected_players.get(server_id, {})
 
     @property
     def player_count(self):
@@ -372,5 +226,5 @@ class LogParser(LoggerMixin):
             await asyncio.gather(*self.tasks, return_exceptions=True)
 
         if hasattr(self, 'ddos_protection'):
-            self.ddos_protection.stop()  # Останавливает фоновую задачу
+            self.ddos_protection.stop()
         self.logger.info("LogParser остановлен.")

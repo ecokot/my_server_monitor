@@ -12,7 +12,7 @@ async def info_query(players_data, game_version, server_name, game_port):
     packed_game_id = struct.pack('<Q', game_id)  # Game ID (uint64, little-endian)
     keywords = (
             b'BUILDID:0,OWNINGID:90263762545778710,OWNINGNAME:' + server_name.encode('utf-8') + b',SESSIONFLAGS:552,'
-                                                                                                   b'MATCHTIMEOUT_f:120.000000,GameMode_s:SG\x00')
+            b'MATCHTIMEOUT_f:120.000000,GameMode_s:SG\x00')
     response = (
             b'\xFF\xFF\xFF\xFF' +  # Префикс ответа
             b'I' +  # Тип ответа (A2S_INFO)
