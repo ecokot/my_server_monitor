@@ -16,6 +16,7 @@ class LogParser:
     """
 
     def __init__(self, mediator=None, config=None, logger=None, shutdown_event: asyncio.Event = None):
+        self.log_files = None
         self.mediator = mediator
         self.config = config or (mediator.config if mediator else None)
         self.logger = logger or (mediator.logger if mediator else None)
@@ -27,14 +28,10 @@ class LogParser:
         self.shutdown_event = shutdown_event
 
         self.connected_players = {}
-
-        # --- Выносим логику ---
         self.players_data_file = self.config.get("PLAYERS_DATA_FILE", "./data/players_data.json")
         self.player_manager = PlayersDataManager(self.players_data_file, self.logger, save_interval=300)
         self.line_processor = LogLineProcessor(self.connected_players, self.player_manager, None,
                                                self.mediator, self.logger)
-        # ---
-
         self.tasks = []
 
         # DDoS Protection
@@ -69,8 +66,6 @@ class LogParser:
                 mapping[os.path.normpath(log_file)] = server_id
         return mapping
 
-    # Удаляем старые методы _load_players_data и _save_players_data
-
     def get_configured_log_files(self):
         servers_config = self.config.get("SERVERS", {})
         log_files = []
@@ -82,7 +77,6 @@ class LogParser:
         return log_files
 
     async def start_parsing(self):
-        # Проверяем сигнал остановки перед началом
         if self.shutdown_event.is_set():
             self.logger.info("LogParser: Получен сигнал остановки перед запуском.")
             return
@@ -92,34 +86,35 @@ class LogParser:
             self.logger.warning("Не найдены пути к лог-файлам в конфиге.")
             return
 
-        self.logger.debug(f"Парсинг {len(self.log_files)} лог-файлам: {self.log_files}")
+        self.logger.debug(f"Парсинг логов: {self.log_files}")
 
         if self.mediator:
             self.mediator.register_handler(GetPlayerCountQuery, self.get_connected_players)
 
         try:
             for log_file in self.log_files:
-                # Проверяем сигнал остановки перед созданием задачи
                 if self.shutdown_event.is_set():
                     self.logger.info("LogParser: Получен сигнал остановки, прерываю создание задач.")
                     break
                 task = asyncio.create_task(self._parse_single_log(log_file))
                 self.tasks.append(task)
 
-            # Если задачи были созданы, ждем их завершения или сигнала остановки
             if self.tasks:
+                # Основное ожидание всех задач
                 await asyncio.gather(*self.tasks, return_exceptions=True)
+
         except asyncio.CancelledError:
             self.logger.info("LogParser.start_parsing: Задача была отменена.")
-            # Отменяем все созданные задачи
+            # Отменяем подзадачи
             for task in self.tasks:
                 if not task.done():
                     task.cancel()
-            # Ждем завершения отмененных задач
+            # Дожидаемся их завершения
             if self.tasks:
                 await asyncio.gather(*self.tasks, return_exceptions=True)
-            # Поднимаем исключение дальше, чтобы задача в MainApp тоже завершилась
-            raise
+            raise  # Поднимаем CancelledError дальше
+        finally:
+            self.logger.debug("LogParser.start_parsing: Завершение метода парсинга.")
 
     async def _parse_single_log(self, log_file_path):
         # Проверяем сигнал остановки перед началом парсинга файла
@@ -145,7 +140,6 @@ class LogParser:
                 if self.shutdown_event.is_set():
                     self.logger.debug(f"LogParser: Получен сигнал остановки, прерываю парсинг истории {log_file_path}.")
                     return
-                # Используем line_processor
                 norm_path = os.path.normpath(log_file_path)
                 server_id = self.log_file_to_server_id.get(norm_path)
                 if server_id:
@@ -186,7 +180,6 @@ class LogParser:
                     if self.shutdown_event.is_set():
                         self.logger.debug(f"LogParser: Получен сигнал остановки, прерываю обработку строк {file_path}.")
                         return  # Выходим из handle_file_change
-                    # Используем line_processor
                     norm_path = os.path.normpath(file_path)
                     server_id = self.log_file_to_server_id.get(norm_path)
                     if server_id:
@@ -199,13 +192,10 @@ class LogParser:
 
     def get_connected_players(self, query=None):
         """
-        Обработчик GetPlayerCountQuery.
-        :param query: Объект с .server_id или None
-        :return: Количество игроков
+        Обработчик запроса на получение списка подключенных игроков.
         """
         if query is None or not hasattr(query, "server_id"):
-            # Если нет server_id — возвращаем пустой словарь
-            self.logger.error("Если нет server_id")
+            self.logger.error("Нет server_id")
             return {}
         server_id = query.server_id
         return self.connected_players.get(server_id, {})

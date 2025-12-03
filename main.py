@@ -19,7 +19,7 @@ class MainApp(LoggerMixin):
         self.shutdown_event = asyncio.Event()
 
     async def run(self):
-        self.logger.info("Starting application...")
+        self.logger.info("Запуск ...")
 
         config = Config()
         mediator = Mediator(config)
@@ -50,7 +50,6 @@ class MainApp(LoggerMixin):
             await asyncio.sleep(5)
         if not self.shutdown_event.is_set():
             try:
-                mediator.subscribe(PlayersChangedEvent, self.query_server.handle_players_changed_event)
                 player_data = mediator.request(GetPlayerCountQuery(server_id=target_server_id))
 
                 self.logger.info(f"Connected players on server {target_server_id}: {len(player_data)}")
@@ -74,6 +73,7 @@ class MainApp(LoggerMixin):
 
         await self.log_parser.shutdown()
         self.running = False
+        await asyncio.sleep(0.5)
         self.logger.info("Application shutdown complete.")
 
     async def shutdown(self):

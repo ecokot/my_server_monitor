@@ -811,3 +811,805 @@
 [2025-12-03 20:26:32,721][INFO] - Mediator - LogParser остановлен.
 [2025-12-03 20:26:32,721][INFO] - MainApp - Application shutdown complete.
 [2025-12-03 20:26:32,721][DEBUG] - Mediator - [DDOSProtection] INFO: Фоновая задача DDOSProtection остановлена.
+[2025-12-03 20:37:00,160][INFO] - MainApp - Запуск...
+[2025-12-03 20:37:00,161][DEBUG] - Mediator - Загружено 8 игроков из ./data/players_data.json
+[2025-12-03 20:37:00,161][INFO] - MainApp - Запуск QueryServer для сервера ID: 1005
+[2025-12-03 20:37:00,161][DEBUG] - Mediator - Подписываем обработчик get_connected_players на событие GetPlayerCountQuery
+[2025-12-03 20:37:00,161][DEBUG] - Mediator - Парсинг логов: ['D:/1/24722.log']
+[2025-12-03 20:37:00,161][DEBUG] - Mediator - Регистрируем обработчик get_connected_players для запроса GetPlayerCountQuery
+[2025-12-03 20:37:00,161][INFO] - MainApp - QueryServer 1005: Запуск на 192.168.1.10:12888...
+[2025-12-03 20:37:00,162][DEBUG] - Mediator - Парсинг файла: D:/1/24722.log
+[2025-12-03 20:37:00,177][DEBUG] - Mediator - Обнаружен SteamID 76561198039198830, ожидаем ник на сервере 1005
+[2025-12-03 20:37:00,177][DEBUG] - Mediator - Сопоставлено: SteamID 76561198039198830 -> Nick 320 на сервере 1005
+[2025-12-03 20:37:00,177][INFO] - Mediator - Игрок подключился: 320 (SteamID: 76561198039198830) к серверу 1005
+[2025-12-03 20:37:00,178][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:37:00,178][INFO] - MainApp - QueryServer 1005: Слушаю на 192.168.1.10:12888
+[2025-12-03 20:37:00,178][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:37:00,178][DEBUG] - Mediator - Обнаружен SteamID 76561198346036900, ожидаем ник на сервере 1005
+[2025-12-03 20:37:00,179][DEBUG] - Mediator - Сопоставлено: SteamID 76561198346036900 -> Nick Sergo22rus на сервере 1005
+[2025-12-03 20:37:00,179][INFO] - Mediator - Игрок подключился: Sergo22rus (SteamID: 76561198346036900) к серверу 1005
+[2025-12-03 20:37:00,179][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:37:00,179][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:37:00,181][DEBUG] - Mediator - Обнаружен SteamID 76561198084546219, ожидаем ник на сервере 1005
+[2025-12-03 20:37:00,181][DEBUG] - Mediator - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter на сервере 1005
+[2025-12-03 20:37:00,182][INFO] - Mediator - Игрок подключился: Ambidexter (SteamID: 76561198084546219) к серверу 1005
+[2025-12-03 20:37:00,182][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:37:00,182][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:37:00,182][INFO] - Mediator - Игрок отключился: Ambidexter (SteamID: 76561198084546219) с сервера 1005
+[2025-12-03 20:37:00,182][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:37:00,183][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:37:00,184][DEBUG] - Mediator - Обнаружен SteamID 76561198151453668, ожидаем ник на сервере 1005
+[2025-12-03 20:37:00,184][DEBUG] - Mediator - Сопоставлено: SteamID 76561198151453668 -> Nick DIABLERO на сервере 1005
+[2025-12-03 20:37:00,184][INFO] - Mediator - Игрок подключился: DIABLERO (SteamID: 76561198151453668) к серверу 1005
+[2025-12-03 20:37:00,184][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:37:00,184][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:37:00,185][INFO] - Mediator - Игрок отключился: DIABLERO (SteamID: 76561198151453668) с сервера 1005
+[2025-12-03 20:37:00,185][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:37:00,187][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:37:00,187][DEBUG] - Mediator - Обнаружен SteamID 76561198448653226, ожидаем ник на сервере 1005
+[2025-12-03 20:37:00,187][DEBUG] - Mediator - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik на сервере 1005
+[2025-12-03 20:37:00,187][INFO] - Mediator - Игрок подключился: Pazik (SteamID: 76561198448653226) к серверу 1005
+[2025-12-03 20:37:00,187][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:37:00,187][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:37:00,187][INFO] - Mediator - Игрок отключился: Sergo22rus (SteamID: 76561198346036900) с сервера 1005
+[2025-12-03 20:37:00,187][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:37:00,187][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:37:00,188][INFO] - Mediator - Игрок отключился: Pazik (SteamID: 76561198448653226) с сервера 1005
+[2025-12-03 20:37:00,188][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:37:00,188][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:37:00,188][DEBUG] - Mediator - Обнаружен SteamID 76561198084546219, ожидаем ник на сервере 1005
+[2025-12-03 20:37:00,188][DEBUG] - Mediator - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter на сервере 1005
+[2025-12-03 20:37:00,189][INFO] - Mediator - Игрок подключился: Ambidexter (SteamID: 76561198084546219) к серверу 1005
+[2025-12-03 20:37:00,189][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:37:00,189][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:37:00,190][DEBUG] - Mediator - Обнаружен SteamID 76561198078372219, ожидаем ник на сервере 1005
+[2025-12-03 20:37:00,190][DEBUG] - Mediator - Сопоставлено: SteamID 76561198078372219 -> Nick Gangsta на сервере 1005
+[2025-12-03 20:37:00,191][INFO] - Mediator - Игрок подключился: Gangsta (SteamID: 76561198078372219) к серверу 1005
+[2025-12-03 20:37:00,191][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:37:00,191][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:37:00,191][DEBUG] - Mediator - Обнаружен SteamID 76561198448653226, ожидаем ник на сервере 1005
+[2025-12-03 20:37:00,191][DEBUG] - Mediator - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik на сервере 1005
+[2025-12-03 20:37:00,191][INFO] - Mediator - Игрок подключился: Pazik (SteamID: 76561198448653226) к серверу 1005
+[2025-12-03 20:37:00,191][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:37:00,192][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:37:00,192][INFO] - Mediator - Игрок отключился: Ambidexter (SteamID: 76561198084546219) с сервера 1005
+[2025-12-03 20:37:00,192][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:37:00,192][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:37:00,192][INFO] - Mediator - Игрок отключился: Pazik (SteamID: 76561198448653226) с сервера 1005
+[2025-12-03 20:37:00,192][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:37:00,193][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:37:00,193][DEBUG] - Mediator - Обнаружен SteamID 76561198019873330, ожидаем ник на сервере 1005
+[2025-12-03 20:37:00,193][DEBUG] - Mediator - Сопоставлено: SteamID 76561198019873330 -> Nick scar на сервере 1005
+[2025-12-03 20:37:00,193][INFO] - Mediator - Игрок подключился: scar (SteamID: 76561198019873330) к серверу 1005
+[2025-12-03 20:37:00,194][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:37:00,194][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:37:00,194][DEBUG] - Mediator - Обнаружен SteamID 76561198040199345, ожидаем ник на сервере 1005
+[2025-12-03 20:37:00,194][DEBUG] - Mediator - Сопоставлено: SteamID 76561198040199345 -> Nick Godyn на сервере 1005
+[2025-12-03 20:37:00,194][INFO] - Mediator - Игрок подключился: Godyn (SteamID: 76561198040199345) к серверу 1005
+[2025-12-03 20:37:00,194][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:37:00,194][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:37:00,196][DEBUG] - Mediator - Обнаружен SteamID 76561198084546219, ожидаем ник на сервере 1005
+[2025-12-03 20:37:00,196][DEBUG] - Mediator - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter на сервере 1005
+[2025-12-03 20:37:00,196][INFO] - Mediator - Игрок подключился: Ambidexter (SteamID: 76561198084546219) к серверу 1005
+[2025-12-03 20:37:00,196][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:37:00,196][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:37:00,197][DEBUG] - Mediator - Обнаружен SteamID 76561198448653226, ожидаем ник на сервере 1005
+[2025-12-03 20:37:00,197][DEBUG] - Mediator - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik на сервере 1005
+[2025-12-03 20:37:00,197][INFO] - Mediator - Игрок подключился: Pazik (SteamID: 76561198448653226) к серверу 1005
+[2025-12-03 20:37:00,197][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:37:00,197][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:37:00,200][INFO] - Mediator - Игрок отключился: scar (SteamID: 76561198019873330) с сервера 1005
+[2025-12-03 20:37:00,200][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:37:00,200][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:37:00,200][INFO] - Mediator - Игрок отключился: Pazik (SteamID: 76561198448653226) с сервера 1005
+[2025-12-03 20:37:00,200][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:37:00,200][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:37:00,201][INFO] - Mediator - Игрок отключился: Ambidexter (SteamID: 76561198084546219) с сервера 1005
+[2025-12-03 20:37:00,201][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:37:00,201][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:37:00,203][DEBUG] - Mediator - Offset файла D:/1/24722.log: 1127698
+[2025-12-03 20:37:05,167][DEBUG] - Mediator - Подписываем обработчик handle_players_changed_event на событие PlayersChangedEvent
+[2025-12-03 20:37:05,167][DEBUG] - Mediator - Передаем запрос обработчику GetPlayerCountQuery
+[2025-12-03 20:37:05,167][INFO] - MainApp - Connected players on server 1005: 3
+[2025-12-03 20:37:20,616][INFO] - MainApp - Received shutdown signal 2. Shutting down...
+[2025-12-03 20:37:20,616][INFO] - MainApp - Received shutdown signal. Cancelling tasks...
+[2025-12-03 20:37:20,630][INFO] - MainApp - QueryServer 1005: Задача отменена, завершаю работу.
+[2025-12-03 20:37:20,630][INFO] - MainApp - QueryServer 1005: Соединение asyncio_dgram закрыто.
+[2025-12-03 20:37:20,630][INFO] - Mediator - LogParser.start_parsing: Задача была отменена.
+[2025-12-03 20:37:20,630][INFO] - MainApp - LogParser and QueryServer tasks were cancelled.
+[2025-12-03 20:37:20,630][INFO] - Mediator - Остановка LogParser...
+[2025-12-03 20:37:20,630][DEBUG] - Mediator - DDOSProtection остановлен.
+[2025-12-03 20:37:20,630][INFO] - Mediator - LogParser остановлен.
+[2025-12-03 20:37:20,630][INFO] - MainApp - Application shutdown complete.
+[2025-12-03 20:37:20,632][DEBUG] - Mediator - [DDOSProtection] INFO: Фоновая задача DDOSProtection остановлена.
+[2025-12-03 20:38:15,976][INFO] - MainApp - Запуск...
+[2025-12-03 20:38:15,976][DEBUG] - Mediator - Загружено 8 игроков из ./data/players_data.json
+[2025-12-03 20:38:15,977][INFO] - MainApp - Запуск QueryServer для сервера ID: 1005
+[2025-12-03 20:38:15,977][DEBUG] - Mediator - Подписываем обработчик get_connected_players на событие GetPlayerCountQuery
+[2025-12-03 20:38:15,977][DEBUG] - Mediator - Парсинг логов: ['D:/1/24722.log']
+[2025-12-03 20:38:15,977][INFO] - MainApp - QueryServer 1005: Запуск на 192.168.1.10:12888...
+[2025-12-03 20:38:15,977][DEBUG] - Mediator - Парсинг файла: D:/1/24722.log
+[2025-12-03 20:38:15,994][DEBUG] - Mediator - Обнаружен SteamID 76561198039198830, ожидаем ник на сервере 1005
+[2025-12-03 20:38:15,994][DEBUG] - Mediator - Сопоставлено: SteamID 76561198039198830 -> Nick 320 на сервере 1005
+[2025-12-03 20:38:15,994][INFO] - Mediator - Игрок подключился: 320 (SteamID: 76561198039198830) к серверу 1005
+[2025-12-03 20:38:15,994][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:38:15,994][INFO] - MainApp - QueryServer 1005: Слушаю на 192.168.1.10:12888
+[2025-12-03 20:38:15,994][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:38:15,995][DEBUG] - Mediator - Обнаружен SteamID 76561198346036900, ожидаем ник на сервере 1005
+[2025-12-03 20:38:15,995][DEBUG] - Mediator - Сопоставлено: SteamID 76561198346036900 -> Nick Sergo22rus на сервере 1005
+[2025-12-03 20:38:15,995][INFO] - Mediator - Игрок подключился: Sergo22rus (SteamID: 76561198346036900) к серверу 1005
+[2025-12-03 20:38:15,995][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:38:15,995][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:38:15,998][DEBUG] - Mediator - Обнаружен SteamID 76561198084546219, ожидаем ник на сервере 1005
+[2025-12-03 20:38:15,998][DEBUG] - Mediator - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter на сервере 1005
+[2025-12-03 20:38:15,998][INFO] - Mediator - Игрок подключился: Ambidexter (SteamID: 76561198084546219) к серверу 1005
+[2025-12-03 20:38:15,998][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:38:15,998][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:38:15,998][INFO] - Mediator - Игрок отключился: Ambidexter (SteamID: 76561198084546219) с сервера 1005
+[2025-12-03 20:38:15,998][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:38:15,998][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:38:16,000][DEBUG] - Mediator - Обнаружен SteamID 76561198151453668, ожидаем ник на сервере 1005
+[2025-12-03 20:38:16,000][DEBUG] - Mediator - Сопоставлено: SteamID 76561198151453668 -> Nick DIABLERO на сервере 1005
+[2025-12-03 20:38:16,000][INFO] - Mediator - Игрок подключился: DIABLERO (SteamID: 76561198151453668) к серверу 1005
+[2025-12-03 20:38:16,000][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:38:16,000][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:38:16,002][INFO] - Mediator - Игрок отключился: DIABLERO (SteamID: 76561198151453668) с сервера 1005
+[2025-12-03 20:38:16,002][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:38:16,002][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:38:16,003][DEBUG] - Mediator - Обнаружен SteamID 76561198448653226, ожидаем ник на сервере 1005
+[2025-12-03 20:38:16,003][DEBUG] - Mediator - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik на сервере 1005
+[2025-12-03 20:38:16,003][INFO] - Mediator - Игрок подключился: Pazik (SteamID: 76561198448653226) к серверу 1005
+[2025-12-03 20:38:16,003][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:38:16,003][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:38:16,004][INFO] - Mediator - Игрок отключился: Sergo22rus (SteamID: 76561198346036900) с сервера 1005
+[2025-12-03 20:38:16,004][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:38:16,004][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:38:16,005][INFO] - Mediator - Игрок отключился: Pazik (SteamID: 76561198448653226) с сервера 1005
+[2025-12-03 20:38:16,005][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:38:16,005][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:38:16,005][DEBUG] - Mediator - Обнаружен SteamID 76561198084546219, ожидаем ник на сервере 1005
+[2025-12-03 20:38:16,005][DEBUG] - Mediator - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter на сервере 1005
+[2025-12-03 20:38:16,005][INFO] - Mediator - Игрок подключился: Ambidexter (SteamID: 76561198084546219) к серверу 1005
+[2025-12-03 20:38:16,005][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:38:16,005][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:38:16,007][DEBUG] - Mediator - Обнаружен SteamID 76561198078372219, ожидаем ник на сервере 1005
+[2025-12-03 20:38:16,007][DEBUG] - Mediator - Сопоставлено: SteamID 76561198078372219 -> Nick Gangsta на сервере 1005
+[2025-12-03 20:38:16,007][INFO] - Mediator - Игрок подключился: Gangsta (SteamID: 76561198078372219) к серверу 1005
+[2025-12-03 20:38:16,007][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:38:16,007][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:38:16,008][DEBUG] - Mediator - Обнаружен SteamID 76561198448653226, ожидаем ник на сервере 1005
+[2025-12-03 20:38:16,008][DEBUG] - Mediator - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik на сервере 1005
+[2025-12-03 20:38:16,008][INFO] - Mediator - Игрок подключился: Pazik (SteamID: 76561198448653226) к серверу 1005
+[2025-12-03 20:38:16,008][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:38:16,008][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:38:16,008][INFO] - Mediator - Игрок отключился: Ambidexter (SteamID: 76561198084546219) с сервера 1005
+[2025-12-03 20:38:16,008][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:38:16,008][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:38:16,009][INFO] - Mediator - Игрок отключился: Pazik (SteamID: 76561198448653226) с сервера 1005
+[2025-12-03 20:38:16,009][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:38:16,009][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:38:16,009][DEBUG] - Mediator - Обнаружен SteamID 76561198019873330, ожидаем ник на сервере 1005
+[2025-12-03 20:38:16,009][DEBUG] - Mediator - Сопоставлено: SteamID 76561198019873330 -> Nick scar на сервере 1005
+[2025-12-03 20:38:16,010][INFO] - Mediator - Игрок подключился: scar (SteamID: 76561198019873330) к серверу 1005
+[2025-12-03 20:38:16,010][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:38:16,010][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:38:16,010][DEBUG] - Mediator - Обнаружен SteamID 76561198040199345, ожидаем ник на сервере 1005
+[2025-12-03 20:38:16,010][DEBUG] - Mediator - Сопоставлено: SteamID 76561198040199345 -> Nick Godyn на сервере 1005
+[2025-12-03 20:38:16,010][INFO] - Mediator - Игрок подключился: Godyn (SteamID: 76561198040199345) к серверу 1005
+[2025-12-03 20:38:16,010][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:38:16,010][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:38:16,011][DEBUG] - Mediator - Обнаружен SteamID 76561198084546219, ожидаем ник на сервере 1005
+[2025-12-03 20:38:16,011][DEBUG] - Mediator - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter на сервере 1005
+[2025-12-03 20:38:16,011][INFO] - Mediator - Игрок подключился: Ambidexter (SteamID: 76561198084546219) к серверу 1005
+[2025-12-03 20:38:16,011][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:38:16,012][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:38:16,014][DEBUG] - Mediator - Обнаружен SteamID 76561198448653226, ожидаем ник на сервере 1005
+[2025-12-03 20:38:16,014][DEBUG] - Mediator - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik на сервере 1005
+[2025-12-03 20:38:16,014][INFO] - Mediator - Игрок подключился: Pazik (SteamID: 76561198448653226) к серверу 1005
+[2025-12-03 20:38:16,014][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:38:16,014][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:38:16,016][INFO] - Mediator - Игрок отключился: scar (SteamID: 76561198019873330) с сервера 1005
+[2025-12-03 20:38:16,016][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:38:16,016][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:38:16,016][INFO] - Mediator - Игрок отключился: Pazik (SteamID: 76561198448653226) с сервера 1005
+[2025-12-03 20:38:16,016][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:38:16,016][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:38:16,017][INFO] - Mediator - Игрок отключился: Ambidexter (SteamID: 76561198084546219) с сервера 1005
+[2025-12-03 20:38:16,017][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:38:16,017][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:38:16,020][DEBUG] - Mediator - Offset файла D:/1/24722.log: 1127698
+[2025-12-03 20:38:20,988][DEBUG] - Mediator - Подписываем обработчик handle_players_changed_event на событие PlayersChangedEvent
+[2025-12-03 20:38:20,988][ERROR] - Mediator - Нет обработчика для запроса GetPlayerCountQuery
+[2025-12-03 20:38:20,988][ERROR] - MainApp - Не удалось получить количество игроков: Нет подписки на этот запрос
+[2025-12-03 20:38:33,727][INFO] - MainApp - Received shutdown signal 2. Shutting down...
+[2025-12-03 20:38:33,727][INFO] - MainApp - Received shutdown signal. Cancelling tasks...
+[2025-12-03 20:38:33,728][INFO] - MainApp - QueryServer 1005: Задача отменена, завершаю работу.
+[2025-12-03 20:38:33,728][INFO] - MainApp - QueryServer 1005: Соединение asyncio_dgram закрыто.
+[2025-12-03 20:38:33,728][INFO] - Mediator - LogParser.start_parsing: Задача была отменена.
+[2025-12-03 20:38:33,728][INFO] - MainApp - LogParser and QueryServer tasks were cancelled.
+[2025-12-03 20:38:33,728][INFO] - Mediator - Остановка LogParser...
+[2025-12-03 20:38:33,728][DEBUG] - Mediator - DDOSProtection остановлен.
+[2025-12-03 20:38:33,729][INFO] - Mediator - LogParser остановлен.
+[2025-12-03 20:38:33,729][INFO] - MainApp - Application shutdown complete.
+[2025-12-03 20:38:33,729][DEBUG] - Mediator - [DDOSProtection] INFO: Фоновая задача DDOSProtection остановлена.
+[2025-12-03 20:44:39,345][INFO] - MainApp - Запуск ...
+[2025-12-03 20:44:39,346][DEBUG] - Mediator - Загружено 8 игроков из ./data/players_data.json
+[2025-12-03 20:44:39,347][INFO] - MainApp - Запуск QueryServer для сервера ID: 1005
+[2025-12-03 20:44:39,347][DEBUG] - Mediator - Подписываем обработчик get_connected_players на событие GetPlayerCountQuery
+[2025-12-03 20:44:39,347][DEBUG] - Mediator - Парсинг логов: ['D:/1/24722.log']
+[2025-12-03 20:44:39,347][DEBUG] - Mediator - Регистрируем обработчик get_connected_players для запроса GetPlayerCountQuery
+[2025-12-03 20:44:39,347][INFO] - MainApp - QueryServer 1005: Запуск на 192.168.1.10:12888...
+[2025-12-03 20:44:39,347][DEBUG] - Mediator - Парсинг файла: D:/1/24722.log
+[2025-12-03 20:44:39,366][DEBUG] - Mediator - Обнаружен SteamID 76561198039198830, ожидаем ник на сервере 1005
+[2025-12-03 20:44:39,366][DEBUG] - Mediator - Сопоставлено: SteamID 76561198039198830 -> Nick 320 на сервере 1005
+[2025-12-03 20:44:39,366][INFO] - Mediator - Игрок подключился: 320 (SteamID: 76561198039198830) к серверу 1005
+[2025-12-03 20:44:39,366][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:44:39,366][INFO] - MainApp - QueryServer 1005: Слушаю на 192.168.1.10:12888
+[2025-12-03 20:44:39,367][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:44:39,367][DEBUG] - Mediator - Обнаружен SteamID 76561198346036900, ожидаем ник на сервере 1005
+[2025-12-03 20:44:39,367][DEBUG] - Mediator - Сопоставлено: SteamID 76561198346036900 -> Nick Sergo22rus на сервере 1005
+[2025-12-03 20:44:39,367][INFO] - Mediator - Игрок подключился: Sergo22rus (SteamID: 76561198346036900) к серверу 1005
+[2025-12-03 20:44:39,367][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:44:39,368][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:44:39,370][DEBUG] - Mediator - Обнаружен SteamID 76561198084546219, ожидаем ник на сервере 1005
+[2025-12-03 20:44:39,370][DEBUG] - Mediator - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter на сервере 1005
+[2025-12-03 20:44:39,370][INFO] - Mediator - Игрок подключился: Ambidexter (SteamID: 76561198084546219) к серверу 1005
+[2025-12-03 20:44:39,370][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:44:39,370][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:44:39,372][INFO] - Mediator - Игрок отключился: Ambidexter (SteamID: 76561198084546219) с сервера 1005
+[2025-12-03 20:44:39,372][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:44:39,372][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:44:39,373][DEBUG] - Mediator - Обнаружен SteamID 76561198151453668, ожидаем ник на сервере 1005
+[2025-12-03 20:44:39,373][DEBUG] - Mediator - Сопоставлено: SteamID 76561198151453668 -> Nick DIABLERO на сервере 1005
+[2025-12-03 20:44:39,373][INFO] - Mediator - Игрок подключился: DIABLERO (SteamID: 76561198151453668) к серверу 1005
+[2025-12-03 20:44:39,373][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:44:39,373][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:44:39,375][INFO] - Mediator - Игрок отключился: DIABLERO (SteamID: 76561198151453668) с сервера 1005
+[2025-12-03 20:44:39,375][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:44:39,375][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:44:39,375][DEBUG] - Mediator - Обнаружен SteamID 76561198448653226, ожидаем ник на сервере 1005
+[2025-12-03 20:44:39,375][DEBUG] - Mediator - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik на сервере 1005
+[2025-12-03 20:44:39,375][INFO] - Mediator - Игрок подключился: Pazik (SteamID: 76561198448653226) к серверу 1005
+[2025-12-03 20:44:39,375][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:44:39,376][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:44:39,376][INFO] - Mediator - Игрок отключился: Sergo22rus (SteamID: 76561198346036900) с сервера 1005
+[2025-12-03 20:44:39,376][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:44:39,377][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:44:39,377][INFO] - Mediator - Игрок отключился: Pazik (SteamID: 76561198448653226) с сервера 1005
+[2025-12-03 20:44:39,379][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:44:39,379][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:44:39,379][DEBUG] - Mediator - Обнаружен SteamID 76561198084546219, ожидаем ник на сервере 1005
+[2025-12-03 20:44:39,379][DEBUG] - Mediator - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter на сервере 1005
+[2025-12-03 20:44:39,379][INFO] - Mediator - Игрок подключился: Ambidexter (SteamID: 76561198084546219) к серверу 1005
+[2025-12-03 20:44:39,379][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:44:39,379][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:44:39,381][DEBUG] - Mediator - Обнаружен SteamID 76561198078372219, ожидаем ник на сервере 1005
+[2025-12-03 20:44:39,381][DEBUG] - Mediator - Сопоставлено: SteamID 76561198078372219 -> Nick Gangsta на сервере 1005
+[2025-12-03 20:44:39,381][INFO] - Mediator - Игрок подключился: Gangsta (SteamID: 76561198078372219) к серверу 1005
+[2025-12-03 20:44:39,381][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:44:39,381][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:44:39,382][DEBUG] - Mediator - Обнаружен SteamID 76561198448653226, ожидаем ник на сервере 1005
+[2025-12-03 20:44:39,382][DEBUG] - Mediator - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik на сервере 1005
+[2025-12-03 20:44:39,382][INFO] - Mediator - Игрок подключился: Pazik (SteamID: 76561198448653226) к серверу 1005
+[2025-12-03 20:44:39,382][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:44:39,383][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:44:39,383][INFO] - Mediator - Игрок отключился: Ambidexter (SteamID: 76561198084546219) с сервера 1005
+[2025-12-03 20:44:39,383][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:44:39,383][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:44:39,383][INFO] - Mediator - Игрок отключился: Pazik (SteamID: 76561198448653226) с сервера 1005
+[2025-12-03 20:44:39,383][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:44:39,383][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:44:39,384][DEBUG] - Mediator - Обнаружен SteamID 76561198019873330, ожидаем ник на сервере 1005
+[2025-12-03 20:44:39,384][DEBUG] - Mediator - Сопоставлено: SteamID 76561198019873330 -> Nick scar на сервере 1005
+[2025-12-03 20:44:39,384][INFO] - Mediator - Игрок подключился: scar (SteamID: 76561198019873330) к серверу 1005
+[2025-12-03 20:44:39,384][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:44:39,384][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:44:39,385][DEBUG] - Mediator - Обнаружен SteamID 76561198040199345, ожидаем ник на сервере 1005
+[2025-12-03 20:44:39,385][DEBUG] - Mediator - Сопоставлено: SteamID 76561198040199345 -> Nick Godyn на сервере 1005
+[2025-12-03 20:44:39,385][INFO] - Mediator - Игрок подключился: Godyn (SteamID: 76561198040199345) к серверу 1005
+[2025-12-03 20:44:39,385][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:44:39,385][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:44:39,386][DEBUG] - Mediator - Обнаружен SteamID 76561198084546219, ожидаем ник на сервере 1005
+[2025-12-03 20:44:39,386][DEBUG] - Mediator - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter на сервере 1005
+[2025-12-03 20:44:39,386][INFO] - Mediator - Игрок подключился: Ambidexter (SteamID: 76561198084546219) к серверу 1005
+[2025-12-03 20:44:39,386][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:44:39,386][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:44:39,388][DEBUG] - Mediator - Обнаружен SteamID 76561198448653226, ожидаем ник на сервере 1005
+[2025-12-03 20:44:39,388][DEBUG] - Mediator - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik на сервере 1005
+[2025-12-03 20:44:39,388][INFO] - Mediator - Игрок подключился: Pazik (SteamID: 76561198448653226) к серверу 1005
+[2025-12-03 20:44:39,388][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:44:39,388][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:44:39,391][INFO] - Mediator - Игрок отключился: scar (SteamID: 76561198019873330) с сервера 1005
+[2025-12-03 20:44:39,391][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:44:39,391][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:44:39,392][INFO] - Mediator - Игрок отключился: Pazik (SteamID: 76561198448653226) с сервера 1005
+[2025-12-03 20:44:39,392][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:44:39,392][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:44:39,393][INFO] - Mediator - Игрок отключился: Ambidexter (SteamID: 76561198084546219) с сервера 1005
+[2025-12-03 20:44:39,393][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:44:39,393][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:44:39,395][DEBUG] - Mediator - Offset файла D:/1/24722.log: 1127698
+[2025-12-03 20:44:44,353][DEBUG] - Mediator - Подписываем обработчик handle_players_changed_event на событие PlayersChangedEvent
+[2025-12-03 20:44:44,353][DEBUG] - Mediator - Передаем запрос обработчику GetPlayerCountQuery
+[2025-12-03 20:44:44,353][INFO] - MainApp - Connected players on server 1005: 3
+[2025-12-03 20:44:45,236][INFO] - MainApp - Received shutdown signal 2. Shutting down...
+[2025-12-03 20:44:45,236][INFO] - MainApp - Received shutdown signal. Cancelling tasks...
+[2025-12-03 20:44:45,257][INFO] - MainApp - QueryServer 1005: Задача отменена, завершаю работу.
+[2025-12-03 20:44:45,257][INFO] - MainApp - QueryServer 1005: Соединение asyncio_dgram закрыто.
+[2025-12-03 20:44:45,257][INFO] - Mediator - LogParser.start_parsing: Задача была отменена.
+[2025-12-03 20:44:45,258][INFO] - MainApp - LogParser and QueryServer tasks were cancelled.
+[2025-12-03 20:44:45,258][INFO] - Mediator - Остановка LogParser...
+[2025-12-03 20:44:45,258][DEBUG] - Mediator - DDOSProtection остановлен.
+[2025-12-03 20:44:45,258][INFO] - Mediator - LogParser остановлен.
+[2025-12-03 20:44:45,258][INFO] - MainApp - Application shutdown complete.
+[2025-12-03 20:44:45,258][DEBUG] - Mediator - [DDOSProtection] INFO: Фоновая задача DDOSProtection остановлена.
+[2025-12-03 20:45:31,440][INFO] - MainApp - Запуск ...
+[2025-12-03 20:45:31,441][DEBUG] - Mediator - Загружено 8 игроков из ./data/players_data.json
+[2025-12-03 20:45:31,441][INFO] - MainApp - Запуск QueryServer для сервера ID: 1005
+[2025-12-03 20:45:31,441][DEBUG] - Mediator - Подписываем обработчик get_connected_players на событие GetPlayerCountQuery
+[2025-12-03 20:45:31,441][DEBUG] - Mediator - Парсинг логов: ['D:/1/24722.log']
+[2025-12-03 20:45:31,442][DEBUG] - Mediator - Регистрируем обработчик get_connected_players для запроса GetPlayerCountQuery
+[2025-12-03 20:45:31,442][INFO] - MainApp - QueryServer 1005: Запуск на 192.168.1.10:12888...
+[2025-12-03 20:45:31,442][DEBUG] - Mediator - Парсинг файла: D:/1/24722.log
+[2025-12-03 20:45:31,459][DEBUG] - Mediator - Обнаружен SteamID 76561198039198830, ожидаем ник на сервере 1005
+[2025-12-03 20:45:31,459][DEBUG] - Mediator - Сопоставлено: SteamID 76561198039198830 -> Nick 320 на сервере 1005
+[2025-12-03 20:45:31,459][INFO] - Mediator - Игрок подключился: 320 (SteamID: 76561198039198830) к серверу 1005
+[2025-12-03 20:45:31,459][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:45:31,460][INFO] - MainApp - QueryServer 1005: Слушаю на 192.168.1.10:12888
+[2025-12-03 20:45:31,460][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:45:31,460][DEBUG] - Mediator - Обнаружен SteamID 76561198346036900, ожидаем ник на сервере 1005
+[2025-12-03 20:45:31,460][DEBUG] - Mediator - Сопоставлено: SteamID 76561198346036900 -> Nick Sergo22rus на сервере 1005
+[2025-12-03 20:45:31,462][INFO] - Mediator - Игрок подключился: Sergo22rus (SteamID: 76561198346036900) к серверу 1005
+[2025-12-03 20:45:31,462][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:45:31,462][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:45:31,464][DEBUG] - Mediator - Обнаружен SteamID 76561198084546219, ожидаем ник на сервере 1005
+[2025-12-03 20:45:31,464][DEBUG] - Mediator - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter на сервере 1005
+[2025-12-03 20:45:31,464][INFO] - Mediator - Игрок подключился: Ambidexter (SteamID: 76561198084546219) к серверу 1005
+[2025-12-03 20:45:31,464][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:45:31,464][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:45:31,465][INFO] - Mediator - Игрок отключился: Ambidexter (SteamID: 76561198084546219) с сервера 1005
+[2025-12-03 20:45:31,465][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:45:31,465][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:45:31,466][DEBUG] - Mediator - Обнаружен SteamID 76561198151453668, ожидаем ник на сервере 1005
+[2025-12-03 20:45:31,466][DEBUG] - Mediator - Сопоставлено: SteamID 76561198151453668 -> Nick DIABLERO на сервере 1005
+[2025-12-03 20:45:31,467][INFO] - Mediator - Игрок подключился: DIABLERO (SteamID: 76561198151453668) к серверу 1005
+[2025-12-03 20:45:31,467][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:45:31,467][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:45:31,468][INFO] - Mediator - Игрок отключился: DIABLERO (SteamID: 76561198151453668) с сервера 1005
+[2025-12-03 20:45:31,468][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:45:31,468][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:45:31,468][DEBUG] - Mediator - Обнаружен SteamID 76561198448653226, ожидаем ник на сервере 1005
+[2025-12-03 20:45:31,468][DEBUG] - Mediator - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik на сервере 1005
+[2025-12-03 20:45:31,468][INFO] - Mediator - Игрок подключился: Pazik (SteamID: 76561198448653226) к серверу 1005
+[2025-12-03 20:45:31,469][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:45:31,469][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:45:31,469][INFO] - Mediator - Игрок отключился: Sergo22rus (SteamID: 76561198346036900) с сервера 1005
+[2025-12-03 20:45:31,469][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:45:31,469][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:45:31,470][INFO] - Mediator - Игрок отключился: Pazik (SteamID: 76561198448653226) с сервера 1005
+[2025-12-03 20:45:31,470][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:45:31,471][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:45:31,471][DEBUG] - Mediator - Обнаружен SteamID 76561198084546219, ожидаем ник на сервере 1005
+[2025-12-03 20:45:31,471][DEBUG] - Mediator - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter на сервере 1005
+[2025-12-03 20:45:31,471][INFO] - Mediator - Игрок подключился: Ambidexter (SteamID: 76561198084546219) к серверу 1005
+[2025-12-03 20:45:31,471][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:45:31,471][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:45:31,474][DEBUG] - Mediator - Обнаружен SteamID 76561198078372219, ожидаем ник на сервере 1005
+[2025-12-03 20:45:31,474][DEBUG] - Mediator - Сопоставлено: SteamID 76561198078372219 -> Nick Gangsta на сервере 1005
+[2025-12-03 20:45:31,474][INFO] - Mediator - Игрок подключился: Gangsta (SteamID: 76561198078372219) к серверу 1005
+[2025-12-03 20:45:31,474][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:45:31,474][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:45:31,475][DEBUG] - Mediator - Обнаружен SteamID 76561198448653226, ожидаем ник на сервере 1005
+[2025-12-03 20:45:31,475][DEBUG] - Mediator - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik на сервере 1005
+[2025-12-03 20:45:31,475][INFO] - Mediator - Игрок подключился: Pazik (SteamID: 76561198448653226) к серверу 1005
+[2025-12-03 20:45:31,475][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:45:31,475][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:45:31,475][INFO] - Mediator - Игрок отключился: Ambidexter (SteamID: 76561198084546219) с сервера 1005
+[2025-12-03 20:45:31,475][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:45:31,475][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:45:31,476][INFO] - Mediator - Игрок отключился: Pazik (SteamID: 76561198448653226) с сервера 1005
+[2025-12-03 20:45:31,476][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:45:31,476][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:45:31,477][DEBUG] - Mediator - Обнаружен SteamID 76561198019873330, ожидаем ник на сервере 1005
+[2025-12-03 20:45:31,477][DEBUG] - Mediator - Сопоставлено: SteamID 76561198019873330 -> Nick scar на сервере 1005
+[2025-12-03 20:45:31,477][INFO] - Mediator - Игрок подключился: scar (SteamID: 76561198019873330) к серверу 1005
+[2025-12-03 20:45:31,477][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:45:31,477][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:45:31,477][DEBUG] - Mediator - Обнаружен SteamID 76561198040199345, ожидаем ник на сервере 1005
+[2025-12-03 20:45:31,477][DEBUG] - Mediator - Сопоставлено: SteamID 76561198040199345 -> Nick Godyn на сервере 1005
+[2025-12-03 20:45:31,477][INFO] - Mediator - Игрок подключился: Godyn (SteamID: 76561198040199345) к серверу 1005
+[2025-12-03 20:45:31,477][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:45:31,478][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:45:31,478][DEBUG] - Mediator - Обнаружен SteamID 76561198084546219, ожидаем ник на сервере 1005
+[2025-12-03 20:45:31,478][DEBUG] - Mediator - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter на сервере 1005
+[2025-12-03 20:45:31,478][INFO] - Mediator - Игрок подключился: Ambidexter (SteamID: 76561198084546219) к серверу 1005
+[2025-12-03 20:45:31,479][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:45:31,479][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:45:31,480][DEBUG] - Mediator - Обнаружен SteamID 76561198448653226, ожидаем ник на сервере 1005
+[2025-12-03 20:45:31,480][DEBUG] - Mediator - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik на сервере 1005
+[2025-12-03 20:45:31,481][INFO] - Mediator - Игрок подключился: Pazik (SteamID: 76561198448653226) к серверу 1005
+[2025-12-03 20:45:31,481][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:45:31,481][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:45:31,482][INFO] - Mediator - Игрок отключился: scar (SteamID: 76561198019873330) с сервера 1005
+[2025-12-03 20:45:31,482][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:45:31,482][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:45:31,482][INFO] - Mediator - Игрок отключился: Pazik (SteamID: 76561198448653226) с сервера 1005
+[2025-12-03 20:45:31,482][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:45:31,482][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:45:31,484][INFO] - Mediator - Игрок отключился: Ambidexter (SteamID: 76561198084546219) с сервера 1005
+[2025-12-03 20:45:31,484][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:45:31,484][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:45:31,486][DEBUG] - Mediator - Offset файла D:/1/24722.log: 1127698
+[2025-12-03 20:45:36,459][DEBUG] - Mediator - Подписываем обработчик handle_players_changed_event на событие PlayersChangedEvent
+[2025-12-03 20:45:36,459][DEBUG] - Mediator - Передаем запрос обработчику GetPlayerCountQuery
+[2025-12-03 20:45:36,459][INFO] - MainApp - Connected players on server 1005: 3
+[2025-12-03 20:45:37,881][INFO] - MainApp - Received shutdown signal 2. Shutting down...
+[2025-12-03 20:45:37,881][INFO] - MainApp - Received shutdown signal. Cancelling tasks...
+[2025-12-03 20:45:37,894][INFO] - MainApp - QueryServer 1005: Задача отменена, завершаю работу.
+[2025-12-03 20:45:37,894][INFO] - MainApp - QueryServer 1005: Соединение asyncio_dgram закрыто.
+[2025-12-03 20:45:37,894][INFO] - Mediator - LogParser.start_parsing: Задача была отменена.
+[2025-12-03 20:45:37,894][INFO] - MainApp - LogParser and QueryServer tasks were cancelled.
+[2025-12-03 20:45:37,894][INFO] - Mediator - Остановка LogParser...
+[2025-12-03 20:45:37,894][DEBUG] - Mediator - DDOSProtection остановлен.
+[2025-12-03 20:45:37,894][INFO] - Mediator - LogParser остановлен.
+[2025-12-03 20:45:37,895][DEBUG] - Mediator - [DDOSProtection] INFO: Фоновая задача DDOSProtection остановлена.
+[2025-12-03 20:45:38,908][INFO] - MainApp - Application shutdown complete.
+[2025-12-03 20:46:04,062][INFO] - MainApp - Запуск ...
+[2025-12-03 20:46:04,062][DEBUG] - Mediator - Загружено 8 игроков из ./data/players_data.json
+[2025-12-03 20:46:04,062][INFO] - MainApp - Запуск QueryServer для сервера ID: 1005
+[2025-12-03 20:46:04,062][DEBUG] - Mediator - Подписываем обработчик get_connected_players на событие GetPlayerCountQuery
+[2025-12-03 20:46:04,064][DEBUG] - Mediator - Парсинг логов: ['D:/1/24722.log']
+[2025-12-03 20:46:04,064][DEBUG] - Mediator - Регистрируем обработчик get_connected_players для запроса GetPlayerCountQuery
+[2025-12-03 20:46:04,064][INFO] - MainApp - QueryServer 1005: Запуск на 192.168.1.10:12888...
+[2025-12-03 20:46:04,064][DEBUG] - Mediator - Парсинг файла: D:/1/24722.log
+[2025-12-03 20:46:04,082][DEBUG] - Mediator - Обнаружен SteamID 76561198039198830, ожидаем ник на сервере 1005
+[2025-12-03 20:46:04,082][DEBUG] - Mediator - Сопоставлено: SteamID 76561198039198830 -> Nick 320 на сервере 1005
+[2025-12-03 20:46:04,082][INFO] - Mediator - Игрок подключился: 320 (SteamID: 76561198039198830) к серверу 1005
+[2025-12-03 20:46:04,082][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:46:04,082][INFO] - MainApp - QueryServer 1005: Слушаю на 192.168.1.10:12888
+[2025-12-03 20:46:04,082][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:46:04,083][DEBUG] - Mediator - Обнаружен SteamID 76561198346036900, ожидаем ник на сервере 1005
+[2025-12-03 20:46:04,083][DEBUG] - Mediator - Сопоставлено: SteamID 76561198346036900 -> Nick Sergo22rus на сервере 1005
+[2025-12-03 20:46:04,083][INFO] - Mediator - Игрок подключился: Sergo22rus (SteamID: 76561198346036900) к серверу 1005
+[2025-12-03 20:46:04,083][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:46:04,083][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:46:04,087][DEBUG] - Mediator - Обнаружен SteamID 76561198084546219, ожидаем ник на сервере 1005
+[2025-12-03 20:46:04,087][DEBUG] - Mediator - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter на сервере 1005
+[2025-12-03 20:46:04,087][INFO] - Mediator - Игрок подключился: Ambidexter (SteamID: 76561198084546219) к серверу 1005
+[2025-12-03 20:46:04,087][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:46:04,087][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:46:04,088][INFO] - Mediator - Игрок отключился: Ambidexter (SteamID: 76561198084546219) с сервера 1005
+[2025-12-03 20:46:04,088][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:46:04,088][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:46:04,089][DEBUG] - Mediator - Обнаружен SteamID 76561198151453668, ожидаем ник на сервере 1005
+[2025-12-03 20:46:04,089][DEBUG] - Mediator - Сопоставлено: SteamID 76561198151453668 -> Nick DIABLERO на сервере 1005
+[2025-12-03 20:46:04,089][INFO] - Mediator - Игрок подключился: DIABLERO (SteamID: 76561198151453668) к серверу 1005
+[2025-12-03 20:46:04,089][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:46:04,089][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:46:04,091][INFO] - Mediator - Игрок отключился: DIABLERO (SteamID: 76561198151453668) с сервера 1005
+[2025-12-03 20:46:04,091][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:46:04,091][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:46:04,091][DEBUG] - Mediator - Обнаружен SteamID 76561198448653226, ожидаем ник на сервере 1005
+[2025-12-03 20:46:04,091][DEBUG] - Mediator - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik на сервере 1005
+[2025-12-03 20:46:04,091][INFO] - Mediator - Игрок подключился: Pazik (SteamID: 76561198448653226) к серверу 1005
+[2025-12-03 20:46:04,092][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:46:04,092][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:46:04,092][INFO] - Mediator - Игрок отключился: Sergo22rus (SteamID: 76561198346036900) с сервера 1005
+[2025-12-03 20:46:04,092][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:46:04,092][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:46:04,093][INFO] - Mediator - Игрок отключился: Pazik (SteamID: 76561198448653226) с сервера 1005
+[2025-12-03 20:46:04,093][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:46:04,093][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:46:04,093][DEBUG] - Mediator - Обнаружен SteamID 76561198084546219, ожидаем ник на сервере 1005
+[2025-12-03 20:46:04,093][DEBUG] - Mediator - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter на сервере 1005
+[2025-12-03 20:46:04,093][INFO] - Mediator - Игрок подключился: Ambidexter (SteamID: 76561198084546219) к серверу 1005
+[2025-12-03 20:46:04,094][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:46:04,094][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:46:04,095][DEBUG] - Mediator - Обнаружен SteamID 76561198078372219, ожидаем ник на сервере 1005
+[2025-12-03 20:46:04,095][DEBUG] - Mediator - Сопоставлено: SteamID 76561198078372219 -> Nick Gangsta на сервере 1005
+[2025-12-03 20:46:04,095][INFO] - Mediator - Игрок подключился: Gangsta (SteamID: 76561198078372219) к серверу 1005
+[2025-12-03 20:46:04,096][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:46:04,096][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:46:04,096][DEBUG] - Mediator - Обнаружен SteamID 76561198448653226, ожидаем ник на сервере 1005
+[2025-12-03 20:46:04,096][DEBUG] - Mediator - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik на сервере 1005
+[2025-12-03 20:46:04,096][INFO] - Mediator - Игрок подключился: Pazik (SteamID: 76561198448653226) к серверу 1005
+[2025-12-03 20:46:04,096][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:46:04,097][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:46:04,097][INFO] - Mediator - Игрок отключился: Ambidexter (SteamID: 76561198084546219) с сервера 1005
+[2025-12-03 20:46:04,097][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:46:04,097][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:46:04,097][INFO] - Mediator - Игрок отключился: Pazik (SteamID: 76561198448653226) с сервера 1005
+[2025-12-03 20:46:04,098][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:46:04,098][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:46:04,098][DEBUG] - Mediator - Обнаружен SteamID 76561198019873330, ожидаем ник на сервере 1005
+[2025-12-03 20:46:04,098][DEBUG] - Mediator - Сопоставлено: SteamID 76561198019873330 -> Nick scar на сервере 1005
+[2025-12-03 20:46:04,098][INFO] - Mediator - Игрок подключился: scar (SteamID: 76561198019873330) к серверу 1005
+[2025-12-03 20:46:04,098][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:46:04,099][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:46:04,099][DEBUG] - Mediator - Обнаружен SteamID 76561198040199345, ожидаем ник на сервере 1005
+[2025-12-03 20:46:04,099][DEBUG] - Mediator - Сопоставлено: SteamID 76561198040199345 -> Nick Godyn на сервере 1005
+[2025-12-03 20:46:04,099][INFO] - Mediator - Игрок подключился: Godyn (SteamID: 76561198040199345) к серверу 1005
+[2025-12-03 20:46:04,099][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:46:04,099][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:46:04,100][DEBUG] - Mediator - Обнаружен SteamID 76561198084546219, ожидаем ник на сервере 1005
+[2025-12-03 20:46:04,100][DEBUG] - Mediator - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter на сервере 1005
+[2025-12-03 20:46:04,100][INFO] - Mediator - Игрок подключился: Ambidexter (SteamID: 76561198084546219) к серверу 1005
+[2025-12-03 20:46:04,100][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:46:04,100][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:46:04,102][DEBUG] - Mediator - Обнаружен SteamID 76561198448653226, ожидаем ник на сервере 1005
+[2025-12-03 20:46:04,102][DEBUG] - Mediator - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik на сервере 1005
+[2025-12-03 20:46:04,102][INFO] - Mediator - Игрок подключился: Pazik (SteamID: 76561198448653226) к серверу 1005
+[2025-12-03 20:46:04,102][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:46:04,102][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:46:04,105][INFO] - Mediator - Игрок отключился: scar (SteamID: 76561198019873330) с сервера 1005
+[2025-12-03 20:46:04,105][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:46:04,105][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:46:04,105][INFO] - Mediator - Игрок отключился: Pazik (SteamID: 76561198448653226) с сервера 1005
+[2025-12-03 20:46:04,105][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:46:04,105][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:46:04,106][INFO] - Mediator - Игрок отключился: Ambidexter (SteamID: 76561198084546219) с сервера 1005
+[2025-12-03 20:46:04,106][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:46:04,106][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:46:04,108][DEBUG] - Mediator - Offset файла D:/1/24722.log: 1127698
+[2025-12-03 20:46:06,305][INFO] - MainApp - Received shutdown signal 2. Shutting down...
+[2025-12-03 20:46:09,061][INFO] - MainApp - Received shutdown signal. Cancelling tasks...
+[2025-12-03 20:46:09,077][INFO] - MainApp - QueryServer 1005: Задача отменена, завершаю работу.
+[2025-12-03 20:46:09,077][INFO] - MainApp - QueryServer 1005: Соединение asyncio_dgram закрыто.
+[2025-12-03 20:46:09,077][INFO] - Mediator - LogParser.start_parsing: Задача была отменена.
+[2025-12-03 20:46:09,077][INFO] - MainApp - LogParser and QueryServer tasks were cancelled.
+[2025-12-03 20:46:09,077][INFO] - Mediator - Остановка LogParser...
+[2025-12-03 20:46:09,077][DEBUG] - Mediator - DDOSProtection остановлен.
+[2025-12-03 20:46:09,077][INFO] - Mediator - LogParser остановлен.
+[2025-12-03 20:46:09,077][DEBUG] - Mediator - [DDOSProtection] INFO: Фоновая задача DDOSProtection остановлена.
+[2025-12-03 20:46:09,592][INFO] - MainApp - Application shutdown complete.
+[2025-12-03 20:49:18,022][INFO] - MainApp - Запуск ...
+[2025-12-03 20:49:18,023][DEBUG] - Mediator - Загружено 8 игроков из ./data/players_data.json
+[2025-12-03 20:49:18,023][INFO] - MainApp - Запуск QueryServer для сервера ID: 1005
+[2025-12-03 20:49:18,023][DEBUG] - Mediator - Подписываем обработчик get_connected_players на событие GetPlayerCountQuery
+[2025-12-03 20:49:18,023][DEBUG] - Mediator - Парсинг логов: ['D:/1/24722.log']
+[2025-12-03 20:49:18,023][DEBUG] - Mediator - Регистрируем обработчик get_connected_players для запроса GetPlayerCountQuery
+[2025-12-03 20:49:18,023][INFO] - MainApp - QueryServer 1005: Запуск на 192.168.1.10:12888...
+[2025-12-03 20:49:18,024][DEBUG] - Mediator - Парсинг файла: D:/1/24722.log
+[2025-12-03 20:49:18,040][DEBUG] - Mediator - Обнаружен SteamID 76561198039198830, ожидаем ник на сервере 1005
+[2025-12-03 20:49:18,042][DEBUG] - Mediator - Сопоставлено: SteamID 76561198039198830 -> Nick 320 на сервере 1005
+[2025-12-03 20:49:18,042][INFO] - Mediator - Игрок подключился: 320 (SteamID: 76561198039198830) к серверу 1005
+[2025-12-03 20:49:18,042][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:49:18,042][INFO] - MainApp - QueryServer 1005: Слушаю на 192.168.1.10:12888
+[2025-12-03 20:49:18,042][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:49:18,043][DEBUG] - Mediator - Обнаружен SteamID 76561198346036900, ожидаем ник на сервере 1005
+[2025-12-03 20:49:18,043][DEBUG] - Mediator - Сопоставлено: SteamID 76561198346036900 -> Nick Sergo22rus на сервере 1005
+[2025-12-03 20:49:18,043][INFO] - Mediator - Игрок подключился: Sergo22rus (SteamID: 76561198346036900) к серверу 1005
+[2025-12-03 20:49:18,043][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:49:18,043][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:49:18,045][DEBUG] - Mediator - Обнаружен SteamID 76561198084546219, ожидаем ник на сервере 1005
+[2025-12-03 20:49:18,045][DEBUG] - Mediator - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter на сервере 1005
+[2025-12-03 20:49:18,045][INFO] - Mediator - Игрок подключился: Ambidexter (SteamID: 76561198084546219) к серверу 1005
+[2025-12-03 20:49:18,045][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:49:18,045][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:49:18,046][INFO] - Mediator - Игрок отключился: Ambidexter (SteamID: 76561198084546219) с сервера 1005
+[2025-12-03 20:49:18,046][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:49:18,046][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:49:18,047][DEBUG] - Mediator - Обнаружен SteamID 76561198151453668, ожидаем ник на сервере 1005
+[2025-12-03 20:49:18,047][DEBUG] - Mediator - Сопоставлено: SteamID 76561198151453668 -> Nick DIABLERO на сервере 1005
+[2025-12-03 20:49:18,047][INFO] - Mediator - Игрок подключился: DIABLERO (SteamID: 76561198151453668) к серверу 1005
+[2025-12-03 20:49:18,048][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:49:18,048][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:49:18,050][INFO] - Mediator - Игрок отключился: DIABLERO (SteamID: 76561198151453668) с сервера 1005
+[2025-12-03 20:49:18,050][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:49:18,050][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:49:18,050][DEBUG] - Mediator - Обнаружен SteamID 76561198448653226, ожидаем ник на сервере 1005
+[2025-12-03 20:49:18,050][DEBUG] - Mediator - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik на сервере 1005
+[2025-12-03 20:49:18,051][INFO] - Mediator - Игрок подключился: Pazik (SteamID: 76561198448653226) к серверу 1005
+[2025-12-03 20:49:18,051][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:49:18,051][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:49:18,051][INFO] - Mediator - Игрок отключился: Sergo22rus (SteamID: 76561198346036900) с сервера 1005
+[2025-12-03 20:49:18,051][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:49:18,051][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:49:18,052][INFO] - Mediator - Игрок отключился: Pazik (SteamID: 76561198448653226) с сервера 1005
+[2025-12-03 20:49:18,053][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:49:18,053][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:49:18,053][DEBUG] - Mediator - Обнаружен SteamID 76561198084546219, ожидаем ник на сервере 1005
+[2025-12-03 20:49:18,053][DEBUG] - Mediator - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter на сервере 1005
+[2025-12-03 20:49:18,053][INFO] - Mediator - Игрок подключился: Ambidexter (SteamID: 76561198084546219) к серверу 1005
+[2025-12-03 20:49:18,053][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:49:18,053][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:49:18,054][DEBUG] - Mediator - Обнаружен SteamID 76561198078372219, ожидаем ник на сервере 1005
+[2025-12-03 20:49:18,054][DEBUG] - Mediator - Сопоставлено: SteamID 76561198078372219 -> Nick Gangsta на сервере 1005
+[2025-12-03 20:49:18,054][INFO] - Mediator - Игрок подключился: Gangsta (SteamID: 76561198078372219) к серверу 1005
+[2025-12-03 20:49:18,054][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:49:18,055][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:49:18,055][DEBUG] - Mediator - Обнаружен SteamID 76561198448653226, ожидаем ник на сервере 1005
+[2025-12-03 20:49:18,055][DEBUG] - Mediator - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik на сервере 1005
+[2025-12-03 20:49:18,055][INFO] - Mediator - Игрок подключился: Pazik (SteamID: 76561198448653226) к серверу 1005
+[2025-12-03 20:49:18,055][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:49:18,055][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:49:18,055][INFO] - Mediator - Игрок отключился: Ambidexter (SteamID: 76561198084546219) с сервера 1005
+[2025-12-03 20:49:18,056][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:49:18,056][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:49:18,056][INFO] - Mediator - Игрок отключился: Pazik (SteamID: 76561198448653226) с сервера 1005
+[2025-12-03 20:49:18,056][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:49:18,056][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:49:18,057][DEBUG] - Mediator - Обнаружен SteamID 76561198019873330, ожидаем ник на сервере 1005
+[2025-12-03 20:49:18,057][DEBUG] - Mediator - Сопоставлено: SteamID 76561198019873330 -> Nick scar на сервере 1005
+[2025-12-03 20:49:18,057][INFO] - Mediator - Игрок подключился: scar (SteamID: 76561198019873330) к серверу 1005
+[2025-12-03 20:49:18,057][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:49:18,057][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:49:18,057][DEBUG] - Mediator - Обнаружен SteamID 76561198040199345, ожидаем ник на сервере 1005
+[2025-12-03 20:49:18,057][DEBUG] - Mediator - Сопоставлено: SteamID 76561198040199345 -> Nick Godyn на сервере 1005
+[2025-12-03 20:49:18,058][INFO] - Mediator - Игрок подключился: Godyn (SteamID: 76561198040199345) к серверу 1005
+[2025-12-03 20:49:18,058][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:49:18,058][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:49:18,060][DEBUG] - Mediator - Обнаружен SteamID 76561198084546219, ожидаем ник на сервере 1005
+[2025-12-03 20:49:18,060][DEBUG] - Mediator - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter на сервере 1005
+[2025-12-03 20:49:18,060][INFO] - Mediator - Игрок подключился: Ambidexter (SteamID: 76561198084546219) к серверу 1005
+[2025-12-03 20:49:18,060][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:49:18,060][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:49:18,063][DEBUG] - Mediator - Обнаружен SteamID 76561198448653226, ожидаем ник на сервере 1005
+[2025-12-03 20:49:18,063][DEBUG] - Mediator - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik на сервере 1005
+[2025-12-03 20:49:18,063][INFO] - Mediator - Игрок подключился: Pazik (SteamID: 76561198448653226) к серверу 1005
+[2025-12-03 20:49:18,063][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:49:18,063][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:49:18,064][INFO] - Mediator - Игрок отключился: scar (SteamID: 76561198019873330) с сервера 1005
+[2025-12-03 20:49:18,064][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:49:18,065][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:49:18,065][INFO] - Mediator - Игрок отключился: Pazik (SteamID: 76561198448653226) с сервера 1005
+[2025-12-03 20:49:18,065][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:49:18,065][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:49:18,066][INFO] - Mediator - Игрок отключился: Ambidexter (SteamID: 76561198084546219) с сервера 1005
+[2025-12-03 20:49:18,066][DEBUG] - Mediator - Публикуем событие: PlayersChangedEvent
+[2025-12-03 20:49:18,066][DEBUG] - Mediator - Отправлено событие PlayersChangedEvent для сервера 1005
+[2025-12-03 20:49:18,068][DEBUG] - Mediator - Offset файла D:/1/24722.log: 1127698
+[2025-12-03 20:49:23,046][DEBUG] - Mediator - Подписываем обработчик handle_players_changed_event на событие PlayersChangedEvent
+[2025-12-03 20:49:23,046][DEBUG] - Mediator - Передаем запрос обработчику GetPlayerCountQuery
+[2025-12-03 20:49:23,046][INFO] - MainApp - Connected players on server 1005: 3
+[2025-12-03 20:49:25,162][INFO] - MainApp - Received shutdown signal 2. Shutting down...
+[2025-12-03 20:49:25,162][INFO] - MainApp - Received shutdown signal. Cancelling tasks...
+[2025-12-03 20:49:25,179][INFO] - MainApp - QueryServer 1005: Задача отменена, завершаю работу.
+[2025-12-03 20:49:25,179][INFO] - MainApp - QueryServer 1005: Соединение asyncio_dgram закрыто.
+[2025-12-03 20:49:25,179][INFO] - Mediator - LogParser.start_parsing: Задача была отменена.
+[2025-12-03 20:49:25,179][DEBUG] - Mediator - LogParser.start_parsing: Завершение метода парсинга.
+[2025-12-03 20:49:25,180][INFO] - MainApp - LogParser and QueryServer tasks were cancelled.
+[2025-12-03 20:49:25,180][INFO] - Mediator - Остановка LogParser...
+[2025-12-03 20:49:25,180][DEBUG] - Mediator - DDOSProtection остановлен.
+[2025-12-03 20:49:25,180][INFO] - Mediator - LogParser остановлен.
+[2025-12-03 20:49:25,180][DEBUG] - Mediator - [DDOSProtection] INFO: Фоновая задача DDOSProtection остановлена.
+[2025-12-03 20:49:25,693][INFO] - MainApp - Application shutdown complete.
+[2025-12-03 21:21:40,468][INFO] - MainApp - Запуск ...
+[2025-12-03 21:21:40,470][DEBUG] - Mediator - Загружено 8 игроков из ./data/players_data.json
+[2025-12-03 21:21:40,470][INFO] - MainApp - Запуск QueryServer для сервера ID: 1005
+[2025-12-03 21:21:40,470][DEBUG] - Mediator - Подписываем обработчик get_connected_players на событие GetPlayerCountQuery
+[2025-12-03 21:21:40,470][DEBUG] - Mediator - Парсинг логов: ['D:/1/24722.log']
+[2025-12-03 21:21:40,471][DEBUG] - Mediator - Регистрируем обработчик get_connected_players для запроса GetPlayerCountQuery
+[2025-12-03 21:21:40,471][INFO] - MainApp - QueryServer 1005: Запуск на 192.168.1.10:12888...
+[2025-12-03 21:21:40,471][DEBUG] - Mediator - Парсинг файла: D:/1/24722.log
+[2025-12-03 21:21:40,488][DEBUG] - Mediator - Обнаружен SteamID 76561198039198830, ожидаем ник на сервере 1005
+[2025-12-03 21:21:40,488][DEBUG] - Mediator - Сопоставлено: SteamID 76561198039198830 -> Nick 320 на сервере 1005
+[2025-12-03 21:21:40,488][INFO] - Mediator - Игрок подключился: 320 (SteamID: 76561198039198830) к серверу 1005
+[2025-12-03 21:21:40,488][DEBUG] - Mediator - Обнаружен SteamID 76561198346036900, ожидаем ник на сервере 1005
+[2025-12-03 21:21:40,488][DEBUG] - Mediator - Сопоставлено: SteamID 76561198346036900 -> Nick Sergo22rus на сервере 1005
+[2025-12-03 21:21:40,489][INFO] - Mediator - Игрок подключился: Sergo22rus (SteamID: 76561198346036900) к серверу 1005
+[2025-12-03 21:21:40,492][DEBUG] - Mediator - Обнаружен SteamID 76561198084546219, ожидаем ник на сервере 1005
+[2025-12-03 21:21:40,492][DEBUG] - Mediator - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter на сервере 1005
+[2025-12-03 21:21:40,492][INFO] - Mediator - Игрок подключился: Ambidexter (SteamID: 76561198084546219) к серверу 1005
+[2025-12-03 21:21:40,492][INFO] - Mediator - Игрок отключился: Ambidexter (SteamID: 76561198084546219) с сервера 1005
+[2025-12-03 21:21:40,493][DEBUG] - Mediator - Обнаружен SteamID 76561198151453668, ожидаем ник на сервере 1005
+[2025-12-03 21:21:40,493][DEBUG] - Mediator - Сопоставлено: SteamID 76561198151453668 -> Nick DIABLERO на сервере 1005
+[2025-12-03 21:21:40,494][INFO] - Mediator - Игрок подключился: DIABLERO (SteamID: 76561198151453668) к серверу 1005
+[2025-12-03 21:21:40,495][INFO] - Mediator - Игрок отключился: DIABLERO (SteamID: 76561198151453668) с сервера 1005
+[2025-12-03 21:21:40,495][DEBUG] - Mediator - Обнаружен SteamID 76561198448653226, ожидаем ник на сервере 1005
+[2025-12-03 21:21:40,495][DEBUG] - Mediator - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik на сервере 1005
+[2025-12-03 21:21:40,495][INFO] - Mediator - Игрок подключился: Pazik (SteamID: 76561198448653226) к серверу 1005
+[2025-12-03 21:21:40,496][INFO] - Mediator - Игрок отключился: Sergo22rus (SteamID: 76561198346036900) с сервера 1005
+[2025-12-03 21:21:40,497][INFO] - Mediator - Игрок отключился: Pazik (SteamID: 76561198448653226) с сервера 1005
+[2025-12-03 21:21:40,497][DEBUG] - Mediator - Обнаружен SteamID 76561198084546219, ожидаем ник на сервере 1005
+[2025-12-03 21:21:40,497][DEBUG] - Mediator - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter на сервере 1005
+[2025-12-03 21:21:40,497][INFO] - Mediator - Игрок подключился: Ambidexter (SteamID: 76561198084546219) к серверу 1005
+[2025-12-03 21:21:40,499][DEBUG] - Mediator - Обнаружен SteamID 76561198078372219, ожидаем ник на сервере 1005
+[2025-12-03 21:21:40,499][DEBUG] - Mediator - Сопоставлено: SteamID 76561198078372219 -> Nick Gangsta на сервере 1005
+[2025-12-03 21:21:40,499][INFO] - Mediator - Игрок подключился: Gangsta (SteamID: 76561198078372219) к серверу 1005
+[2025-12-03 21:21:40,499][DEBUG] - Mediator - Обнаружен SteamID 76561198448653226, ожидаем ник на сервере 1005
+[2025-12-03 21:21:40,499][DEBUG] - Mediator - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik на сервере 1005
+[2025-12-03 21:21:40,499][INFO] - Mediator - Игрок подключился: Pazik (SteamID: 76561198448653226) к серверу 1005
+[2025-12-03 21:21:40,501][INFO] - Mediator - Игрок отключился: Ambidexter (SteamID: 76561198084546219) с сервера 1005
+[2025-12-03 21:21:40,501][INFO] - Mediator - Игрок отключился: Pazik (SteamID: 76561198448653226) с сервера 1005
+[2025-12-03 21:21:40,502][DEBUG] - Mediator - Обнаружен SteamID 76561198019873330, ожидаем ник на сервере 1005
+[2025-12-03 21:21:40,502][DEBUG] - Mediator - Сопоставлено: SteamID 76561198019873330 -> Nick scar на сервере 1005
+[2025-12-03 21:21:40,502][INFO] - Mediator - Игрок подключился: scar (SteamID: 76561198019873330) к серверу 1005
+[2025-12-03 21:21:40,502][DEBUG] - Mediator - Обнаружен SteamID 76561198040199345, ожидаем ник на сервере 1005
+[2025-12-03 21:21:40,502][DEBUG] - Mediator - Сопоставлено: SteamID 76561198040199345 -> Nick Godyn на сервере 1005
+[2025-12-03 21:21:40,502][INFO] - Mediator - Игрок подключился: Godyn (SteamID: 76561198040199345) к серверу 1005
+[2025-12-03 21:21:40,503][DEBUG] - Mediator - Обнаружен SteamID 76561198084546219, ожидаем ник на сервере 1005
+[2025-12-03 21:21:40,503][DEBUG] - Mediator - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter на сервере 1005
+[2025-12-03 21:21:40,503][INFO] - Mediator - Игрок подключился: Ambidexter (SteamID: 76561198084546219) к серверу 1005
+[2025-12-03 21:21:40,505][DEBUG] - Mediator - Обнаружен SteamID 76561198448653226, ожидаем ник на сервере 1005
+[2025-12-03 21:21:40,505][DEBUG] - Mediator - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik на сервере 1005
+[2025-12-03 21:21:40,505][INFO] - Mediator - Игрок подключился: Pazik (SteamID: 76561198448653226) к серверу 1005
+[2025-12-03 21:21:40,507][INFO] - Mediator - Игрок отключился: scar (SteamID: 76561198019873330) с сервера 1005
+[2025-12-03 21:21:40,507][INFO] - Mediator - Игрок отключился: Pazik (SteamID: 76561198448653226) с сервера 1005
+[2025-12-03 21:21:40,507][INFO] - Mediator - Игрок отключился: Ambidexter (SteamID: 76561198084546219) с сервера 1005
+[2025-12-03 21:21:40,510][DEBUG] - Mediator - Offset файла D:/1/24722.log: 1127698
+[2025-12-03 21:21:40,512][INFO] - MainApp - QueryServer 1005: Слушаю на 192.168.1.10:12888
+[2025-12-03 21:21:45,463][DEBUG] - Mediator - Подписываем обработчик handle_players_changed_event на событие PlayersChangedEvent
+[2025-12-03 21:21:45,463][DEBUG] - Mediator - Передаем запрос обработчику GetPlayerCountQuery
+[2025-12-03 21:21:45,463][INFO] - MainApp - Connected players on server 1005: 3
+[2025-12-03 21:22:00,287][INFO] - MainApp - Received shutdown signal 2. Shutting down...
+[2025-12-03 21:22:00,287][INFO] - MainApp - Received shutdown signal. Cancelling tasks...
+[2025-12-03 21:22:00,287][INFO] - MainApp - QueryServer 1005: Задача отменена, завершаю работу.
+[2025-12-03 21:22:00,287][INFO] - MainApp - QueryServer 1005: Соединение asyncio_dgram закрыто.
+[2025-12-03 21:22:00,287][INFO] - Mediator - LogParser.start_parsing: Задача была отменена.
+[2025-12-03 21:22:00,288][DEBUG] - Mediator - LogParser.start_parsing: Завершение метода парсинга.
+[2025-12-03 21:22:00,288][INFO] - MainApp - LogParser and QueryServer tasks were cancelled.
+[2025-12-03 21:22:00,288][INFO] - Mediator - Остановка LogParser...
+[2025-12-03 21:22:00,288][DEBUG] - Mediator - DDOSProtection остановлен.
+[2025-12-03 21:22:00,288][INFO] - Mediator - LogParser остановлен.
+[2025-12-03 21:22:00,288][DEBUG] - Mediator - [DDOSProtection] INFO: Фоновая задача DDOSProtection остановлена.
+[2025-12-03 21:22:00,791][INFO] - MainApp - Application shutdown complete.
+[2025-12-03 21:23:32,697][INFO] - MainApp - Запуск ...
+[2025-12-03 21:23:32,698][DEBUG] - Mediator - Загружено 8 игроков из ./data/players_data.json
+[2025-12-03 21:23:32,698][INFO] - MainApp - Запуск QueryServer для сервера ID: 1005
+[2025-12-03 21:23:32,698][DEBUG] - Mediator - Подписываем обработчик get_connected_players на событие GetPlayerCountQuery
+[2025-12-03 21:23:32,698][DEBUG] - Mediator - Парсинг логов: ['D:/1/24722.log']
+[2025-12-03 21:23:32,698][DEBUG] - Mediator - Регистрируем обработчик get_connected_players для запроса GetPlayerCountQuery
+[2025-12-03 21:23:32,699][INFO] - MainApp - QueryServer 1005: Запуск на 192.168.1.10:12888...
+[2025-12-03 21:23:32,699][DEBUG] - Mediator - Парсинг файла: D:/1/24722.log
+[2025-12-03 21:23:32,718][DEBUG] - Mediator - Обнаружен SteamID 76561198039198830, ожидаем ник на сервере 1005
+[2025-12-03 21:23:32,718][DEBUG] - Mediator - Сопоставлено: SteamID 76561198039198830 -> Nick 320 на сервере 1005
+[2025-12-03 21:23:32,718][INFO] - Mediator - Игрок подключился: 320 (SteamID: 76561198039198830) к серверу 1005
+[2025-12-03 21:23:32,719][DEBUG] - Mediator - Обнаружен SteamID 76561198346036900, ожидаем ник на сервере 1005
+[2025-12-03 21:23:32,719][DEBUG] - Mediator - Сопоставлено: SteamID 76561198346036900 -> Nick Sergo22rus на сервере 1005
+[2025-12-03 21:23:32,719][INFO] - Mediator - Игрок подключился: Sergo22rus (SteamID: 76561198346036900) к серверу 1005
+[2025-12-03 21:23:32,722][DEBUG] - Mediator - Обнаружен SteamID 76561198084546219, ожидаем ник на сервере 1005
+[2025-12-03 21:23:32,722][DEBUG] - Mediator - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter на сервере 1005
+[2025-12-03 21:23:32,722][INFO] - Mediator - Игрок подключился: Ambidexter (SteamID: 76561198084546219) к серверу 1005
+[2025-12-03 21:23:32,723][INFO] - Mediator - Игрок отключился: Ambidexter (SteamID: 76561198084546219) с сервера 1005
+[2025-12-03 21:23:32,724][DEBUG] - Mediator - Обнаружен SteamID 76561198151453668, ожидаем ник на сервере 1005
+[2025-12-03 21:23:32,724][DEBUG] - Mediator - Сопоставлено: SteamID 76561198151453668 -> Nick DIABLERO на сервере 1005
+[2025-12-03 21:23:32,724][INFO] - Mediator - Игрок подключился: DIABLERO (SteamID: 76561198151453668) к серверу 1005
+[2025-12-03 21:23:32,726][INFO] - Mediator - Игрок отключился: DIABLERO (SteamID: 76561198151453668) с сервера 1005
+[2025-12-03 21:23:32,726][DEBUG] - Mediator - Обнаружен SteamID 76561198448653226, ожидаем ник на сервере 1005
+[2025-12-03 21:23:32,726][DEBUG] - Mediator - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik на сервере 1005
+[2025-12-03 21:23:32,726][INFO] - Mediator - Игрок подключился: Pazik (SteamID: 76561198448653226) к серверу 1005
+[2025-12-03 21:23:32,727][INFO] - Mediator - Игрок отключился: Sergo22rus (SteamID: 76561198346036900) с сервера 1005
+[2025-12-03 21:23:32,729][INFO] - Mediator - Игрок отключился: Pazik (SteamID: 76561198448653226) с сервера 1005
+[2025-12-03 21:23:32,729][DEBUG] - Mediator - Обнаружен SteamID 76561198084546219, ожидаем ник на сервере 1005
+[2025-12-03 21:23:32,729][DEBUG] - Mediator - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter на сервере 1005
+[2025-12-03 21:23:32,729][INFO] - Mediator - Игрок подключился: Ambidexter (SteamID: 76561198084546219) к серверу 1005
+[2025-12-03 21:23:32,731][DEBUG] - Mediator - Обнаружен SteamID 76561198078372219, ожидаем ник на сервере 1005
+[2025-12-03 21:23:32,731][DEBUG] - Mediator - Сопоставлено: SteamID 76561198078372219 -> Nick Gangsta на сервере 1005
+[2025-12-03 21:23:32,731][INFO] - Mediator - Игрок подключился: Gangsta (SteamID: 76561198078372219) к серверу 1005
+[2025-12-03 21:23:32,732][DEBUG] - Mediator - Обнаружен SteamID 76561198448653226, ожидаем ник на сервере 1005
+[2025-12-03 21:23:32,732][DEBUG] - Mediator - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik на сервере 1005
+[2025-12-03 21:23:32,732][INFO] - Mediator - Игрок подключился: Pazik (SteamID: 76561198448653226) к серверу 1005
+[2025-12-03 21:23:32,732][INFO] - Mediator - Игрок отключился: Ambidexter (SteamID: 76561198084546219) с сервера 1005
+[2025-12-03 21:23:32,733][INFO] - Mediator - Игрок отключился: Pazik (SteamID: 76561198448653226) с сервера 1005
+[2025-12-03 21:23:32,733][DEBUG] - Mediator - Обнаружен SteamID 76561198019873330, ожидаем ник на сервере 1005
+[2025-12-03 21:23:32,733][DEBUG] - Mediator - Сопоставлено: SteamID 76561198019873330 -> Nick scar на сервере 1005
+[2025-12-03 21:23:32,733][INFO] - Mediator - Игрок подключился: scar (SteamID: 76561198019873330) к серверу 1005
+[2025-12-03 21:23:32,734][DEBUG] - Mediator - Обнаружен SteamID 76561198040199345, ожидаем ник на сервере 1005
+[2025-12-03 21:23:32,734][DEBUG] - Mediator - Сопоставлено: SteamID 76561198040199345 -> Nick Godyn на сервере 1005
+[2025-12-03 21:23:32,734][INFO] - Mediator - Игрок подключился: Godyn (SteamID: 76561198040199345) к серверу 1005
+[2025-12-03 21:23:32,735][DEBUG] - Mediator - Обнаружен SteamID 76561198084546219, ожидаем ник на сервере 1005
+[2025-12-03 21:23:32,735][DEBUG] - Mediator - Сопоставлено: SteamID 76561198084546219 -> Nick Ambidexter на сервере 1005
+[2025-12-03 21:23:32,735][INFO] - Mediator - Игрок подключился: Ambidexter (SteamID: 76561198084546219) к серверу 1005
+[2025-12-03 21:23:32,737][DEBUG] - Mediator - Обнаружен SteamID 76561198448653226, ожидаем ник на сервере 1005
+[2025-12-03 21:23:32,737][DEBUG] - Mediator - Сопоставлено: SteamID 76561198448653226 -> Nick Pazik на сервере 1005
+[2025-12-03 21:23:32,737][INFO] - Mediator - Игрок подключился: Pazik (SteamID: 76561198448653226) к серверу 1005
+[2025-12-03 21:23:32,740][INFO] - Mediator - Игрок отключился: scar (SteamID: 76561198019873330) с сервера 1005
+[2025-12-03 21:23:32,741][INFO] - Mediator - Игрок отключился: Pazik (SteamID: 76561198448653226) с сервера 1005
+[2025-12-03 21:23:32,742][INFO] - Mediator - Игрок отключился: Ambidexter (SteamID: 76561198084546219) с сервера 1005
+[2025-12-03 21:23:32,744][DEBUG] - Mediator - Offset файла D:/1/24722.log: 1127698
+[2025-12-03 21:23:32,747][INFO] - MainApp - QueryServer 1005: Слушаю на 192.168.1.10:12888
+[2025-12-03 21:23:37,718][DEBUG] - Mediator - Передаем запрос обработчику GetPlayerCountQuery
+[2025-12-03 21:23:37,718][INFO] - MainApp - Connected players on server 1005: 3
+[2025-12-03 21:34:41,069][INFO] - MainApp - Received shutdown signal 2. Shutting down...
+[2025-12-03 21:34:41,069][INFO] - MainApp - Received shutdown signal. Cancelling tasks...
+[2025-12-03 21:34:41,082][INFO] - MainApp - QueryServer 1005: Задача отменена, завершаю работу.
+[2025-12-03 21:34:41,082][INFO] - MainApp - QueryServer 1005: Соединение asyncio_dgram закрыто.
+[2025-12-03 21:34:41,083][INFO] - Mediator - LogParser.start_parsing: Задача была отменена.
+[2025-12-03 21:34:41,083][DEBUG] - Mediator - LogParser.start_parsing: Завершение метода парсинга.
+[2025-12-03 21:34:41,083][INFO] - MainApp - LogParser and QueryServer tasks were cancelled.
+[2025-12-03 21:34:41,083][INFO] - Mediator - Остановка LogParser...
+[2025-12-03 21:34:41,083][DEBUG] - Mediator - DDOSProtection остановлен.
+[2025-12-03 21:34:41,084][INFO] - Mediator - LogParser остановлен.
+[2025-12-03 21:34:41,084][DEBUG] - Mediator - [DDOSProtection] INFO: Фоновая задача DDOSProtection остановлена.
+[2025-12-03 21:34:41,596][INFO] - MainApp - Application shutdown complete.
