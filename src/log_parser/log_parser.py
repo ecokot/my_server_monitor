@@ -124,7 +124,15 @@ class LogParser:
 
         if not os.path.exists(log_file_path):
             self.logger.error(f"Файл логов не найден: {log_file_path}")
-            return
+            # Ждем некоторое время и проверяем снова, так как файл может быть создан позже
+            for _ in range(10):  # Проверяем в течение 10 секунд
+                await asyncio.sleep(1)
+                if os.path.exists(log_file_path):
+                    self.logger.info(f"Файл логов найден: {log_file_path}")
+                    break
+            else:
+                self.logger.error(f"Файл логов так и не был создан: {log_file_path}")
+                return
 
         self.logger.debug(f"Парсинг файла: {log_file_path}")
         await self._parse_history(log_file_path)
@@ -153,15 +161,59 @@ class LogParser:
             self.logger.debug(f"LogParser: Получен сигнал остановки, пропускаю реальный парсинг {log_file_path}.")
             return
 
-        offset_tracker = {'offset': os.path.getsize(log_file_path)}
-        self.logger.debug(f"Offset файла {log_file_path}: {offset_tracker['offset']}")
+        # Для отслеживания ротации логов будем хранить текущий файл и его inode
+        current_log_file = log_file_path
+        initial_inode = self._get_file_inode(current_log_file)
+        
+        offset_tracker = {'offset': os.path.getsize(current_log_file) if os.path.exists(current_log_file) else 0}
+        self.logger.debug(f"Offset файла {current_log_file}: {offset_tracker['offset']}")
 
         # Внутренняя функция для обработки изменений файла
         async def handle_file_change(file_path):
-            # Проверяем, что это нужный файл и не получен сигнал остановки
-            if os.path.basename(file_path) != os.path.basename(log_file_path) or self.shutdown_event.is_set():
+            # Проверяем сигнал остановки
+            if self.shutdown_event.is_set():
                 return
+            
+            # Проверяем, является ли это изменение нашего целевого файла или файла с тем же именем/шаблоном
+            file_basename = os.path.basename(file_path)
+            target_basename = os.path.basename(current_log_file)
+            
+            # Проверяем, что это нужный файл (по точному совпадению имени или по базовому имени)
+            # Это позволяет обрабатывать файлы типа MOEService.log, MOEService.log.1, MOEService.log.2023-01-01
+            is_target_file = (
+                file_basename == target_basename or  # Точный совпадение
+                os.path.normpath(file_path) == os.path.normpath(current_log_file) or  # Тот же путь
+                (file_basename.startswith(target_basename) and 
+                 (file_basename == target_basename or 
+                  file_basename[len(target_basename)] in ['.', '-', '_']))  # Файл с суффиксом (например, .1, .2023-01-01)
+            )
+            
+            if not is_target_file:
+                return
+            
+            # Проверяем, не произошла ли ротация файла (изменился inode или файл перестал существовать)
+            current_inode = self._get_file_inode(current_log_file)
+            if current_inode is not None and initial_inode != current_inode:
+                # Произошла ротация файла - обновляем текущий файл и сбрасываем смещение
+                self.logger.info(f"Обнаружена ротация лог-файла: {current_log_file}")
+                offset_tracker['offset'] = 0  # Начинаем читать новый файл с начала
+                # Обновляем inode для нового файла
+                new_inode = self._get_file_inode(current_log_file)
+                if new_inode is not None:
+                    initial_inode = new_inode
+            elif current_inode is None and os.path.exists(current_log_file):
+                # Файл был удален и создан заново
+                self.logger.info(f"Файл был создан заново: {current_log_file}")
+                offset_tracker['offset'] = 0
+                new_inode = self._get_file_inode(current_log_file)
+                if new_inode is not None:
+                    initial_inode = new_inode
+
             try:
+                # Проверяем, существует ли файл
+                if not os.path.exists(file_path):
+                    return
+                    
                 with open(file_path, "r", encoding="utf-8", errors="replace") as f:
                     f.seek(offset_tracker['offset'])
                     new_lines = f.readlines()
@@ -185,10 +237,35 @@ class LogParser:
                     if server_id:
                         await self.line_processor.process_line(line.strip(), server_id)
             except Exception as e:
-                self.logger.error(f"Ошибка при обработке файла {file_path}: {e}")
+                # Проверяем, является ли ошибка связанной с доступом к файлу
+                if "No such file or directory" in str(e) or "Permission denied" in str(e) or "Bad file descriptor" in str(e):
+                    self.logger.warning(f"Файл больше не доступен {file_path}: {e}. Проверяю ротацию логов...")
+                    # Возможно, произошла ротация файла
+                    if os.path.exists(current_log_file):
+                        # Если целевой файл существует, обновляем смещение
+                        try:
+                            offset_tracker['offset'] = os.path.getsize(current_log_file)
+                            self.logger.info(f"Обновлено смещение для файла {current_log_file}: {offset_tracker['offset']}")
+                        except Exception as size_error:
+                            self.logger.error(f"Не удалось обновить смещение для файла {current_log_file}: {size_error}")
+                    else:
+                        # Файл не существует, возможно, он еще не создан
+                        self.logger.info(f"Целевой файл {current_log_file} не существует, ждем его создания...")
+                else:
+                    self.logger.error(f"Ошибка при обработке файла {file_path}: {e}")
 
         loop = asyncio.get_event_loop()
         await watch_directory(os.path.dirname(log_file_path), handle_file_change, loop)
+
+    def _get_file_inode(self, file_path):
+        """Получает inode файла для определения ротации"""
+        try:
+            if os.path.exists(file_path):
+                stat = os.stat(file_path)
+                return stat.st_ino
+            return None
+        except OSError:
+            return None
 
     def get_connected_players(self, query=None):
         """

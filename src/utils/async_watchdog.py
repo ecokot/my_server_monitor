@@ -1,5 +1,6 @@
 # src/utils/async_watchdog.py
 import asyncio
+import os
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 
@@ -13,6 +14,25 @@ class AsyncEventHandler(FileSystemEventHandler):
         if not event.is_directory:
             # Выполняем корутину в основном цикле событий
             asyncio.run_coroutine_threadsafe(self.callback(event.src_path), self.loop)
+    
+    def on_created(self, event):
+        if not event.is_directory:
+            # Выполняем корутину в основном цикле событий
+            asyncio.run_coroutine_threadsafe(self.callback(event.src_path), self.loop)
+    
+    def on_deleted(self, event):
+        if not event.is_directory:
+            # Выполняем корутину в основном цикле событий
+            asyncio.run_coroutine_threadsafe(self.callback(event.src_path), self.loop)
+    
+    def on_moved(self, event):
+        if not event.is_directory:
+            # Обрабатываем перемещение/переименование файлов
+            # Вызываем callback для обоих путей: старого и нового
+            if event.src_path:
+                asyncio.run_coroutine_threadsafe(self.callback(event.src_path), self.loop)
+            if event.dest_path:
+                asyncio.run_coroutine_threadsafe(self.callback(event.dest_path), self.loop)
 
 
 async def watch_directory(directory, callback, loop):
