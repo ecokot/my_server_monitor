@@ -62,6 +62,16 @@ class LoggerMixin:
         )
         file_handler.setLevel(getattr(logging, level_file))
         file_handler.setFormatter(file_formatter)
+        
+        # Добавляем callback для уведомления о ротации
+        def on_rollover(source, dest):
+            if dest:
+                print(f"Log file rotated: {source} -> {dest}")
+            else:
+                print(f"Log file rotated: {source} (timestamp added)")
+        
+        # Устанавливаем callback для уведомления о ротации
+        file_handler.rotator = self._rotator_callback
 
         # Обработчик консоли
         console_handler = logging.StreamHandler()
@@ -75,3 +85,10 @@ class LoggerMixin:
 
         self.logger = logger
         LoggerMixin._logger_initialized[class_name] = logger
+    
+    def _rotator_callback(self, source, dest):
+        """Callback, вызываемый при ротации логов"""
+        if dest:
+            self.logger.info(f"Log file rotated: {source} -> {dest}")
+        else:
+            self.logger.info(f"Log file rotated: {source} (timestamp added)")

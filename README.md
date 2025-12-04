@@ -86,3 +86,12 @@ The application provides comprehensive logging with:
 - Console logging with colors
 - Configurable log levels
 - Per-class logger instances
+
+### Log File Rotation
+
+The application uses automatic log file rotation that occurs at midnight every day:
+- Current log file `./logs/MOEService.log` is renamed to `./logs/MOEService.log.YYYY-MM-DD`
+- A new `./logs/MOEService.log` file is created for new log entries
+- Up to 7 days of archived logs are kept
+- When accessing logs programmatically, account for this rotation behavior
+- For more details, see the `LOGGING_GUIDE.md` file
