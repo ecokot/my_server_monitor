@@ -89,8 +89,6 @@ class LogLineProcessor:
                 player_name = self.connected_players[server_id][steam_id]["name"]
                 del self.connected_players[server_id][steam_id]
                 self.logger.info(f"Игрок отключился: {player_name} (SteamID: {steam_id}) с сервера {server_id}")
-            else:
-                self.logger.debug(f"Отключение неотслеживаемого игрока: {steam_id} с сервера {server_id}")
             return
 
     async def _notify_players_changed(self, server_id: str):
@@ -102,6 +100,3 @@ class LogLineProcessor:
                 self.logger.debug(f"Отправлено событие PlayersChangedEvent для сервера {server_id}")
             except Exception as e:
                 self.logger.error(f"Ошибка при отправке PlayersChangedEvent: {e}")
-
-    def reset_pending_steam_id(self):
-        self.pending_steam_id = None

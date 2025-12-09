@@ -1,7 +1,9 @@
 from datetime import datetime, timedelta
 from collections import defaultdict
 import json
+import ctypes
 import os
+import sys
 import subprocess
 import asyncio
 from typing import Optional, Callable, Dict
@@ -9,12 +11,12 @@ from typing import Optional, Callable, Dict
 
 class DDOSProtection:
     def __init__(
-        self,
-        threshold: int = 50,
-        interval: int = 60,
-        block_duration_hours: int = 24,
-        log_callback: Optional[Callable] = None,
-        config_blocked_ips_file: str = "./data/blocked_ips.json"
+            self,
+            threshold: int = 50,
+            interval: int = 60,
+            block_duration_hours: int = 24,
+            log_callback: Optional[Callable] = None,
+            config_blocked_ips_file: str = "./data/blocked_ips.json"
     ):
         """
         :param threshold: Кол-во запросов за интервал, после которого IP блокируется
@@ -29,10 +31,35 @@ class DDOSProtection:
         self.log_callback = log_callback or print
         self.blocked_ips_file = config_blocked_ips_file
 
+        # Новая проверка
+        self.admin_access = self._is_admin()
+        if not self.admin_access:
+            self._log(
+                "Предупреждение: Приложение запущено без прав администратора. Функция блокировки IP через netsh будет отключена.",
+                "error")
+
         self.ip_data = defaultdict(list)  # Активные запросы: ip -> [timestamps]
         self.blocked_ips: Dict[str, str] = self._load_blocked_ips()  # ip -> isoformat времени блокировки
 
         self.cleanup_task: Optional[asyncio.Task] = None
+
+    def _is_admin(self):
+        """Проверяет, запущено ли приложение с правами администратора."""
+        try:
+            # Для Windows
+            if sys.platform.startswith('win'):
+                return ctypes.windll.shell32.IsUserAnAdmin()
+            else:
+                # Для Unix-систем проверяем эффективный UID
+                return os.geteuid() == 0
+        except AttributeError:
+            # Если ctypes.windll.shell32 или os.geteuid недоступны (редко)
+            self._log("Не удалось проверить права администратора: библиотека ctypes недоступна.", "warning")
+            return False
+        except OSError:
+            # os.geteuid может бросить OSError на Windows
+            self._log("Не удалось проверить права администратора: ошибка получения UID.", "warning")
+            return False
 
     def start(self, loop: asyncio.AbstractEventLoop):
         """Запускает фоновую задачу очистки"""
@@ -118,37 +145,83 @@ class DDOSProtection:
             self._save_blocked_ips()
 
     def _block_ip(self, ip: str):
-        """Блокирует IP через netsh и сохраняет в файл"""
+        """Блокирует IP через netsh и сохраняет в файл, если есть права администратора."""
         if self.is_blocked(ip):
             return
 
+        if not self.admin_access:
+            # Если нет прав, просто логируем, что IP должен быть заблокирован, но не блокируем через netsh
+            self._log(
+                f"Нет прав администратора: невозможно заблокировать IP {ip} через netsh. IP добавлен в список ожидания.",
+                "warning")
+            # Все равно сохраняем в файл, чтобы не забыть
+            self.blocked_ips[ip] = datetime.now().isoformat()
+            self._save_blocked_ips()
+            return
+
         try:
-            subprocess.run(
+            result = subprocess.run(
                 f'netsh advfirewall firewall add rule name="Block MOE IP {ip}" '
                 f'dir=in action=block remoteip={ip}',
                 shell=True,
                 check=True,
                 timeout=5
             )
-            self._log(f"IP {ip} успешно заблокирован.", "warning")
-        except subprocess.SubprocessError as e:
-            self._log(f"Ошибка при блокировке IP {ip}: {e}", "error")
+            # check=True означает, что subprocess.CalledProcessError будет выброшен, если returncode != 0
+            self._log(f"IP {ip} успешно заблокирован через netsh.", "warning")
+        except subprocess.TimeoutExpired:
+            self._log(f"Таймаут при попытке заблокировать IP {ip} через netsh.", "error")
+            # Не сохраняем в файл, если команда не завершена
+            return
+        except subprocess.CalledProcessError as e:
+            self._log(f"Ошибка при блокировке IP {ip} через netsh (return code {e.returncode}): {e}", "error")
+            # Не сохраняем в файл, если команда вернула ошибку
+            return
+        except Exception as e:
+            self._log(f"Неожиданная ошибка при блокировке IP {ip} через netsh: {e}", "error")
+            # Не сохраняем в файл, если произошла другая ошибка
+            return
 
+        # Только если netsh прошла успешно, сохраняем в файл
         self.blocked_ips[ip] = datetime.now().isoformat()
         self._save_blocked_ips()
 
     def _unblock_ip(self, ip: str):
-        """Разблокирует IP (удаляет правило)"""
+        """Разблокирует IP (удаляет правило), если есть права администратора."""
+        if not self.admin_access:
+            # Если нет прав, логируем, что разблокировка невозможна
+            self._log(
+                f"Нет прав администратора: невозможно разблокировать IP {ip} через netsh. Попробуйте перезапустить с правами администратора.",
+                "warning")
+            # Удаляем из *внутреннего* списка, чтобы не пытаться разблокировать снова при следующем цикле
+            # Но не пытаемся выполнить команду netsh
+            return
+
         try:
-            subprocess.run(
+            result = subprocess.run(
                 f'netsh advfirewall firewall delete rule name="Block MOE IP {ip}"',
                 shell=True,
                 check=True,
                 timeout=5
             )
-            self._log(f"IP {ip} разблокирован (время истекло).", "info")
-        except subprocess.SubprocessError as e:
-            self._log(f"Ошибка при разблокировке IP {ip}: {e}", "error")
+            self._log(f"IP {ip} разблокирован через netsh (время истекло).", "info")
+        except subprocess.TimeoutExpired:
+            self._log(f"Таймаут при попытке разблокировать IP {ip} через netsh.", "error")
+            # Не удаляем из внутреннего списка, чтобы попробовать снова позже
+            return
+        except subprocess.CalledProcessError as e:
+            self._log(f"Ошибка при разблокировке IP {ip} через netsh (return code {e.returncode}): {e}", "error")
+            # Не удаляем из внутреннего списка, чтобы попробовать снова позже
+            return
+        except Exception as e:
+            self._log(f"Неожиданная ошибка при разблокировке IP {ip} через netsh: {e}", "error")
+            # Не удаляем из внутреннего списка, чтобы попробовать снова позже
+            return
+
+        # Только если netsh прошла успешно, удаляем из внутреннего списка и сохраняем
+        if ip in self.blocked_ips:
+            del self.blocked_ips[ip]
+        self._save_blocked_ips()
 
     def _load_blocked_ips(self) -> Dict[str, str]:
         """Загрузить список заблокированных IP из файла"""
@@ -172,7 +245,6 @@ class DDOSProtection:
     def _log(self, message: str, level: str = "info"):
         """Универсальный логгер (можно подменить на logger.info и т.п.)"""
         self.log_callback(f"[DDOSProtection] {level.upper()}: {message}")
-
 
 # Глобальный экземпляр (опционально, если хочешь singleton)
 # ddos_protection = DDOSProtection()

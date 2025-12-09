@@ -42,7 +42,7 @@ class LogParser:
         self.ddos_protection = DDOSProtection(
             threshold=ddos_config.get("DDOS_THRESHOLD", 50),
             interval=ddos_config.get("DDOS_INTERVAL", 60),
-            log_callback=self.logger.debug,
+            log_callback=self.logger.error,
             config_blocked_ips_file=ddos_config.get("BLOCKED_IPS_FILE", "./data/blocked_ips.json")
         )
         # Установим ddos_protection в line_processor
