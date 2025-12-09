@@ -3,13 +3,13 @@
 import asyncio
 from collections import defaultdict
 from src.config import Config
-from src.logger import LoggerMixin
+from src.logger import Logger
 
 
-class Mediator(LoggerMixin):  # <-- Наследуем от LoggerMixin
-    def __init__(self, config=None):
-        super().__init__()  # <-- Вызываем миксин
+class Mediator:
+    def __init__(self, config=None, logger=None):
         self.config = config or Config()
+        self.logger = logger or Logger()
         self._event_handlers = defaultdict(list)
         self._request_handlers = {}
 

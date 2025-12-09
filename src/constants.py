@@ -8,7 +8,7 @@ IP_TIMESTAMP_PATTERN = re.compile(
 
 # Регулярные выражения для парсинга строк
 LOGIN_PATTERN_SERVER = re.compile(r"PostLogin Account:\s*(\d+)")
-JOIN_PATTERN_SERVER = re.compile(r"Join succeeded:\s*(\w+)")
+JOIN_NICKNAME_SERVER = re.compile(r"Join succeeded:\s*(\w+)")
 LOGOUT_PATTERN_SERVER = re.compile(r"Logout Account:\s*(\d+)")
 
 LOGIN_PATTERN_LOBBY = re.compile(r"ASGGameModeLobby::LobbyClientLogin NickName = ([^,]+), UniqueId = (\d+)")

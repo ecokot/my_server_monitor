@@ -52,19 +52,12 @@ class QueryServer:
         :param data: Данные запроса (если есть).
         """
         if request_type == "A2S_INFO":
-            server_name = self.config.get(f"SERVERS.{self.server_id}.SERVER_NAME", None)
-            if server_name is None:
-                self.logger.error(f"QueryServer {self.server_id}: Не найдено SERVER_NAME в конфигурации.")
-                return
-            game_port = self.config.get(f"SERVERS.{self.server_id}.GAME_PORT", None)
-            if game_port is None:
-                self.logger.error(f"QueryServer {self.server_id}: Не найден GAME_PORT в конфигурации.")
-                return
-
-            # Запрашиваем данные о подключенных игроках
+            # Уведомляем медиатор о необходимости получить данные о подключенных игроках для ЭТОГО сервера
+            # Формируем ответ
+            server_name = self.config.get(f"SERVERS.{self.server_id}.SERVER_NAME", f"[{self.server_id}] Default Server")
+            game_port = self.config.get(f"SERVERS.{self.server_id}.GAME_PORT", 11888)
+            # Передаем количество подключенных игроков для этого сервера
             self.players_data = self.mediator.request(GetPlayerCountQuery(server_id=self.server_id))
-            if not self.players_data:
-                self.logger.error(f"QueryServer {self.server_id}: Не удалось получить данные о игроках.")
             return await info_query(self.players_data, self.config.get("VERSION_GAME", "1.1.0"), server_name,
                                     game_port)
         elif request_type == "A2S_SERVERQUERY_GETCHALLENGE":
@@ -73,6 +66,24 @@ class QueryServer:
         elif request_type == "A2S_PLAYER":
             # Формируем ответ
             return await player_query(data, addr[0], self.challenge_numbers, self.players_data)
+
+    def handle_event(self, event_type, data):
+        """
+        Обрабатывает события, уведомленные медиатором.
+        :param event_type: Тип события (например, get_players_response).
+        :param data: Данные события (если есть).
+        """
+        if event_type == "get_players_response":
+            # Сохраняем данные о подключенных игроках, полученные от медиатора
+            # Предполагаем, что data = {steam_id: player_data} для конкретного сервера
+            # NOTE: Этот вызов может быть инициирован LogParser'ом при изменении состояния
+            # или по запросу от медиатора. Пока что просто обновляем.
+            # Важно: LogParser должен передавать данные только для *этого* server_id
+            # или мы должны фильтровать здесь.
+            # Для простоты сейчас обновляем всё.
+            self.players_data = data or {}
+            self.logger.debug(
+                f"QueryServer {self.server_id}: Обновлены данные подключенных игроков. Количество: {len(self.players_data)}")
 
     async def main(self):
         """
@@ -115,6 +126,9 @@ class QueryServer:
         # Проверяем, является ли запрос A2S_INFO
         if A2S_INFO.match(data):
             self.logger.info(f"QueryServer {self.server_id}: Получен A2S_INFO от {addr[0]}:{addr[1]}")
+            player_data = self.mediator.request(GetPlayerCountQuery(server_id=self.server_id))
+
+            self.logger.info(f"Connected players on server {self.server_id}: {len(player_data)}")
             return await self.handle_request('A2S_INFO', data, addr)
         elif A2S_SERVERQUERY_GETCHALLENGE.match(data):
             self.logger.info(
