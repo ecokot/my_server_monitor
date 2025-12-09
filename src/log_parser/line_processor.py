@@ -5,8 +5,6 @@ from typing import Dict, Optional
 from src.events.types import PlayersChangedEvent
 from src.constants import (
     IP_TIMESTAMP_PATTERN,
-    UNIFIED_LOGIN_PATTERN,
-    LOGOUT_PATTERN_LOBBY,
     LOGOUT_PATTERN_SERVER,
     LOGIN_PATTERN_SERVER,
     JOIN_NICKNAME_SERVER)
@@ -32,7 +30,7 @@ class LogLineProcessor:
             steam_id = self.pending_steam_id
             player_name = join_match.group(1)
 
-            self.logger.debug(f"Сопоставлено: SteamID {steam_id} -> Nick {player_name} на сервере {server_id}")
+            # self.logger.debug(f"Сопоставлено: SteamID {steam_id} -> Nick {player_name} на сервере {server_id}")
 
             # Инициализируем сервер, если нужно
             if server_id not in self.connected_players:
@@ -54,7 +52,6 @@ class LogLineProcessor:
                     "login_time": datetime.now().isoformat()
                 }
                 self.logger.info(f"Игрок подключился: {player_name} (SteamID: {steam_id}) к серверу {server_id}")
-                #await self._notify_players_changed(server_id)
 
             elif existing_player["name"].startswith("Unknown_"):
                 old_name = existing_player["name"]
@@ -67,7 +64,7 @@ class LogLineProcessor:
             self.pending_steam_id = None
             return
 
-        # 1. DDoS Detection (остаётся)
+        # 1. DDoS Detection
         if is_history:
             ip_match = IP_TIMESTAMP_PATTERN.search(line)
             if ip_match:
@@ -80,53 +77,11 @@ class LogLineProcessor:
         if post_login_match:
             steam_id = post_login_match.group(1)
             self.pending_steam_id = steam_id
-            self.logger.debug(f"Обнаружен SteamID {steam_id}, ожидаем ник на сервере {server_id}")
-            return
-
-        # 3. Основной вход
-        login_match = UNIFIED_LOGIN_PATTERN.search(line)
-        if login_match:
-            steam_id = login_match.group(1) or login_match.group(3)
-
-            if not steam_id:
-                return
-
-            # Инициализируем сервер
-            if server_id not in self.connected_players:
-                self.connected_players[server_id] = {}
-
-            # Проверяем, есть ли уже на этом сервере
-            if steam_id in self.connected_players[server_id]:
-                self.logger.debug(f"Игрок {steam_id} уже в сети на сервере {server_id}. Пропускаем.")
-                return
-
-            parsed_name = login_match.group(2)
-            current_name = self.player_manager.get_player_name(steam_id)
-
-            if parsed_name:
-                if not current_name or current_name != parsed_name:
-                    updated = self.player_manager.update_player(steam_id, parsed_name)
-                    if updated:
-                        self.player_manager.save_if_needed()
-                final_name = parsed_name
-            else:
-                final_name = current_name or f"Unknown_{steam_id}"
-
-            # Убедимся, что имя есть в player_manager
-            if steam_id not in self.player_manager.get_all_data():
-                self.player_manager.update_player(steam_id, final_name)
-                self.player_manager.save_if_needed()
-
-            self.connected_players[server_id][steam_id] = {
-                "name": final_name,
-                "server_id": server_id,
-                "login_time": datetime.now().isoformat()
-            }
-            self.logger.info(f"Игрок подключился: {final_name} (SteamID: {steam_id}) к серверу {server_id}")
+            # self.logger.debug(f"Обнаружен SteamID {steam_id}, ожидаем ник на сервере {server_id}")
             return
 
         # 4. Выход
-        logout_match = LOGOUT_PATTERN_LOBBY.search(line) or LOGOUT_PATTERN_SERVER.search(line)
+        logout_match = LOGOUT_PATTERN_SERVER.search(line)
         if logout_match:
             steam_id = logout_match.group(1).strip()
 
@@ -134,7 +89,6 @@ class LogLineProcessor:
                 player_name = self.connected_players[server_id][steam_id]["name"]
                 del self.connected_players[server_id][steam_id]
                 self.logger.info(f"Игрок отключился: {player_name} (SteamID: {steam_id}) с сервера {server_id}")
-                #await self._notify_players_changed(server_id)
             else:
                 self.logger.debug(f"Отключение неотслеживаемого игрока: {steam_id} с сервера {server_id}")
             return

@@ -7,6 +7,7 @@ from src.logger import Logger
 from src.log_parser.log_parser import LogParser
 from src.mediator.mediator import Mediator
 from src.query_server.query_server import QueryServer
+from src.config import Config
 
 
 class MainApp:

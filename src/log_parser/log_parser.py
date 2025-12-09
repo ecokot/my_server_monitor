@@ -69,8 +69,6 @@ class LogParser:
                 mapping[os.path.normpath(log_file)] = server_id
         return mapping
 
-    # Удаляем старые методы _load_players_data и _save_players_data
-
     def get_configured_log_files(self):
         servers_config = self.config.get("SERVERS", {})
         log_files = []
@@ -92,7 +90,7 @@ class LogParser:
             self.logger.warning("Не найдены пути к лог-файлам в конфиге.")
             return
 
-        self.logger.debug(f"Парсинг {len(self.log_files)} лог-файлам: {self.log_files}")
+        self.logger.debug(f"Парсинг файла: {self.log_files}")
 
         if self.mediator:
             self.mediator.register_handler(GetPlayerCountQuery, self.get_connected_players)
@@ -206,7 +204,7 @@ class LogParser:
         """
         if query is None or not hasattr(query, "server_id"):
             # Если нет server_id — возвращаем пустой словарь
-            self.logger.error("Если нет server_id")
+            self.logger.error("Запрос без server_id")
             return {}
         server_id = query.server_id
         return self.connected_players.get(server_id, {})
