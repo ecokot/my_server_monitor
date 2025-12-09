@@ -16,7 +16,8 @@ class DDOSProtection:
             interval: int = 60,
             block_duration_hours: int = 24,
             log_callback: Optional[Callable] = None,
-            config_blocked_ips_file: str = "./data/blocked_ips.json"
+            config_blocked_ips_file: str = "./data/blocked_ips.json",
+            logger=None
     ):
         """
         :param threshold: Кол-во запросов за интервал, после которого IP блокируется
@@ -30,13 +31,12 @@ class DDOSProtection:
         self.block_duration = timedelta(hours=block_duration_hours)
         self.log_callback = log_callback or print
         self.blocked_ips_file = config_blocked_ips_file
-
+        self.logger = logger
         # Новая проверка
         self.admin_access = self._is_admin()
         if not self.admin_access:
-            self._log(
-                "Предупреждение: Приложение запущено без прав администратора. Функция блокировки IP через netsh будет отключена.",
-                "error")
+            self.logger.warning("Предупреждение: Приложение запущено без прав администратора. Функция блокировки IP"
+                              " через netsh будет отключена.")
 
         self.ip_data = defaultdict(list)  # Активные запросы: ip -> [timestamps]
         self.blocked_ips: Dict[str, str] = self._load_blocked_ips()  # ip -> isoformat времени блокировки
@@ -54,11 +54,11 @@ class DDOSProtection:
                 return os.geteuid() == 0
         except AttributeError:
             # Если ctypes.windll.shell32 или os.geteuid недоступны (редко)
-            self._log("Не удалось проверить права администратора: библиотека ctypes недоступна.", "warning")
+            self.logger.warning("Не удалось проверить права администратора: библиотека ctypes недоступна.")
             return False
         except OSError:
             # os.geteuid может бросить OSError на Windows
-            self._log("Не удалось проверить права администратора: ошибка получения UID.", "warning")
+            self.logger.warning("Не удалось проверить права администратора: ошибка получения UID.")
             return False
 
     def start(self, loop: asyncio.AbstractEventLoop):
@@ -70,7 +70,7 @@ class DDOSProtection:
         """Останавливает фоновую задачу"""
         if self.cleanup_task and not self.cleanup_task.done():
             self.cleanup_task.cancel()
-            self.log_callback("DDOSProtection остановлен.")
+            self.logger.debug("DDOSProtection остановлен.")
 
     def add_request(self, ip: str, timestamp: str):
         """
@@ -81,7 +81,7 @@ class DDOSProtection:
         try:
             dt = datetime.strptime(timestamp, "%Y.%m.%d-%H.%M.%S:%f")
         except ValueError:
-            self._log(f"Некорректный формат временной метки: {timestamp}", level="error")
+            self.logger.error(f"Некорректный формат временной метки: {timestamp}")
             return
 
         # Очищаем старые записи
@@ -124,7 +124,7 @@ class DDOSProtection:
                 self._unblock_expired_ips(now)
 
             except asyncio.CancelledError:
-                self._log("Фоновая задача DDOSProtection остановлена.", "info")
+                self.logger.info("Фоновая задача DDOSProtection остановлена.")
                 break
 
     def _unblock_expired_ips(self, current_time: datetime):
@@ -151,9 +151,9 @@ class DDOSProtection:
 
         if not self.admin_access:
             # Если нет прав, просто логируем, что IP должен быть заблокирован, но не блокируем через netsh
-            self._log(
-                f"Нет прав администратора: невозможно заблокировать IP {ip} через netsh. IP добавлен в список ожидания.",
-                "warning")
+            self.logger.warning(
+                f"Нет прав администратора: невозможно заблокировать IP {ip} через netsh. IP добавлен в список"
+                f" ожидания.")
             # Все равно сохраняем в файл, чтобы не забыть
             self.blocked_ips[ip] = datetime.now().isoformat()
             self._save_blocked_ips()
@@ -168,17 +168,17 @@ class DDOSProtection:
                 timeout=5
             )
             # check=True означает, что subprocess.CalledProcessError будет выброшен, если returncode != 0
-            self._log(f"IP {ip} успешно заблокирован через netsh.", "warning")
+            self.logger.warning(f"IP {ip} успешно заблокирован через netsh.")
         except subprocess.TimeoutExpired:
-            self._log(f"Таймаут при попытке заблокировать IP {ip} через netsh.", "error")
+            self.logger.error(f"Таймаут при попытке заблокировать IP {ip} через netsh.")
             # Не сохраняем в файл, если команда не завершена
             return
         except subprocess.CalledProcessError as e:
-            self._log(f"Ошибка при блокировке IP {ip} через netsh (return code {e.returncode}): {e}", "error")
+            self.logger.error(f"Ошибка при блокировке IP {ip} через netsh (return code {e.returncode}): {e}")
             # Не сохраняем в файл, если команда вернула ошибку
             return
         except Exception as e:
-            self._log(f"Неожиданная ошибка при блокировке IP {ip} через netsh: {e}", "error")
+            self.logger.error(f"Неожиданная ошибка при блокировке IP {ip} через netsh: {e}")
             # Не сохраняем в файл, если произошла другая ошибка
             return
 
@@ -190,9 +190,9 @@ class DDOSProtection:
         """Разблокирует IP (удаляет правило), если есть права администратора."""
         if not self.admin_access:
             # Если нет прав, логируем, что разблокировка невозможна
-            self._log(
-                f"Нет прав администратора: невозможно разблокировать IP {ip} через netsh. Попробуйте перезапустить с правами администратора.",
-                "warning")
+            self.logger.warning(
+                f"Нет прав администратора: невозможно разблокировать IP {ip} через netsh. Попробуйте перезапустить с "
+                f"правами администратора.")
             # Удаляем из *внутреннего* списка, чтобы не пытаться разблокировать снова при следующем цикле
             # Но не пытаемся выполнить команду netsh
             return
@@ -204,17 +204,17 @@ class DDOSProtection:
                 check=True,
                 timeout=5
             )
-            self._log(f"IP {ip} разблокирован через netsh (время истекло).", "info")
+            self.logger.info(f"IP {ip} разблокирован через netsh (время истекло).", "info")
         except subprocess.TimeoutExpired:
-            self._log(f"Таймаут при попытке разблокировать IP {ip} через netsh.", "error")
+            self.logger.error(f"Таймаут при попытке разблокировать IP {ip} через netsh.")
             # Не удаляем из внутреннего списка, чтобы попробовать снова позже
             return
         except subprocess.CalledProcessError as e:
-            self._log(f"Ошибка при разблокировке IP {ip} через netsh (return code {e.returncode}): {e}", "error")
+            self.logger.error(f"Ошибка при разблокировке IP {ip} через netsh (return code {e.returncode}): {e}")
             # Не удаляем из внутреннего списка, чтобы попробовать снова позже
             return
         except Exception as e:
-            self._log(f"Неожиданная ошибка при разблокировке IP {ip} через netsh: {e}", "error")
+            self.logger.error(f"Неожиданная ошибка при разблокировке IP {ip} через netsh: {e}")
             # Не удаляем из внутреннего списка, чтобы попробовать снова позже
             return
 
@@ -240,11 +240,7 @@ class DDOSProtection:
             with open(self.blocked_ips_file, "w", encoding="utf-8") as f:
                 json.dump(self.blocked_ips, f, indent=4, ensure_ascii=False)
         except OSError as e:
-            self._log(f"Не удалось сохранить blocked_ips.json: {e}", "error")
-
-    def _log(self, message: str, level: str = "info"):
-        """Универсальный логгер (можно подменить на logger.info и т.п.)"""
-        self.log_callback(f"[DDOSProtection] {level.upper()}: {message}")
+            self.logger.error(f"Не удалось сохранить blocked_ips.json: {e}")
 
 # Глобальный экземпляр (опционально, если хочешь singleton)
 # ddos_protection = DDOSProtection()
