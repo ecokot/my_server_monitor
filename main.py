@@ -2,8 +2,7 @@
 
 import asyncio
 import signal
-from src.events.types import GetPlayerCountQuery, PlayersChangedEvent
-from src.config import Config
+from src.events.types import GetPlayerCountQuery
 from src.logger import Logger
 from src.log_parser.log_parser import LogParser
 from src.mediator.mediator import Mediator
